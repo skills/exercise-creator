@@ -1,0 +1,10 @@
+{
+    // "jest.enable": false,
+    "jest.disabledWorkspaceFolders": [
+        // "skills-manager",
+        // "skill*",
+        // "skills/**"
+    ],
+
+    "workbench.tree.indent": 10,
+}

@@ -1,0 +1,58 @@
+{
+	"runArgs": ["--name", "vsc-skills-manager"],
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	
+	"features": {
+		// For umm... everything. ;)
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+
+		// For creating GitHub Actions
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		},
+
+		// For creating python-based Skills - https://github.com/devcontainers/features/tree/main/src/python
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.13"
+		},
+
+		// For running docker containers
+		// "ghcr.io/devcontainers/features/docker-in-docker:2": {}; // Uncomment if using a Codespace
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}, // Uncomment if using local machine
+
+		// For running worfklows locally
+		"ghcr.io/dhoeric/features/act:1": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				// GitHub Actions Syntax checking
+				"github.vscode-github-actions",
+
+				// For styling docs for display on GitHub website
+				"bierner.github-markdown-preview",
+				"yahyabatulu.vscode-markdown-alert",
+
+				// For unit unit testing Actions
+				"Orta.vscode-jest",
+				"dbaeumer.vscode-eslint",
+				
+				// Managing docker images and containers
+				"ms-azuretools.vscode-docker",
+				
+				// For building Skills
+				"GitHub.copilot",
+				"ms-python.python"
+			]
+		}
+	}
+
+	// https://containers.dev/implementors/json_reference/#lifecycle-scripts
+	// "postCreateCommand": {
+	// 	"command": "npm install",
+	// 	"workingDirectory": "/workspaces/skills-manager"
+	// }
+}
