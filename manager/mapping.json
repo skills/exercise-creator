@@ -1,0 +1,14 @@
+{
+  "repos": [
+    {
+      "ms_learn": "ms_learn1",
+      "learning_objective": "learning_objective1",
+      "github_features": ["feature1", "feature2"]
+    },
+    {
+      "ms_learn": "ms_learn2",
+      "learning_objective": "learning_objective2",
+      "github_features": ["feature3", "feature4"]
+    }
+  ]
+}
