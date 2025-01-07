@@ -1,0 +1,110 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+  // Ref: https://containers.dev/features
+  "features": {
+    // Developing Actions workflows
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/dhoeric/features/act:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "pnpmVersion": "latest",
+      "nvmVersion": "latest"
+    },
+
+    // Consistent formatting
+    "ghcr.io/devcontainers-contrib/features/prettier:1": {},
+
+    // Python Support
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.13"
+    },
+
+    // General
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+
+    "vscode": {
+      "extensions": [
+        // Styling docs for GitHub website
+        "bierner.github-markdown-preview",
+        "yahyabatulu.vscode-markdown-alert",
+        "davidanson.vscode-markdownlint",
+        "rvest.vs-code-prettier-eslint",
+        "yzhang.markdown-all-in-one",
+
+        // Developing Actions workflows
+        "github.vscode-github-actions",
+        "me-dutour-mathieu.vscode-github-actions",
+        "redhat.vscode-yaml",
+
+        // Managing docker images and containers
+        "ms-azuretools.vscode-docker",
+
+        // General
+        "github.copilot",
+        "esbenp.prettier-vscode",
+        "github.vscode-pull-request-github",
+        "hediet.vscode-drawio",
+        "ryanluker.vscode-coverage-gutters",
+        "SonarSource.sonarlint-vscode",
+
+        // Python support
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+
+        // Javascript support
+        "dbaeumer.vscode-eslint",
+        "Orta.vscode-jest"
+      ],
+
+      "settings": {
+        // Git
+        "git.autofetch": true,
+        "git.allowForcePush": false,
+
+        // GitHub
+        "github.copilot.editor.enableAutoCompletions": true,
+        "github.copilot.chat.codeGeneration.instructions": [
+          { "file": ".github/copilot/code-style.md" }
+        ],
+        "github.copilot.chat.commitMessageGeneration.instructions": [
+          { "file": ".github/copilot/commit-message-style.md" }
+        ],
+        "github.copilot.chat.reviewSelection.instructions": [
+          { "file": ".github/copilot/review-style.md" }
+        ],
+        "github.copilot.chat.testGeneration.instructions": [
+          { "file": ".github/copilot/test-style.md" }
+        ],
+
+        // Consistent formatting
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "markdown.extension.list.indentationSize": "adaptive",
+        "markdown.extension.italic.indicator": "_",
+        "markdown.extension.orderedList.marker": "one",
+        "prettier.configPath": ".prettierrc.json",
+
+        // Skill courses mapping table
+        "livePreview.autoRefreshPreview": "Never"
+      }
+    }
+  },
+
+  // https://containers.dev/implementors/json_reference/#lifecycle-scripts
+  // "postCreateCommand": {
+  //   "command": "npm install",
+  //   "workingDirectory": "/workspaces/skills-manager"
+  // },
+
+  "remoteEnv": {
+    "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
+  }
+}
