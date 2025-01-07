@@ -46,3 +46,59 @@ When the users triggers the action, it will check the related artificats and add
   - Sharing grading results
   - Congratulating when finished
 - All grading workflwos are stored in the course's `.github/workflows/` folder.
+## Common Tasks
+
+### Configure nektos/act
+
+Act is used for running Actions workflows locally, which is is typically useful for testing grading workflows.
+
+1. Open the Skills course project.
+1. Update the `.gitignore` to ignore the Act configuration files.
+
+   ```gitignore
+   .actrc*
+   ```
+
+1. Create the `.actrc` Act config file with the following entries.
+
+   ```bash
+   # Load event payload from file
+   -e .actrc.event.json
+
+   # Load workflow inputs from file
+   --input-file .actrc.inputs
+
+   # Load secrets and environment variables from file
+   --var-file .actrc.vars
+   --secret-file .actrc.secrets
+
+   # Cache used Actions
+   --action-offline-mode
+
+   # Use full runner
+   -P ubuntu-latest=catthehacker/ubuntu:full-latest
+
+   # Run as AMD64 if on ARM64
+   --container-architecture linux/amd64
+   ```
+
+1. Manually pull the runner image.
+
+   - It is large and may take a while to retrieve.
+   - The amd64 version is used because learners will likely use the default public runners.
+
+   ```bash
+   docker pull --platform linux/amd64 catthehacker/ubuntu:full-latest
+   ```
+
+1. Create the `.actrc.vars` environment variables file. Here is an example.
+
+   ```env
+   MYVAR=hello world
+   ```
+
+1. Create the `.actrc.secrets` secrets file. It will likely only be used for your Personal Access Token (PAT).
+
+```env
+GITHUB_TOKEN=(my token)
+```
