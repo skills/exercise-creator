@@ -25,6 +25,28 @@ This project is primarily meant to be started from a Codespace. It includes all 
    act --version
    ```
 
+1. Open the code workspace file.
+   1. In VS Code, select **File** then **Open Workspace from File...**.
+   1. Select the file `skills-manager.code-workspace`. The window will reload.
+
+## Work on a course
+
+The following steps clone a Skills course repository into the codespace and configure VS Code to enable working on it.
+
+1. In VS Code, open a terminal.
+1. Navigate to the `/workspaces/` directory.
+1. Clone the desired Skills course.
+1. Open the workspace file `/workspaes/skills-manager/skills-manager.code-workspace`.
+1. Add an entry for the cloned course repository. It will look similar to below.
+
+   ```json
+   {
+     "path": "/workspaces/skills-manager/overview-app/"
+   }
+   ```
+
+1. Inspect the File Explorer. The repository should now be visable and can be worked on as usual.
+
 ## FAQ
 
 - **I prefer to work locally. Will it also work as a Dev Container?**  
