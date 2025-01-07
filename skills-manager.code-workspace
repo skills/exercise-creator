@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+
+  "settings": {
+    // Refresh overview app as it is being modified
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    // "livePreview.autoRefreshPreview": "Never",
+
+    // Styling
+    "markdownlint.config": {
+      "line-length": false,
+      "first-line-h1": false,
+      "heading-increment": false
+    }
+  }
+}
