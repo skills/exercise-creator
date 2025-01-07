@@ -46,6 +46,7 @@ When the users triggers the action, it will check the related artificats and add
   - Sharing grading results
   - Congratulating when finished
 - All grading workflwos are stored in the course's `.github/workflows/` folder.
+
 ## Common Tasks
 
 ### Configure nektos/act
@@ -102,3 +103,50 @@ Act is used for running Actions workflows locally, which is is typically useful 
 ```env
 GITHUB_TOKEN=(my token)
 ```
+
+### Run an Actions workflow locally
+
+1. Ensure any required environment variables are in the `.actrc.vars` file.
+1. Ensure any required secrets are in the `.actrc.secrets` file.
+1. Update the `.actrc.event.json` event payload file to match with the expected Actions workflow trigger. Here are some examples. See reference for more
+
+   ```json
+   // Push branch
+   {
+     "ref": "refs/heads/my-feature"
+   }
+   ```
+
+   ```json
+   // Push tag
+   {
+     "base_ref": "refs/heads/main",
+     "ref": "refs/tags/v1.0.0"
+   }
+   ```
+
+   ```json
+   /// Pull request
+   {
+     "base_ref": "refs/heads/main",
+     "ref": "refs/pull/123/merge"
+   }
+   ```
+
+   > Ref: https://nektosact.com/usage/index.html#events
+
+   > [!TIP]
+   > You can get a real example payload by adding a step to print the full context. Make sure to run it on actual github.com!
+   >
+   > ```bash
+   > - name: Show full context and event payload
+   >   run: echo '${{ toJSON(github) }}'
+   > ```
+
+1. Run the workflow using Act. See reference for other event types.
+
+   ```bash
+    act push -W .github/workflows/step-1-into.yml
+   ```
+
+   > Ref: https://nektosact.com/usage/index.html#workflows
