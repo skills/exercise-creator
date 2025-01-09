@@ -1,0 +1,49 @@
+﻿RepoID,Skill,Reviewed,URL,Objective Domain,Description,Grouping,Collected feedback from Discussions?,Updated to Issue flow?,Badge Created?,Linked with MS Learn Module?,Last Validated,Last Updated
+,Introduction to GitHub,"Course is a bit strange. It tells them about creating a profile and has them create a profile.md file, but it's not in their actual profile. It's mention in the Finish section, but since that seems like review, I imagine many people overlook it.",https://github.com/skills/introduction-to-github,,Get started using GitHub in less than an hour.,First day on GitHub,,,,,,
+,Communicate using Markdown,no comments,https://github.com/skills/communicate-using-markdown,,"Organize ideas and collaborate using Markdown, a lightweight language for text formatting.
+",First day on GitHub,,,,,,
+,GitHub Pages,Doesn't show any actual markdown content. Doesn't show what the url would be to view the Pages site.,https://github.com/skills/github-pages,,Create a site or blog from your GitHub repositories with GitHub Pages.,First day on GitHub,,,,,,
+,Review pull requests,Can't assign self as a reviewer. Maybe create the PR for them so they can be a reviewer. (Note: creating PRs from Actions is restricted.) Instructions are pretty general and there are very few pictures. Seems like it was made in a rush.,https://github.com/skills/review-pull-requests,,"Collaborate and work together on GitHub.
+",First week on GitHub,,,,,,
+,Resolve merge conflicts,"Can we make the content a bit more realistic? Instructions seem pretty generalized, with no pictures. Might be hard to follow.",https://github.com/skills/resolve-merge-conflicts,,"Learn why conflicts happen and how to resolve them.
+",First week on GitHub,,,,,,
+,Release-based workflow,"Might be good to discuss Packages here too. Idea: do something that depends on the release, like downloading the package version, so they can see the value. Make a reference to using Actions to automate this process. Uses github pages, but never shares link to view it.",https://github.com/skills/release-based-workflow,,"Practice a release-based workflow and explore branching strategies.
+",First week on GitHub,,,,,,
+,Connect the dots,Maybe we can provide example of using search.,https://github.com/skills/connect-the-dots,,"Find relevant conversations, commits, and projects in a repository.
+",First week on GitHub,,,,,,
+,Code with Codespaces,Can we split into 2 course. One on making a codespace. One on just starting a project that already has one. Pictures are out of date. We should modify to include Copilot by default. This will ease them in to the next course. Should probably mention usage limits for free tier. Dotfiles could be a little less abstract; it's hard to follow.,https://github.com/skills/code-with-codespaces,,"Develop code using GitHub Codespaces and Visual Studio Code.
+",First week on GitHub,,,,,,
+,Code with Copilot,"Quite out of date. It doesn't mention workspace, edits, spark, etc. Title should be modified to not mention codespaces; Codespaces should just be referenced as tool for practicing. Copilot is included now in VS Code. It's not just the OpenAI Codex model anymore. More editors are supported.",https://github.com/skills/copilot-codespaces-vscode,,"Develop with AI-powered code suggestions using GitHub Copilot, Codespaces, and VS Code.
+",First week on GitHub,,,,,,
+,Hello GitHub Actions,Maybe mention billing.,https://github.com/skills/hello-github-actions,,"Create a GitHub Action and use it in a workflow.
+",Automate workflows with GitHub Actions,,,,,,
+,Test with Actions,"Since it is mentioning passing artificats, we should mention passing values using ENVs. Update to use rulesets instead of branch protection.",https://github.com/skills/test-with-actions,,"Create workflows that enable you to use Continuous Integration (CI) for your projects.
+",Automate workflows with GitHub Actions,,,,,,
+,Publish packages,"We should intro publishin to packages from command line before doing it in an action. The first publish has to be done from a PAT, not a workflow, (or update the workflow permissions in settings.) Doesn't seem necessary to make the merge its own step. Docker login step probably needs some clarity. Maybe add an FYI that some companies have firewall filters to control package management. I think we could do 3 of these: docker, python, npm. I wonder if we could actually make the course a bit dynamic by asking the user which they would like to do.",https://github.com/skills/publish-packages,,"Use GitHub Actions to publish your project to a Docker image.
+",Automate workflows with GitHub Actions,,,,,,
+,Deploy to Azure,Mention Azure account as prerequisite. Might be easier it ran in a codespace. Verify workflow still works with Azure. So specific it might be fragile. Courses is a bit intimidating. Can we make it friendlier? Might add instructions to verify in Azure that resources are removed.,https://github.com/skills/deploy-to-azure,,"Create a deployment workflow using GitHub Actions and Microsoft Azure.
+",Automate workflows with GitHub Actions,,,,,,
+,Write JavaScript actions,"Modify to use a codespace. Shows how to run workflow from same repo, but not another repo. Just mentions publishing it.",https://github.com/skills/write-javascript-actions,,"Write your own GitHub JavaScript Action.
+",Automate workflows with GitHub Actions,,,,,,
+,Reusable workflows,no comments,https://github.com/skills/reusable-workflows,,"Make a workflow reusable in other workflows.
+",Automate workflows with GitHub Actions,,,,,,
+,Secure your repository supply chain,"Is Dependency submission API still beta? Avoid temporary phrases like ""recent"", ""new"", ""beta"". Mention that Actions will run tests on the same PR, ensuring the update doesn't break anything.",https://github.com/skills/secure-repository-supply-chain,,"Secure your supply chain, patch dependency vulnerabilities.
+",Code security and analysis,,,,,,
+,Secure code game,not reviewed,https://github.com/skills/secure-code-game,,"Learn about software security in a fun, educational environment.
+",Code security and analysis,,,,,,
+,Introduction to CodeQL,Check if repo settings screenshots are still accurate.,https://github.com/skills/introduction-to-codeql,,"Learn how to enable CodeQL to secure your code.
+",Code security and analysis,,,,,,
+,Change commit history,"We should have a warning that this rewrites the history, changing all hashes, potentially breaking any work on parallel branches. People will have to clear their local copies.
+Step 1: Implies that git rm removes it from history. Misleading. This is clarified in the next step, but a user might think they are done and not continue to the next step.
+Step 2: I've historically had issues with the ""install BFG Repo Cleaner"" step. Maybe we can make this easier.",https://github.com/skills/change-commit-history,,"A skills course on changing the commit history with Git.
+",Code security and analysis,,,,,,
+,Introduction to secret scanning,no comments,https://github.com/skills/introduction-to-secret-scanning,,"Enable secret scanning and take a feature tour.
+",Code security and analysis,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,, ,,,,,,,,,
