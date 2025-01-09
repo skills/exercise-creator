@@ -99,12 +99,5 @@
   },
 
   // https://containers.dev/implementors/json_reference/#lifecycle-scripts
-  // "postCreateCommand": {
-  //   "command": "npm install",
-  //   "workingDirectory": "/workspaces/skills-manager"
-  // },
-
-  "remoteEnv": {
-    "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
-  }
+  "postCreateCommand": "bash ./.devcontainer/postCreate.sh"
 }

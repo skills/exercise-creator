@@ -2,6 +2,12 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "/workspaces/action-text-variables"
+    },
+    {
+      "path": "/workspaces/skills-response-templates"
     }
   ],
 
