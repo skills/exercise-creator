@@ -91,7 +91,7 @@
         "markdown.extension.italic.indicator": "_",
         "markdown.extension.orderedList.marker": "one",
 
-        // Skill courses mapping table
+        // Learning coverage
         "livePreview.autoRefreshPreview": "Never"
       }
     }

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const skillsCoursesTable = document.getElementById("skills-courses-table");
-  const featureMappingTable = document.getElementById("feature-mapping-table");
+  const learningCoverageTable = document.getElementById("learning-coverage-table");
   const reposTable = document.getElementById("repos-table");
   const fontSizeSelector = document.getElementById("font-size");
   const refreshRateSelector = document.getElementById("refresh-rate");
@@ -179,27 +179,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   async function loadTables() {
     // Fetch CSV files
     const skillsCoursesCSV = await fetchCSV("skills-courses.csv");
-    const featureMappingCSV = await fetchCSV("feature-mapping.csv");
+    const learningCoverageCSV = await fetchCSV("learning-coverage.csv");
 
     const skillsCoursesJson = await csvToJson(skillsCoursesCSV);
-    const featureMappingJson = await csvToJson(featureMappingCSV);
+    const learningCoverageJson = await csvToJson(learningCoverageCSV);
 
     // Clear old content
     const oldSkillsCoursesTable = skillsCoursesTable.querySelector("table");
     if (oldSkillsCoursesTable) {
       skillsCoursesTable.removeChild(oldSkillsCoursesTable);
     }
-    const oldFeatureMappingTable = featureMappingTable.querySelector("table");
-    if (oldFeatureMappingTable) {
-      featureMappingTable.removeChild(oldFeatureMappingTable);
+    const oldLearningCoverageTable = learningCoverageTable.querySelector("table");
+    if (oldLearningCoverageTable) {
+      learningCoverageTable.removeChild(oldLearningCoverageTable);
     }
 
     // Load new content
     skillsCoursesTable.appendChild(createTableFromJson(skillsCoursesJson));
-    featureMappingTable.appendChild(createTableFromJson(featureMappingJson));
+    learningCoverageTable.appendChild(createTableFromJson(learningCoverageJson));
 
     addRowAndColumnHoverEffect(skillsCoursesTable.querySelector("table"));
-    addRowAndColumnHoverEffect(featureMappingTable.querySelector("table"));
+    addRowAndColumnHoverEffect(learningCoverageTable.querySelector("table"));
   }
 
   const repos = await fetchRepos();
