@@ -16,27 +16,67 @@ There are a few roles related to Skills Course development.
 > [!WARNING]
 > The above action and repository are currently hosted under the [chriswblake](https://github.com/chriswblake) GitHub account. They will eventually be migrated to a GitHub owned org.
 
-## Course Content
+## Course Planning
+
+### Selecting a New Course
 
 Skills courses are organized to build awareness level **_skill_** of a one (or a few) GitHub related features or products.
 
+- What specific skills does the learner leave the course with?
+- What will the learner be able to do after completing the course?
+- Is the topic specific and small enough to fit within 1 hour.
+  - Most learners tend to drop off after 30-45 minutes.
+  - We've found that it takes learners about four times the length of an expert to complete a course.
+  - If your course needs more steps, consider splitting your learning objective into multiple courses.
+
+### Course Organization and Flow
+
+Courses are communicated to the learner using an Issue and comments, similar to a real development workflow.
+
 - Courses are organized into 5 or less steps.
 - Each step is a single markdown file.
-- Each step's file is prefixed with a number to keep them in order.
+- Each step builds on the previous step.
+- Each step's markdown file and grading workflow is prefixed with a number to keep them in order.
 - All courses files are stored in the `.github/steps/` folder.
+- Workflows monitor the learner's actions, triggering grading and sharing next steps.
 
-### Using images
+> [!TIP]
+> Make the first step easy so the user can build confidence.
 
-- Image files should use absolute URLs. Relative links will break when the markdown content is copied and pasted as comment to the learning issuee.
+### Step Content
+
+Steps are used to communicate a piece of the lesson. They are fairly short, introducing a concept and providing a way to quickly practice.
+
+- Each step is a single markdown file and pairs with a [grading workflow](#course-grading).
+- Each step has 2 components: theory and practice
+  - The theory builds context by introducing a new idea and sharing the fundamentals.
+  - The practice activity is a step-by-step guide interacting with actual GitHub.
+- Include references for learning more. Typically to somewhere in [GitHub Docs](https://docs.github.com).
+- Consider using [Alert Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) to highlight tips and warnings for typical troubleshooting.
+- Image files should use absolute URLs. Relative links will break when the markdown content is copied and pasted as an issue comment.
 - Animated images (GIFs) are deliberately blocked on GitHub.
+- Try to keep formatting consistent between steps.
+- When possible, try to follow the [GitHub Docs style guide](https://github.com/github/docs/blob/main/contributing/content-style-guide.md).
 
 > [!TIP]
 > You can paste an image from your clipboard to any text editor on GitHub and get an absolute URL. GitHub will upload the content then insert a link in the text editor.
 
-## Course Grading
+### Storyline and Personality
 
-A GitHub Actions workflow is used to monitor the current steps work.
-When the users triggers the action, it will check the related artificats and add an issue comment informing the user they have passed.
+Courses are meant to build on one another and increasingly enable the learner. They are also not meant to be boring learning materials! Use the storyline, GitHub's history/characters, and your imagination to make it interesting.
+
+- Each course should use one of the chosen storylines.
+- If a course builds on the work of a previous course, provide that previous work as the starting point.
+- Use Mona and the ocotcats for responding to the user.
+- Use a combination of professional, polite, inviting tone for learning content and friendly, casual, active responses for feedback.
+  - How would you interact with your friend or coworker?
+  - Use emoji to convey a positive tone.
+- Avoid use of acronymns and short hand. For example, use `repository` instead of `repo`.
+
+### Course Grading
+
+A GitHub Actions workflow is used to monitor the learner's progress for an active step.
+When the user triggers the action, it will check the related artifacts and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed.
 
 - Each learning step has it's own grading workflow.
 - After grading passes, the next step's learning content is shared.
@@ -46,7 +86,91 @@ When the users triggers the action, it will check the related artificats and add
   - Providing temporary status updates
   - Sharing grading results
   - Congratulating when finished
-- All grading workflwos are stored in the course's `.github/workflows/` folder.
+- All grading workflows are stored in the course's `.github/workflows/` folder.
+- Ensure the workflows are easy to follow and include references. Many developers will use them as references.
+
+### Maintainability
+
+GitHub Skills courses are not version safe. As such they will become out of date as GitHub evolves. Here are recommendations to consider.
+
+- Be concise. More content means more to update.
+- Avoid including content that will likely change, for example usage quotas and limits.
+- Don't copy from GitHub Docs. Instead introduce it and reference GitHub Docs page. This will also teach the learn to use Docs for future questions.
+
+## Testing a Course
+
+### Proofreading
+
+- Verify tenses are consistent.
+- Verify tones are consistent.
+- Verify spelling and grammar.
+- Verify acronymns are spelled out or removed.
+
+### Verify the grading workflows
+
+Most grading workflows can be verified locally before testing them in the actual course flow.
+
+1. Ensure you are in the Codespace and have [configured nektos/act](#configure-nektosact).
+1. Ensure any required environment variables are in the `.actrc.vars` file.
+1. Ensure any required secrets are in the `.actrc.secrets` file.
+1. Update the `.actrc.event.json` event payload file to match with the expected grading workflow's trigger. Here are some examples. See reference for more.
+
+   ```json
+   // Push branch
+   {
+     "ref": "refs/heads/my-feature"
+   }
+   ```
+
+   ```json
+   // Push tag
+   {
+     "base_ref": "refs/heads/main",
+     "ref": "refs/tags/v1.0.0"
+   }
+   ```
+
+   ```json
+   /// Pull request
+   {
+     "base_ref": "refs/heads/main",
+     "ref": "refs/pull/123/merge"
+   }
+   ```
+
+   > Ref: [Act - event payloads](https://nektosact.com/usage/index.html#events) - information
+
+   > [!TIP]
+   > You can get a real example payload by adding a step to print the full context. Make sure to run it on actual github.com!
+   >
+   > ```bash
+   > - name: Show full context and event payload
+   >   run: echo '${{ toJSON(github) }}'
+   > ```
+
+1. Run the workflow using Act. See reference for other event types.
+
+   ```bash
+    act push -W .github/workflows/step-1-into.yml
+   ```
+
+   > Ref: [Act - run a specific workflow file](https://nektosact.com/usage/index.html#workflows)
+
+### Acceptance Testing
+
+The only true test is giving the course an actual try.
+
+- Try the course yourself on actual GitHub. See what happens, take notes, and fix bugs.
+- Once it works for you, knowing how it is supposed to work, try it others.
+
+  - someone familiar with the topic (technical review)
+  - someone unfamiliar with the topic (potential learner)
+  - outside of GitHub (make sure nothing requires internal permissions)
+
+- Check in our your course regularly for any reported issues or out-of-date information.
+
+- Keep everything you need in the one course repository.
+- If a course must be private during development, create an organization for your courses, make your courses private, and invite the specific users that need these courses to your organization.
 
 ## Common Tasks
 
@@ -101,53 +225,6 @@ Act is used for running Actions workflows locally, which is is typically useful 
 
 1. Create the `.actrc.secrets` secrets file. It will likely only be used for your Personal Access Token (PAT).
 
-```env
-GITHUB_TOKEN=(my token)
-```
-
-### Run an Actions workflow locally
-
-1. Ensure any required environment variables are in the `.actrc.vars` file.
-1. Ensure any required secrets are in the `.actrc.secrets` file.
-1. Update the `.actrc.event.json` event payload file to match with the expected Actions workflow trigger. Here are some examples. See reference for more
-
-   ```json
-   // Push branch
-   {
-     "ref": "refs/heads/my-feature"
-   }
+   ```env
+   GITHUB_TOKEN=(my token)
    ```
-
-   ```json
-   // Push tag
-   {
-     "base_ref": "refs/heads/main",
-     "ref": "refs/tags/v1.0.0"
-   }
-   ```
-
-   ```json
-   /// Pull request
-   {
-     "base_ref": "refs/heads/main",
-     "ref": "refs/pull/123/merge"
-   }
-   ```
-
-   > Ref: https://nektosact.com/usage/index.html#events
-
-   > [!TIP]
-   > You can get a real example payload by adding a step to print the full context. Make sure to run it on actual github.com!
-   >
-   > ```bash
-   > - name: Show full context and event payload
-   >   run: echo '${{ toJSON(github) }}'
-   > ```
-
-1. Run the workflow using Act. See reference for other event types.
-
-   ```bash
-    act push -W .github/workflows/step-1-into.yml
-   ```
-
-   > Ref: https://nektosact.com/usage/index.html#workflows
