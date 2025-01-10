@@ -1,11 +1,14 @@
 # Skills Manager
 
-This is a toolkit for developing and managing GitHub Skills and related Actions workflows. Please use the below guides to get started with this toolkit and for creating new courses.
+This is a codespace and toolkit for developing and managing GitHub Skills courses and related Actions workflows.
+It provides settings and guides for consistent styling, tools to test grading workflows, and tools to manage all courses as an ecosystem.
+
+Please use the below guides to start the codespace and start building! 🤓
 
 ## How to Develop
 
 - [Initial Setup](docs/initial-setup.md) - A step-by-step guide to start developing.
-- [Develop a Skill Course](docs/develop-a-skill-course.md) - Important tasks and guidelines.
+- [Develop a Skills Course](docs/develop-a-skill-course.md) - Important tasks and guidelines.
 
 ### New Course Flowchart
 
