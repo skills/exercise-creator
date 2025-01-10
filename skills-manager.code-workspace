@@ -20,7 +20,8 @@
     "markdownlint.config": {
       "line-length": false,
       "first-line-h1": false,
-      "heading-increment": false
+      "heading-increment": false,
+      "no-blanks-blockquote": false
     },
     "prettier.printWidth": 100
   }
