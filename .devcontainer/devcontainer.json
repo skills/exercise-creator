@@ -90,7 +90,6 @@
         "markdown.extension.list.indentationSize": "adaptive",
         "markdown.extension.italic.indicator": "_",
         "markdown.extension.orderedList.marker": "one",
-        "prettier.configPath": ".prettierrc.json",
 
         // Skill courses mapping table
         "livePreview.autoRefreshPreview": "Never"
