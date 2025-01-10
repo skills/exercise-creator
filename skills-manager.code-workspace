@@ -21,6 +21,7 @@
       "line-length": false,
       "first-line-h1": false,
       "heading-increment": false
-    }
+    },
+    "prettier.printWidth": 100
   }
 }
