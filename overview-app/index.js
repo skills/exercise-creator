@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     get(key) {
       return {
         data: JSON.parse(localStorage.getItem(`${key}Data`)) || null,
-        timestamp:
-          parseInt(localStorage.getItem(`${key}Timestamp`), 10) || null,
+        timestamp: parseInt(localStorage.getItem(`${key}Timestamp`), 10) || null,
       };
     },
     set(key, data) {
@@ -153,9 +152,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const index = cell.cellIndex;
         const row = cell.parentElement;
         table
-          .querySelectorAll(
-            `td:nth-child(${index + 1}), th:nth-child(${index + 1})`
-          )
+          .querySelectorAll(`td:nth-child(${index + 1}), th:nth-child(${index + 1})`)
           .forEach((colCell) => {
             colCell.classList.add("hover");
           });
@@ -165,9 +162,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const index = cell.cellIndex;
         const row = cell.parentElement;
         table
-          .querySelectorAll(
-            `td:nth-child(${index + 1}), th:nth-child(${index + 1})`
-          )
+          .querySelectorAll(`td:nth-child(${index + 1}), th:nth-child(${index + 1})`)
           .forEach((colCell) => {
             colCell.classList.remove("hover");
           });
@@ -216,9 +211,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         tableContainers.forEach((tc) => tc.classList.remove("active"));
 
         tab.classList.add("active");
-        document
-          .getElementById(tab.getAttribute("data-target"))
-          .classList.add("active");
+        document.getElementById(tab.getAttribute("data-target")).classList.add("active");
         localStorage.setItem("activeTab", tab.getAttribute("data-target"));
       });
     });
@@ -227,9 +220,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (activeTab) {
       tabs.forEach((t) => t.classList.remove("active"));
       tableContainers.forEach((tc) => tc.classList.remove("active"));
-      document
-        .querySelector(`.tab[data-target="${activeTab}"]`)
-        .classList.add("active");
+      document.querySelector(`.tab[data-target="${activeTab}"]`).classList.add("active");
       document.getElementById(activeTab).classList.add("active");
     } else {
       tabs[0].classList.add("active");
