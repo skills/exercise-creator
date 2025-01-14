@@ -2,7 +2,7 @@
 
 This project is primarily meant to be started from a Codespace. It includes all the necessary tools to develop and hopefully all settings to support consistent styling.
 
-### Start the Codespace
+### 1. Start the Codespace
 
 1. Navigate to the [skills-manager](https://github.com/chriswblake/skills-manager) repository main page.
 1. Above the files list, on the top right, expand the green button to show development options.
@@ -11,7 +11,7 @@ This project is primarily meant to be started from a Codespace. It includes all 
    - After started, if no credentials are found, it will ask to login to GitHub.
    - After login, skills-related skills will be added to the workspace.
 
-### Verify Setup
+### 2. Verify Setup
 
 Ensure all extensions and tools are ready.
 
@@ -36,7 +36,7 @@ Ensure all extensions and tools are ready.
    act --version
    ```
 
-### Open the workspace
+### 3. Open the workspace
 
 The workspace allows opening multiple skills-related projects simultaneously.
 
@@ -45,6 +45,8 @@ The workspace allows opening multiple skills-related projects simultaneously.
 1. Select the file `/workspaces/skills-manager/skills-manager.code-workspace`.
    - The VS Code window will reload.
    - Check the file explorer. Additional projects have been opened.
+
+# Common Tasks
 
 ## Work on a Skills course
 
