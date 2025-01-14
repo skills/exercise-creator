@@ -9,18 +9,15 @@ There are a few roles related to Skills Course development.
 ## Tools
 
 - [overview app](../overview-app/README.md) - A no-install simple web application that lists all Skills courses and the topics they cover.
-- [text-variables](https://github.com/chriswblake/action-text-variables) - A GitHub Action that enables loading a template and replacing variables.
-- [response-templates](https://github.com/chriswblake/response-templates) - A GitHub repository with premade markdown templates for creating issues, commenting on issues, and modifying markdown files.
+- [text-variables](https://github.com/skills/action-text-variables) - A GitHub Action that enables loading a template and replacing variables.
+- [response-templates](https://github.com/skills/response-templates) - A GitHub repository with premade markdown templates for creating issues, commenting on issues, and modifying markdown files.
 - [nektos/act](https://nektosact.com/usage/index.html) - Command line tool to run Actions workflows locally.
-
-> [!WARNING]
-> The above action and repository are currently hosted under the [chriswblake](https://github.com/chriswblake) GitHub account. They will eventually be migrated to a GitHub owned org.
 
 ## Course Planning
 
 Please use the issue template for a guide and checklist to creating a new Skills course. It will provide links back to these docs.
 
-<a id="copy-course" href="https://github.com/chriswblake/skills-manager/issues/new?template=new-skills-course.md&title=New+Course%3A+%28set+title%29">
+<a id="copy-course" href="https://github.com/skills/skills-manager/issues/new?template=new-skills-course.md&title=New+Course%3A+%28set+title%29">
       <img src="https://img.shields.io/badge/👩‍🚀_Create_A_New_Course-008000" height="25pt"/>
    </a>
 

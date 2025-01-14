@@ -4,7 +4,7 @@ This project is primarily meant to be started from a Codespace. It includes all 
 
 ### 1. Start the Codespace
 
-1. Navigate to the [skills-manager](https://github.com/chriswblake/skills-manager) repository main page.
+1. Navigate to the [skills-manager](https://github.com/skills/skills-manager) repository main page.
 1. Above the files list, on the top right, expand the green button to show development options.
 1. Choose the **Codespaces** tab and select **Create Codespace on main**.
 1. Wait for the Codespace to be created.
