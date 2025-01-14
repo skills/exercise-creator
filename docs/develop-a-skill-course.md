@@ -18,6 +18,12 @@ There are a few roles related to Skills Course development.
 
 ## Course Planning
 
+Please use the issue template for a guide and checklist to creating a new Skills course. It will provide links back to these docs.
+
+<a id="copy-course" href="https://github.com/chriswblake/skills-manager/issues/new?template=new-skills-course.md&title=New+Course%3A+%28set+title%29">
+      <img src="https://img.shields.io/badge/👩‍🚀_Create_A_New_Course-008000" height="25pt"/>
+   </a>
+
 ### Selecting a New Course
 
 Skills courses are organized to build awareness level **_skill_** of a one (or a few) GitHub related features or products.
