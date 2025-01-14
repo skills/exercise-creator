@@ -136,3 +136,26 @@ Act is used for running Actions workflows locally, which is is typically useful 
 - **What does the Codespace include?**
   - Runtime for Python and Javascript
   - Extensions and settings
+
+## Updating workspace and project settings
+
+Workspaces settings are defined in multiple places depending on necessity of change. They are applied in the below.
+
+- **User settings** - Exist outside of the codespace and are ot related to the project.
+  - Example: dark/light mode
+- **Codespace settings**
+  - Location: `.devcontainer/devcontainer.json`
+  - Default settings for projects that don't include settings.
+  - Modifications won't be affective until container is rebuilt.
+  - Example: Providing prettier formatting to Skills courses.
+- **Workspace settings**
+  - Location: `skills-manager.code-workspace`
+  - Developer can freely make changes without accidentally committing.
+  - Git tracking is disabled on this file when the codespace is created.
+  - Example: Develop new default settings for the codespace.
+  - Example: Cloning additional repos and adding to the workspace.
+- **Project settings**
+  - Location: `<repo>/.vscode/settings.json`
+  - Onlyl apply to the related repository folder.
+  - Setting for a specific project.
+  - Example: Configure linting or testing
