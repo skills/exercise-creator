@@ -70,6 +70,9 @@ The following steps clone a Skills course repository into the codespace and add 
 
 1. Inspect the File Explorer. The repository should now be visable and can be worked on as usual.
 
+> [!NOTE]
+> The `skills-manager.code-workspace` file has been excluded from Git tracking. Feel free to customize it for your personal development flow!
+
 ## Configure nektos/act
 
 Act is used for running Actions workflows locally, which is is typically useful for testing grading workflows.

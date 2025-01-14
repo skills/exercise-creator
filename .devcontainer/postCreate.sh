@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Stop tracking workspace settings
+git update-index --skip-worktree skills-manager.code-workspace
+
 # Login using the GitHub CLI
 echo "Logging in to GitHub"
 if ! gh auth status &>/dev/null; then
