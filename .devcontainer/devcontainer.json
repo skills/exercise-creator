@@ -61,6 +61,7 @@
         "hediet.vscode-drawio",
         "ryanluker.vscode-coverage-gutters",
         "SonarSource.sonarlint-vscode",
+        "janisdd.vscode-edit-csv",
 
         // Python support
         "ms-python.python",
