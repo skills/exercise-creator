@@ -1,4 +1,4 @@
-﻿Feature,Introduction to GitHub,Communicate using Markdown,GitHub Pages,Review Pull Requests,Resolve Merge Conflicts,Release-based workflow,Connect the dots,Code with GitHub Codespaces,Code with Copilot,Hello GitHub Actions,Test with Actions,Publish to GitHub Packages,Deploy to Azure,Write JavaScript Actions,Reusable workflows,Secure your repository supply chain,Introduction to CodeQL,Remove commit history,Introduction to secret scanning
+Feature,Introduction to GitHub,Communicate using Markdown,GitHub Pages,Review Pull Requests,Resolve Merge Conflicts,Release-based workflow,Connect the dots,Code with GitHub Codespaces,Code with Copilot,Hello GitHub Actions,Test with Actions,Publish to GitHub Packages,Deploy to Azure,Write JavaScript Actions,Reusable workflows,Secure your repository supply chain,Introduction to CodeQL,Remove commit history,Introduction to secret scanning
 
 H: Git,,,,,,,,,,,,,,,,,,,
 initialize,,,,,,,,,,,,,,,,,,,
@@ -171,9 +171,9 @@ H: Duration,,,,,,,,,,,,,,,,,,,
 H: Misc ,,,,,,,,,,,,,,,,,,,
 Student Developer Pack?,,,,,,,,,,,,,,,,,,,
 
-H: Certifications,,,,,,,,,,,,,,,,,,,
-Fundamentals,,,,,,,,,,,,,,,,,,,
-Actions,,,,,,,,,,,,,,,,,,,
-Advanced Security,,,,,,,,,,,,,,,,,,,
-Admin,,,,,,,,,,,,,,,,,,,
-Copilot,,,,,,,,,,,,,,,,,,,
+H: Certifications (MS Learn),,,,,,,,,,,,,,,,,,,
+Foundations,x,x,,x,,,x,x,,,,,,,,x,,,
+Actions,,,,,,,,,,x,x,x,x,x,,,,,
+Advanced Security,,,,,,,,,,,,,,,,x,,x,x
+Admin,,,,,,,,,,,,x,x,,,x,,x,
+Copilot,,,,,,,,,x,,,,,,,,,,
