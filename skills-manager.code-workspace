@@ -12,9 +12,14 @@
   ],
 
   "settings": {
-    // Refresh overview app as it is being modified
-    "livePreview.autoRefreshPreview": "On All Changes in Editor",
-    // "livePreview.autoRefreshPreview": "Never",
+    // Open live preview in external browser. Copy/paste is not supported in the internal browser.
+    "livePreview.openPreviewTarget": "External Browser",
+    
+    // Optional: If developing the overview app, reload automatically
+    // "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    
+    "csv-edit.shouldWatchCsvSourceFile": "yesAndAutoReload",
+    "csv-edit.initiallyIsInReadonlyMode": true,
 
     // Styling
     "markdownlint.config": {
