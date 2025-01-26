@@ -36,6 +36,29 @@
         <label id="rate-limit-status"></label>
       </div>
     </div>
+
+    <!-- GitHub Token Dialog -->
+    <dialog id="github-token-dialog">
+      <h3>GitHub Authorization</h3>
+      <p>
+        This application requires a
+        <a href="https://github.com/settings/personal-access-tokens" target="_blank"
+          >Personal Access Token (PAT)</a
+        >
+        to access the GitHub API. Read-only access to repositories within the
+        <a href="https://github.com/skills" target="_blank">Skills</a> organization is sufficient.
+      </p>
+      <form method="dialog" style="width: 80%">
+        <label for="github-token-input">GitHub Token</label><br />
+        <input
+          type="text"
+          id="github-token-input"
+          placeholder="github_pat__****, ghp_****, etc."
+        /><br />
+        <button type="submit">Save Token</button>
+      </form>
+    </dialog>
+
     <div>
       <div class="tab" data-target="skills-courses-tab">Skills Courses</div>
       <div class="tab active" data-target="learning-coverage-tab">Learning Coverage</div>

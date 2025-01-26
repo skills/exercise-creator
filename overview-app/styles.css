@@ -241,3 +241,12 @@ body.dark-mode tr.row-header td {
   font-size: 32px; /* Increased font size */
   font-weight: bold;
 }
+
+#github-token-dialog {
+  max-width: 400px;
+}
+
+#github-token-input {
+  width: 100%;
+  margin-bottom: 5px;
+}

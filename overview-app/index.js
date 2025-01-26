@@ -90,10 +90,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     return table;
   }
 
-  function promptForGithubToken() {
+  async function promptForGithubToken() {
     return new Promise((resolve) => {
-      const token = prompt("Please enter your GitHub token:");
-      resolve(token);
+      const dialog = document.getElementById("github-token-dialog");
+      const input = document.getElementById("github-token-input");
+
+      dialog.showModal();
+
+      dialog.addEventListener("close", () => {
+        resolve(input.value);
+      });
     });
   }
 
