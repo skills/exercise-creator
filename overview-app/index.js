@@ -107,7 +107,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     return token;
   }
+
+  async function loadOctokit() {
+    const module = await import("https://cdn.skypack.dev/@octokit/rest");
+    return module.Octokit;
+  }
+
   const githubToken = await ensureGithubToken();
+  const Octokit = await loadOctokit();
+  const octokit = new Octokit({
+    auth: githubToken,
+  });
+
+  async function fetchRepos(maxAge = 24 * 60 * 60 * 1000) {
     // Try using cached data
     const now = Date.now();
     const cache = cacheManager.get("repos");
@@ -118,15 +130,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Update cache and return
     console.log("fetchRepos: Refreshing repo data");
-    const response = await fetch("https://api.github.com/orgs/skills/repos");
-    const data = await response.json();
+    const { data } = await octokit.repos.listForOrg({
+      org: "skills",
+    });
     cacheManager.set("repos", data);
     return data;
   }
 
+  async function fetchRepoTraffic(repoName, maxAge = 24 * 60 * 60 * 1000) {
+    // Try using cached data
+    const now = Date.now();
+    const cache = cacheManager.get(`repoTraffic_${repoName}`);
+    if (cache.data && now - cache.timestamp < maxAge) {
+      console.debug(`fetchRepoTraffic: Using cached traffic data for ${repoName}`);
+      return cache.data;
+    }
+
+    // Update cache and return
+    console.log(`fetchRepoTraffic: Refreshing traffic data for ${repoName}`);
+    const { data } = await octokit.repos.getViews({
+      owner: "skills",
+      repo: repoName,
+    });
+    cacheManager.set(`repoTraffic_${repoName}`, data);
+    return data;
+  }
+
+
   function createReposTable(repos) {
     const table = document.createElement("table");
-    const headers = ["ID", "Name", "Description", "URL"];
+    const headers = ["ID", "Name", "Description", "URL", "Views", "Unique Visitors"];
     const thead = document.createElement("thead");
     const tbody = document.createElement("tbody");
 
@@ -138,7 +171,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
     thead.appendChild(headerRow);
 
-    repos.forEach((repo) => {
+    // Sort repositories by name
+    repos.sort((a, b) => a.name.localeCompare(b.name));
+
+    repos.forEach(async (repo) => {
       const tr = document.createElement("tr");
       const idTd = document.createElement("td");
       idTd.textContent = repo.id;
@@ -148,13 +184,21 @@ document.addEventListener("DOMContentLoaded", async () => {
       descriptionTd.textContent = repo.description;
       const urlTd = document.createElement("td");
       const urlLink = document.createElement("a");
+      urlLink.target = "_blank";
       urlLink.href = repo.html_url;
       urlLink.textContent = repo.html_url;
       urlTd.appendChild(urlLink);
+      const trafficData = await fetchRepoTraffic(repo.name);
+      const viewsTd = document.createElement("td");
+      viewsTd.textContent = trafficData.count;
+      const uniquesTd = document.createElement("td");
+      uniquesTd.textContent = trafficData.uniques;
       tr.appendChild(idTd);
       tr.appendChild(nameTd);
       tr.appendChild(descriptionTd);
       tr.appendChild(urlTd);
+      tr.appendChild(viewsTd);
+      tr.appendChild(uniquesTd);
       tbody.appendChild(tr);
     });
 
