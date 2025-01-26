@@ -57,11 +57,11 @@ a:hover {
 .tab.active {
   background-color: var(--tab-active);
 }
-.table-container {
+.tab-container {
   display: none;
   margin-top: 20px;
 }
-.table-container.active {
+.tab-container.active {
   display: block;
 }
 table {

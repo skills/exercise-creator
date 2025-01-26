@@ -203,12 +203,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function setupTabs() {
     const tabs = document.querySelectorAll(".tab");
-    const tableContainers = document.querySelectorAll(".table-container");
+    const tabContainers = document.querySelectorAll(".tab-container");
 
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
         tabs.forEach((t) => t.classList.remove("active"));
-        tableContainers.forEach((tc) => tc.classList.remove("active"));
+        tabContainers.forEach((tc) => tc.classList.remove("active"));
 
         tab.classList.add("active");
         document.getElementById(tab.getAttribute("data-target")).classList.add("active");
@@ -219,12 +219,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     const activeTab = localStorage.getItem("activeTab");
     if (activeTab) {
       tabs.forEach((t) => t.classList.remove("active"));
-      tableContainers.forEach((tc) => tc.classList.remove("active"));
+      tabContainers.forEach((tc) => tc.classList.remove("active"));
       document.querySelector(`.tab[data-target="${activeTab}"]`).classList.add("active");
       document.getElementById(activeTab).classList.add("active");
     } else {
       tabs[0].classList.add("active");
-      tableContainers[0].classList.add("active");
+      tabContainers[0].classList.add("active");
     }
   }
 
