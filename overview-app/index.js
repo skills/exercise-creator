@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
   const settingsButton = document.getElementById("settings-button");
   const settingsMenu = document.getElementById("settings-menu");
+  const authStatusLabel = document.getElementById("auth-status");
   let refreshInterval;
 
   const cacheManager = {
@@ -89,7 +90,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     return table;
   }
 
-  async function fetchRepos(maxAge = 60000) {
+  function promptForGithubToken() {
+    return new Promise((resolve) => {
+      const token = prompt("Please enter your GitHub token:");
+      resolve(token);
+    });
+  }
+
+  async function ensureGithubToken() {
+    let token = localStorage.getItem("githubToken");
+    if (!token) {
+      token = await promptForGithubToken();
+      if (token) {
+        localStorage.setItem("githubToken", token);
+      }
+    }
+    return token;
+  }
+  const githubToken = await ensureGithubToken();
     // Try using cached data
     const now = Date.now();
     const cache = cacheManager.get("repos");
@@ -293,9 +311,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
+  async function fetchGithubRateLimit() {
+    const { data } = await octokit.rateLimit.get();
+    return data.rate.remaining;
+  }
+
+  async function displayGithubRateLimit() {
+    const remainingQuota = await fetchGithubRateLimit();
+    const rateLimitLabel = document.getElementById("rate-limit-status");
+    rateLimitLabel.textContent = `Remaining Quota: ${remainingQuota}`;
+  }
+
   function setupSettingsMenu() {
-    settingsButton.addEventListener("click", () => {
+    settingsButton.addEventListener("click", async () => {
       settingsMenu.classList.toggle("show");
+      await displayGithubRateLimit();
     });
 
     window.addEventListener("click", (event) => {
@@ -307,6 +337,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  async function checkGithubAuthorization(token) {
+    try {
+      const Octokit = await loadOctokit();
+      const octokit = new Octokit({ auth: token });
+      await octokit.request("GET /user");
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function displayAuthorizationStatus(isAuthorized) {
+    if (isAuthorized) {
+      authStatusLabel.textContent = "Authorized";
+      authStatusLabel.classList.add("success");
+      authStatusLabel.classList.remove("error");
+    } else {
+      authStatusLabel.textContent = "Invalid Token";
+      authStatusLabel.classList.add("error");
+      authStatusLabel.classList.remove("success");
+    }
+  }
+
+  function applyInitialGithubToken() {
+    const savedToken = localStorage.getItem("githubToken");
+    if (savedToken) {
+      checkGithubAuthorization(savedToken).then(displayAuthorizationStatus);
+    }
+  }
+
   setupTabs();
   setupFontSizeSelector();
   applyInitialFontSize();
@@ -315,5 +375,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupDarkModeToggle();
   applyInitialDarkMode();
   setupSettingsMenu();
+  applyInitialGithubToken();
   await loadTables(); // Load CSV files on initial page load
 });
