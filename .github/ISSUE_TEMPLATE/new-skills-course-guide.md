@@ -1,9 +1,10 @@
 ---
-name: New Skills Course
+name: New Skills Course Guide
 about: Steps for creating a new Skills course
-title: "New Course: (tentative title)"
-labels: ""
-assignees: ""
+title: 'New Course: (tentative title)'
+labels: ''
+assignees: ''
+
 ---
 
 ### Description
