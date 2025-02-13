@@ -48,9 +48,9 @@ The workspace allows opening multiple skills-related projects simultaneously.
 
 # Common Tasks
 
-## Work on a Skills course
+## Work on a Skills exercise
 
-The following steps clone a Skills course repository into the codespace and add it to the workspace to work in paralle.
+The following steps clone a Skills exercise repository into the codespace and add it to the workspace to work in paralle.
 
 1. Ensure the Codespace is open.
 1. Open a terminal.
@@ -58,13 +58,13 @@ The following steps clone a Skills course repository into the codespace and add 
    ```bash
    cd /workspaces
    ```
-1. Clone the desired Skills course.
+1. Clone the desired Skills exercise.
 1. Open the workspace file `/workspaes/skills-manager/skills-manager.code-workspace`.
-1. Add an entry for the recently cloned course repository. It will look similar to below.
+1. Add an entry for the recently cloned exercise repository. It will look similar to below.
 
    ```json
    {
-     "path": "/workspaces/my-skills-course/"
+     "path": "/workspaces/my-skills-exercise/"
    }
    ```
 
@@ -77,7 +77,7 @@ The following steps clone a Skills course repository into the codespace and add 
 
 Act is used for running Actions workflows locally, which is is typically useful for testing grading workflows.
 
-1. Open the Skills course project.
+1. Open the Skills exercise project.
 1. Update the `.gitignore` to ignore the Act configuration files.
 
    ```gitignore
@@ -147,7 +147,7 @@ Workspaces settings are defined in multiple places depending on necessity of cha
   - Location: `.devcontainer/devcontainer.json`
   - Default settings for projects that don't include settings.
   - Modifications won't be affective until container is rebuilt.
-  - Example: Providing prettier formatting to Skills courses.
+  - Example: Providing prettier formatting to Skills exercises.
 - **Workspace settings**
   - Location: `skills-manager.code-workspace`
   - Developer can freely make changes without accidentally committing.

@@ -1,9 +1,9 @@
-## New Course Checklist
+## New Exercise Checklist
 
 > [!TIP]
-> When a new course issue is created, add these checklists to the description or add as comment.
+> When a new exercise issue is created, add these checklists to the description or add as comment.
 
-### Course Personality
+### Exercise Personality
 
 - [ ] README is updated at end with celebration message.
 - [ ] Step feedback (issue comments) use casual, polite, active, and inspiring language.
@@ -43,6 +43,6 @@
 ### Management
 
 - [ ] Issue associated to [GitHub Skills project](https://github.com/orgs/github/projects/20507).
-  - [ ] Assigned to course developer.
-  - [ ] Close issue when course is released.
+  - [ ] Assigned to exercise developer.
+  - [ ] Close issue when exercise is released.
 - [ ] Use overview app and [update learning coverage](../overview-app/README.md).

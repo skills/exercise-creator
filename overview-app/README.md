@@ -1,11 +1,11 @@
 ## Overview App
 
-The `./overview-app` folder contains a no-install simple web application that provides high level information about the Skills catalog such as available courses, topics they cover, and eventually metrics (later).
+The `./overview-app` folder contains a no-install simple web application that provides high level information about the Skills catalog such as available exercises, topics they cover, and eventually metrics (later).
 
 Content is manually populated in 2 CSV files:
 
-- `skills-courses.csv` - A list of all Skills courses, tracking info, and important relationships.
-- `learning-coverage.csv` - A matrix of the GitHub features covered by the available Skills courses.
+- `skills-exercises.csv` - A list of all Skills exercises, tracking info, and important relationships.
+- `learning-coverage.csv` - A matrix of the GitHub features covered by the available Skills exercises.
 
 > [!IMPORTANT]
 > The CSV files are a temporary solution for early development until the structure is stable. They will later be replaced with API calls and source data will come directly from the repositories.
