@@ -1,24 +1,23 @@
 ---
-name: New Skills Course Guide
-about: Steps for creating a new Skills course
-title: 'New Course: (tentative title)'
-labels: ''
-assignees: ''
-
+name: New Skills Exercise Guide
+about: Steps for creating a new Skills exercise
+title: "New Exercise: (tentative title)"
+labels: ""
+assignees: ""
 ---
 
 ### Description
 
-<!--- Replace this comment with a single sentence description of the course -->
+<!--- Replace this comment with a single sentence description of the exercise -->
 
-### Course Outline
+### Outline
 
-**README** - Course Overview
+**README** - Overview
 
 - Storyline:
 - Audience:
 - Estimated time:
-- Why take this course?:
+- Why take this exercise?:
 
 **Step 1** - Introduction to XYZ
 

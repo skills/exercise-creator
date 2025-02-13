@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const skillsCoursesTable = document.getElementById("skills-courses-table");
+  const skillsExercisesTable = document.getElementById("skills-exercises-table");
   const learningCoverageTable = document.getElementById("learning-coverage-table");
   const reposTable = document.getElementById("repos-table");
   const fontSizeSelector = document.getElementById("font-size");
@@ -509,16 +509,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function loadTables() {
     // Fetch CSV files
-    const skillsCoursesCSV = await fetchCSV("skills-courses.csv");
+    const skillsExercisesCSV = await fetchCSV("skills-exercises.csv");
     const learningCoverageCSV = await fetchCSV("learning-coverage.csv");
 
-    const skillsCoursesJson = await csvToJson(skillsCoursesCSV);
+    const skillsExercisesJson = await csvToJson(skillsExercisesCSV);
     const learningCoverageJson = await csvToJson(learningCoverageCSV);
 
     // Clear old content
-    const oldSkillsCoursesTable = skillsCoursesTable.querySelector("table");
-    if (oldSkillsCoursesTable) {
-      skillsCoursesTable.removeChild(oldSkillsCoursesTable);
+    const oldSkillsExercisesTable = skillsExercisesTable.querySelector("table");
+    if (oldSkillsExercisesTable) {
+      skillsExercisesTable.removeChild(oldSkillsExercisesTable);
     }
     const oldLearningCoverageTable = learningCoverageTable.querySelector("table");
     if (oldLearningCoverageTable) {
@@ -526,10 +526,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Load new content
-    skillsCoursesTable.appendChild(createTableFromJson(skillsCoursesJson));
+    skillsExercisesTable.appendChild(createTableFromJson(skillsExercisesJson));
     learningCoverageTable.appendChild(createTableFromJson(learningCoverageJson));
 
-    addRowAndColumnHoverEffect(skillsCoursesTable.querySelector("table"));
+    addRowAndColumnHoverEffect(skillsExercisesTable.querySelector("table"));
     addRowAndColumnHoverEffect(learningCoverageTable.querySelector("table"));
   }
 
