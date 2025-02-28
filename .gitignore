@@ -1,6 +1,8 @@
 *.temp*
 *.env*
 *.secret*
+*.actrc.vars*
+*.actrc.secrets*
 
 ##########################################
 # MAC OS - https://github.com/github/gitignore/blob/main/Global/macOS.gitignore

@@ -1,0 +1,15 @@
+# User Codespace owner as actor
+--actor $GITHUB_USER
+
+# Load variables and secrets from files
+--var-file /workspaces/skills-manager/.actrc.vars
+--secret-file /workspaces/skills-manager/.actrc.secrets
+
+# Cache used Actions
+--action-offline-mode
+
+# Use Skills runner image
+-P ubuntu-latest=ubuntu-skills:latest
+
+# Run as AMD64 if on ARM64
+--container-architecture linux/amd64

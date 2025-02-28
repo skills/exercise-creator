@@ -29,3 +29,7 @@ done
 
 # Build the Skills runner image for Act
 docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
+
+# Add a symbolic link in the user folder to the .actrc file in this repo
+# This means sets a default Act config across all projects.
+ln -s /workspaces/skills-manager/.actrc $HOME/.actrc
