@@ -100,8 +100,8 @@ Act is used for running Actions workflows locally, which is is typically useful 
    # Cache used Actions
    --action-offline-mode
 
-   # Use full runner
-   -P ubuntu-latest=catthehacker/ubuntu:full-latest
+   # Use Skills image
+   -P ubuntu-latest=ubuntu-skills:latest
 
    # Run as AMD64 if on ARM64
    --container-architecture linux/amd64

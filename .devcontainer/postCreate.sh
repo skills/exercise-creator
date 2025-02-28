@@ -26,3 +26,6 @@ for repo in "${repositories[@]}"; do
   gh repo clone "$repo"
   echo ""
 done
+
+# Build the Skills runner image for Act
+docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
