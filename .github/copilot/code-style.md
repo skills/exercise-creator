@@ -1,1 +1,1 @@
-Try to make methods async.
+Try to make the code simple to understand.
