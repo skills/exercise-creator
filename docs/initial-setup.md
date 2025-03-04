@@ -59,7 +59,7 @@ The following steps clone a Skills exercise repository into the codespace and ad
    cd /workspaces
    ```
 1. Clone the desired Skills exercise.
-1. Open the workspace file `/workspaes/skills-manager/skills-manager.code-workspace`.
+1. Open the workspace file `/workspaces/skills-manager/skills-manager.code-workspace`.
 1. Add an entry for the recently cloned exercise repository. It will look similar to below.
 
    ```json
