@@ -24,6 +24,8 @@
 
 - [ ] Set visibility set to `public`.
 - [ ] Set forking to disabled?
+- [ ] Mark the repository as template
+- [ ] Disable all step workflows.
 - [ ] Enable [automatically delete head branches](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches).
 - [ ] Add a [Social Preview image](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview).
 - [ ] Add `skills-course` to the [repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
