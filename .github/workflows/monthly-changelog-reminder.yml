@@ -28,13 +28,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Git user
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-
       - name: Create issue
         id: create-issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           issue_url=$(gh issue create \
             --title "$ISSUE_TITLE" \
@@ -95,5 +92,3 @@ jobs:
           COMMENT_TEXT: ${{ steps.build-comment.outputs.updated-text }} # Use intermediary env variable to avoid multiline issue
         run: |
           gh issue comment "$ISSUE_URL" --body "$COMMENT_TEXT"
-
-
