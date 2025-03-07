@@ -1,0 +1,99 @@
+name: Monthly Changelog Reminder
+
+on:
+  schedule:
+    # Run on the 1st day of each month at 9:00 AM UTC
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+env:
+  ISSUE_TEMPLATE_FILE: ".github/templates/changelog-reminder-issue.md"
+  CHANGELOG_TEMPLATE_FILE: ".github/templates/changelog-template.md"
+  ISSUE_TITLE: "Monthly Skills Changelog Reminder"
+  NEW_EXERCISE_LOOKBACK_DAYS: 30
+  SKILLS_EXERCISE_REPO_TOPIC: "skills-course"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-issue:
+    name: Create Changelog Reminder Issue
+    runs-on: ubuntu-latest
+    outputs:
+      issue_url: ${{ steps.create-issue.outputs.ISSUE_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Git user
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+
+      - name: Create issue
+        id: create-issue
+        run: |
+          issue_url=$(gh issue create \
+            --title "$ISSUE_TITLE" \
+            --body-file "$ISSUE_TEMPLATE_FILE")
+          echo "ISSUE_URL=$issue_url" >> "$GITHUB_OUTPUT"
+
+  generate-changelog:
+    name: Generate changelog and comment
+    needs: create-issue
+    runs-on: ubuntu-latest
+    env:
+      ISSUE_URL: ${{ needs.create-issue.outputs.issue_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List recent skills exercise repos
+        uses: actions/github-script@v6
+        id: list-new-exercises
+        with:
+          script: |
+            const org = 'skills';
+            const topic = process.env.SKILLS_EXERCISE_REPO_TOPIC;
+            const daysLookback = parseInt(process.env.NEW_EXERCISE_LOOKBACK_DAYS);
+
+            // Calculate date based on configurable lookback period
+            const pastDate = new Date();
+            pastDate.setDate(pastDate.getDate() - daysLookback);
+            const dateFilter = pastDate.toISOString().split('T')[0];
+
+            const { data: repos } = await github.rest.search.repos({
+              q: `org:${org} topic:${topic} created:>=${dateFilter} sort:created-desc`,
+              per_page: 100
+            });
+
+            const formattedRepos = repos.items.map(repo => ({
+              name: repo.name,
+              url: repo.html_url,
+              topics: repo.topics || [],
+              description: repo.description || ''
+            }));
+
+            return formattedRepos;
+
+      - name: Build changelog comment
+        id: build-comment
+        uses: skills/action-text-variables@v1
+        with:
+          template-file: ${{ env.CHANGELOG_TEMPLATE_FILE }}
+          template-vars: |
+            {
+              "new_exercises": ${{ steps.list-new-exercises.outputs.result }},
+              "platform_enhancements": []
+            }
+      - name: Create comment - changelog draft
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_TEXT: ${{ steps.build-comment.outputs.updated-text }} # Use intermediary env variable to avoid multiline issue
+        run: |
+          gh issue comment "$ISSUE_URL" --body "$COMMENT_TEXT"
+
+
