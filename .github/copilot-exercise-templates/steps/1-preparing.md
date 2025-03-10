@@ -69,8 +69,7 @@ Let's start up our development environment, use copilot to learn a bit about the
 <!-- Provide any details to build, run, and debug of an application or service 
 Example below -->
 
-1. Now that we know a bit more about the project, let's actually try runnning it! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
-
+1. Now that we know a bit more about the project, let's actually try running it! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
    <img width="300" alt="image" src="https://github.com/user-attachments/assets/50b27f2a-5eab-4827-9343-ab5bce62357e" />
 
 1. We want to see our webpage running in a browser, so let's find the url and port. If it isn't visible, expand the the lower panel and select the **Ports** tab.
