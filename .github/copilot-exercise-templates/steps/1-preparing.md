@@ -2,7 +2,7 @@
 
 Welcome to your **"`<name of the course>`"** exercise! :robot:
 
-In this exercise, you will be "`<brief one liner to describe the exercise> " ex. using different GitHub Copilot features to work on a website that allows students` of Mergington High School to sign up for extracurricular activities. 🎻 ⚽️ ♟️
+In this exercise, you will be "`<brief one liner to describe the exercise> " ex. using different GitHub Copilot features to work on a website that allows students of Mergington High School to sign up for extracurricular activities. 🎻 ⚽️`♟️
 
 ### What is GitHub Copilot?
 
