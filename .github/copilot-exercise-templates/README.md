@@ -13,7 +13,7 @@
 An intro to the exercise and what you will learn.
 
 ex. 
-Companies very oftern have legacy applications that are not well documented and are difficult to maintain.
+Companies very often have legacy applications that are not well documented and are difficult to maintain.
 This is especially true for applications that were built a long time ago and have not been updated in a while.
 These applications may be written in outdated programming languages or frameworks,
 making it challenging to find developers who are familiar with them.
