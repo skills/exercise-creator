@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.log("fetchRepos: Refreshing repo data");
     const { data } = await octokit.repos.listForOrg({
       org: "skills",
+      per_page: 100,
     });
 
     // Filter repos with the topic "skills-course"
