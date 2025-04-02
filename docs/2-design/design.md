@@ -104,3 +104,20 @@ Below are some ideas for the grading job.
   - How would you interact with your friend or coworker?
   - Use emoji to convey a positive tone.
 
+## Upcoming Releases
+
+Product features are always released in stages, typically with the last step being a public preview.
+
+- A new/updated step can be created in advance. Use a separate transition workflow to allow the learner to try the alternative/bonus content.
+
+- Example:
+
+  - The learner adds an issue comment with a special phrase asking for the preview content. This triggers a separate workflow that adds a comment or additional issue with the special content.
+
+- Consider disabling the grading workflow until general availability.
+
+## Side learnings, bonus content, and easter eggs
+
+- Nothing for now, but we have ideas. 🐣
+
+- If you have ideas, write them down so you don't forget! 🤫
