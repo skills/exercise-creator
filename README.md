@@ -20,6 +20,12 @@ Before creating an exercise, please use the [planning guide](docs/1-planning/pla
 - Exercise Structure
 - [Storylines](docs/1-planning/storylines.md)
 
+### Design
+
+While creating an exercise, please use the [design recommendations](docs/2-design/design.md) to provide a familiar learning experience between exercises. In covers topics like:
+
+- Markdown Recommendations
+- Using the [Exercise Toolkit](https://github.com/skills/exercise-toolkit)
 
 ![New Exercise Flowchart](docs/new-exercise-flowchart.drawio.svg)
 
