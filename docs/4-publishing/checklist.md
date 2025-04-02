@@ -48,3 +48,15 @@
   - [ ] Assigned to exercise developer.
   - [ ] Close issue when exercise is released.
 - [ ] Use overview app and [update learning coverage](../overview-app/README.md).
+
+
+
+---
+
+
+
+- [ ] The exercise is tagged with `skills-course`.
+- [ ] The exercise aligns with one of the storylines, so it has continuity.
+- [ ] The exercise can have prerequisites, but they should be minimal.
+- [ ] If an exercise builds on another, provide the output of the previous exercise as a starting point.
+- [ ] Learning topics are mapped in the spreadsheet.
