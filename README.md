@@ -12,6 +12,14 @@ Please use the below guides to start the codespace and start building! 🤓
 
 Before making an exercise, please follow the [Initial Setup guide](docs/initial-setup.md) for instructions on preparing this codespace.
 
+### Planning
+
+Before creating an exercise, please use the [planning guide](docs/1-planning/planning.md) to create an outline. It covers topics like:
+
+- Important Considerations
+- Exercise Structure
+- [Storylines](docs/1-planning/storylines.md)
+
 
 ![New Exercise Flowchart](docs/new-exercise-flowchart.drawio.svg)
 
