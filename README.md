@@ -1,16 +1,17 @@
 # Skills Manager
 
-This is a codespace and toolkit for developing and managing GitHub Skills exercises and related Actions workflows.
-It provides settings and guides for consistent styling, tools to test grading workflows, and tools to manage all exercises as an ecosystem.
+This is a codespace with guidelines for developing and managing GitHub Skills exercises and supportive tooling. It provides:
+
+- Unified settings for consistent styling (like linting).
+- Tools for testing transition and grading workflows.
+- Guidelines and recommendations for designing exercise steps.
 
 Please use the below guides to start the codespace and start building! 🤓
 
-## How to Develop
+## How to Develop Exercises
 
-- [Initial Setup](docs/initial-setup.md) - A step-by-step guide to start developing.
-- [Develop a Skills Exercise](docs/develop-a-skill-exercise.md) - Important tasks and guidelines.
+Before making an exercise, please follow the [Initial Setup guide](docs/initial-setup.md) for instructions on preparing this codespace.
 
-### New Exercise Flowchart
 
 ![New Exercise Flowchart](docs/new-exercise-flowchart.drawio.svg)
 
