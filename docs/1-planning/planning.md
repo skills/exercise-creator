@@ -9,6 +9,7 @@ There are a few perspectives to consider for planning a new Skills Exercise.
 - **Step Grading** - Actions workflows to grade each step and provide feedback.
 - **Catalog Impact** - Each exercise should feel familiar and add a **_Skill_** in the learner's capabilities (ideally covering all features of GitHub).
 
+Please use the [new exercise issue](new-exercise-issue.example.md) example as a template.
 
 ## Skills Exercise Content
 
