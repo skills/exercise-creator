@@ -58,3 +58,49 @@ It step typically looks like this:
 
 - Lists don't support normal [Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts). Use our [suggested Alert alternatives](formatting.md#alerts) instead.
 
+## Step Grading and Transition
+
+A GitHub Actions workflow is used to monitor the learner's progress for the active step.
+
+When the user triggers the action, it will check for expected outputs and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed.
+
+- Each learning step has it's own workflow. One job is dedicated to grading.
+- After the grading job passes, the next job shares the next step.
+- After the step workflow finishes, it disables itself and enables the next step's workflow.
+
+### Grading Types
+
+> [!IMPORTANT]
+> Only add a grading workflow if useful feedback can be provided to guide the learner to correct the mistake (and retrigger grading).
+
+Below are some ideas for the grading job.
+
+- A file contains 1 (or more) of a key word/phrase.
+
+- Checking validity/content at a provided URL. Examples:
+
+  - A new issue was created (in a different repo).
+  - The user started a web service in their codespace.
+
+- Answering a multiple choice question. Examples:
+  - Learner checked a box in an issue comment.
+
+### Tips: Grading
+
+- It is ok **NOT** to have a grading job in the workflow. This will mean the lesson will progres regardless of work.Better to be safe than leave a user stuck and confused.
+
+- Existing markdown templates should be used as often as possible. See [Tools](#tools) above. Templates cover the typical sistuations such as:
+
+  - Creating the learning issue
+  - Providing temporary status updates
+  - Sharing grading results
+  - Congratulating when finished
+
+- Ensure the workflows are easy to follow and include references. Many developers will use them as references.
+
+- Use Mona and the ocotcats for responding to the user. The [exercise toolkit](https://github.com/skills/exercise-toolkit) provides premade templates.
+
+- Use friendly, casual, active responses for feedback.
+  - How would you interact with your friend or coworker?
+  - Use emoji to convey a positive tone.
+
