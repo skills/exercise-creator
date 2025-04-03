@@ -32,4 +32,4 @@ The existing storyline to be used and how it might be applied to the practical a
 ### Audience
 
 - **Difficulty level:** Beginner, Intermediate, Advanced
-- **Personas:** Software Developer, Non-Software Developer, Project Manager, Business Executive, Student, etc.
+- **Personas:** Software Developer, Non-Software Developer, Project Manager, Technical Writer, Quality Control Tester, Business Executive, Student, etc.
