@@ -1,62 +1,26 @@
-## New Exercise Checklist
+# Publish Checklist
+
+The following are **recommended** items to verify **before**, **during**, and **after** releasing the exercise for general availability.
+
+A separate [design checklist](../2-design/checklist.md) is available for handling logistics during release.
 
 > [!TIP]
-> When a new exercise issue is created, add these checklists to the description or add as comment.
+> When a new exercise issue is created, add these checklists areas to the issue as comments.
 
-### Exercise Personality
+## Before Release
 
-- [ ] README is updated at end with celebration message.
-- [ ] Step feedback (issue comments) use casual, polite, active, and inspiring language.
-
-### Repository Content
-
-- [ ] [Add a `.gitignore` file](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) with at least operating system generated files.
-  - [Windows](https://github.com/github/gitignore/blob/main/Global/Windows.gitignore)
-  - [MacOS](https://github.com/github/gitignore/blob/main/Global/macOS.gitignore)
-  - [Linux](https://github.com/github/gitignore/blob/main/Global/Linux.gitignore)
-- [ ] A link is included to the [related Discussions area](https://github.com/orgs/skills/discussions).
-- [ ] [Add a LICENSE file](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
-- [ ] Readme footer contains copyright and a link to the license.
-- [ ] Readme footer contains code of conduct link.
-- [ ] Grading workflows are easy to follow.
-
-### Repository Settings
-
-- [ ] Set visibility set to `public`.
-- [ ] Set forking to disabled?
-- [ ] Mark the repository as template
-- [ ] Disable all step workflows.
-- [ ] Enable [automatically delete head branches](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches).
-- [ ] Add a [Social Preview image](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/customizing-your-repositorys-social-media-preview).
-- [ ] Add `skills-course` to the [repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
-
-### Quality Control
-
+- [ ] Create a Discussions page.
+- [ ] Update **Skills Project** to automatically add issues created in the exercise repository.
 - [ ] All links clicked and verified
-- [ ] Peer reviewed with a GitHub employee
-  - [ ] Easy to follow
-  - [ ] Flows well
-  - [ ] No typos
-- [ ] Peer reviewed with a Non-GitHub employee
-- [ ] Tested for normal usage (i.e. where user doesn't make mistakes)
-- [ ] Make a list of likely user mistakes
-- [ ] Tested and handles likely user mistakes
 
-### Management
+## During Releasing
 
-- [ ] Issue associated to [GitHub Skills project](https://github.com/orgs/github/projects/20507).
-  - [ ] Assigned to exercise developer.
-  - [ ] Close issue when exercise is released.
-- [ ] Use overview app and [update learning coverage](../overview-app/README.md).
+- [ ] If it is a Friday, reconsider if that is really what you want to do. 🧐
+- [ ] Verify all step workflows are disabled.
+- [ ] Set visibility to `public`.
 
+## After Release
 
-
----
-
-
-
-- [ ] The exercise is tagged with `skills-course`.
-- [ ] The exercise aligns with one of the storylines, so it has continuity.
-- [ ] The exercise can have prerequisites, but they should be minimal.
-- [ ] If an exercise builds on another, provide the output of the previous exercise as a starting point.
-- [ ] Learning topics are mapped in the spreadsheet.
+- [ ] Close the tracking issue and set the completion date.
+- [ ] Add to upcoming release change log.
+- [ ] Congratulate the team for a job well done! ✨
