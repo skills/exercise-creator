@@ -1,0 +1,8 @@
+{
+  "base_ref": "refs/heads/main",
+  "ref": "refs/heads/my-branch",
+  "pull_request": {
+    "merged": true,
+    "body": "This is the description."
+  }
+}

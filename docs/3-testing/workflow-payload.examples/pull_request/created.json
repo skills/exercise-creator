@@ -1,0 +1,7 @@
+{
+  "base_ref": "refs/heads/main",
+  "ref": "refs/heads/my-branch",
+  "pull_request": {
+    "body": "This is the description."
+  }
+}

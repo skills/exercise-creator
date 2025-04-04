@@ -4,7 +4,7 @@
       "path": "."
     },
     {
-      "path": "/workspaces/action-text-variables"
+      "path": "/workspaces/exercise-toolkit"
     },
     {
       "path": "/workspaces/response-templates"
@@ -28,7 +28,7 @@
       "heading-increment": false,
       "no-blanks-blockquote": false,
       "no-inline-html": {
-        "allowed_elements": ["a", "img", "details", "summary", "p"]
+        "allowed_elements": ["a", "img", "details", "summary", "p", "br"]
       },
       "no-alt-text": false,
       "code-block-style": {
