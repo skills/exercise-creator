@@ -21,3 +21,9 @@ The general testing flow will look similar to:
 1. Repeat above for each job in the workflow.
 1. Enable everything, except url override, and run the entire workflow with sample payloads.
 
+### Tips
+
+- Only create a grading workflow, if failing would provide useful feedback to correct their mistake.
+- Workflows might be ran multiple times. Check for continuity issues, if using the option to edit the last comment.
+  - FYI, the option to edit the last comment is relative to the user.
+
