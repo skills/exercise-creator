@@ -67,6 +67,3 @@ Right now, exercises are created manually. A previous exercise is typically used
 6. The Exercise Developer revises the exercise, either directly or with additional prompts to Copilot.
 7. The new skill is finished and added to the catalog.
 8. After some usage, feedback is used to update the existing exercise(s) and guidelines.
-
-> [!IMPORTANT]
-> The guidelines do not currently include suggestions for automated tests, user acceptance, or other QA requirements.
