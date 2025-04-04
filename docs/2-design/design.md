@@ -40,6 +40,12 @@ It step typically looks like this:
 
 - For story content, keep phrasing professional, polite, and inviting.
 
+- Be concise. More content means more to update.
+
+- Avoid including content that will likely change, for example usage quotas and limits.
+
+- Don't copy from GitHub Docs. Instead introduce it and reference the GitHub Docs page. This will also indirectly teach the learner to that the Docs are the best place to search.
+
 ### Tips: Activity Section
 
 - Keep it short, sweet, and slightly techincal/challenging. Too simple and they will become board. Too complex and they will give up.
