@@ -20,12 +20,24 @@ Before creating an exercise, please use the [planning guide](docs/1-planning/pla
 - Exercise Structure
 - [Storylines](docs/1-planning/storylines.md)
 
+If applying significant changes to an existing exercise, please use a forking process. This will allow testing the exercise from the default branch like normal.
+
 ### Design
 
 While creating an exercise, please use the [design recommendations](docs/2-design/design.md) to provide a familiar learning experience between exercises. In covers topics like:
 
 - Markdown Recommendations
 - Using the [Exercise Toolkit](https://github.com/skills/exercise-toolkit)
+
+## Contributing
+
+We are very open to contributions and enhancements from the community! 🧑‍🚀
+
+Please feel free to create an issue or submit a pull request. More details will come later.
+
+## The Future
+
+Right now, exercises are created manually. A previous exercise is typically used as the starting point for a new exercise. However, we hope to eventually shift to a Copilot-centeric approach. This is an outline of our current thinking.
 
 ![New Exercise Flowchart](docs/new-exercise-flowchart.drawio.svg)
 
