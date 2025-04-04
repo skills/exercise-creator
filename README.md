@@ -38,6 +38,15 @@ After an exercise has learning theory, activities, and workflows, it will need t
 - Example event payloads
 - User testing
 
+### Publishing and Maintenance
+
+When an exercise is finished and ready to be published, please use the [publish checklist](docs/4-publishing/checklist.md) for **before**, **during**, and **after** checks. It covers topics like:
+
+- Maintenance
+- Repository settings
+- Discussions
+- End of life
+
 ## Contributing
 
 We are very open to contributions and enhancements from the community! 🧑‍🚀
