@@ -90,22 +90,13 @@ A default configuration is loaded from the `.actrc` file, which provides:
    GITHUB_TOKEN=gph_*******
    ```
 
-1. To provide a create environment variables, update or create the `/.actrc.vars` file.
+1. To provide environment variables to your worklow, update or create the `/.actrc.vars` file.
 
    ```env
    MYVAR=hello world
    ```
 
-1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. Example push payload:
-
-   ```json
-   {
-     "ref": "refs/heads/main",
-     "repository": {
-       "is_template": true
-     }
-   }
-   ```
+1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
 
 # FAQ
 
