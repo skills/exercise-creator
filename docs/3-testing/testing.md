@@ -69,3 +69,15 @@ Most grading/transition workflows can be verified locally before testing them in
 >   run: echo '${{ toJSON(github) }}'
 > ```
 
+### User Testing
+
+The only true test is giving the exercise a trial run.
+
+- Try the exercise yourself on actual GitHub, with a dummy account. See what happens, take notes, and fix bugs.
+- Once it works for you, knowing how it is supposed to work, try it others.
+
+  - someone familiar with the topic (technical review)
+  - someone unfamiliar with the topic (potential learner)
+  - outside of GitHub (make sure nothing requires internal permissions)
+
+- How does it look on a smaller screen, for example split screen.
