@@ -1,0 +1,8 @@
+{
+  "ref": "refs/heads/accelerate-with-copilot",
+  "paths": [
+    "src/static/app.js",
+    "src/static/index.html",
+    "src/static/style.css"
+  ]
+}
