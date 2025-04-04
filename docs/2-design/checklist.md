@@ -92,6 +92,10 @@ TODO: This might not make sense if the prebuild is not available after copying t
 - [ ] Final workflow posts review
 - [ ] Final workflow adds celebration message to readme.
 - [ ] Feedback workflows provide useful feedback for common user mistakes.
+- [ ] Verify tense is consistent.
+- [ ] Verify tone is consistent.
+- [ ] Verify acronymns are spelled out or explained.
+- [ ] Check for typos and grammar.
 
 ### Story
 
