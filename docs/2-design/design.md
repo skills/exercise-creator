@@ -13,7 +13,6 @@ The [Exercise Toolkit](https://github.com/skills/exercise-toolkit) repository pr
 
 - [text-variables](https://github.com/skills/action-text-variables) - A GitHub Action that enables loading a template and replacing variables.
 
-
 ## Step Content
 
 If you are unfamiliar, please see the [planning guide](../1-planning/planning.md) for the breakdown of an exercise into steps and activities.
