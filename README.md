@@ -29,6 +29,15 @@ While creating an exercise, please use the [design recommendations](docs/2-desig
 - Markdown Recommendations
 - Using the [Exercise Toolkit](https://github.com/skills/exercise-toolkit)
 
+### Testing
+
+After an exercise has learning theory, activities, and workflows, it will need to be tested. Please follow the [testing](/docs/3-testing/testing.md) guide. It covers topics like:
+
+- Running transition workflows locally
+- Verifying grading workflows locally
+- Example event payloads
+- User testing
+
 ## Contributing
 
 We are very open to contributions and enhancements from the community! 🧑‍🚀
