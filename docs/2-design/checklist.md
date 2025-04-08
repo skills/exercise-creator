@@ -111,9 +111,9 @@ TODO: This might not make sense if the prebuild is not available after copying t
 | TBD  | -      | 1-Jan       | -                 |
 | TBD  | -      | 1-Jan       | -                 |
 
-- [ ] Easy to follow
-- [ ] Flows well
-- [ ] No typos
+Legend:
+👀 - Feedback seen
+🚀 - Feedback implemented
 
 ### Beta Testers (external)
 
