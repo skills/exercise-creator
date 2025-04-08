@@ -27,7 +27,7 @@ The general testing flow will look similar to:
 - Workflows might be ran multiple times. Check for continuity issues, if using the option to edit the last comment.
   - FYI, the option to edit the last comment is relative to the user.
 
-### Running workflows locally
+## Running workflows locally
 
 Most grading/transition workflows can be verified locally before testing them in the actual exercise flow.
 
@@ -69,7 +69,7 @@ Most grading/transition workflows can be verified locally before testing them in
 >   run: echo '${{ toJSON(github) }}'
 > ```
 
-### User Testing
+## User Testing
 
 The only true test is giving the exercise a trial run.
 
@@ -81,3 +81,21 @@ The only true test is giving the exercise a trial run.
   - outside of GitHub (make sure nothing requires internal permissions)
 
 - How does it look on a smaller screen, for example split screen.
+
+### Beta testers
+
+Beta testers are probably the most important part of making a learning exercise. Different perspectives and backgrounds will bring up mistakes, misinterpertations, and bad assumptions. So, don't skip this!
+
+IMPORANT: Track who is testing on the issue. Have them put their feedback on the issue. If it comes in a different form (like email), transfer it to the issue.
+
+- For contractors and external beta testers, add them directly to the repo. All internal employees already have read access.
+
+- Asking for help in group chats generally doesn't work well. Everyone assumes someone else will help and then noone helps.
+
+- Do not share the link in general chats. You will not know who is accessing it. Instead, collect names and share it with them personally.
+
+- Build personal connection with volunteers before and after the request. Noone likes feeling used. Plus we all like making new friends!
+
+- Be clear that you appreciate them. You can say the generic "thank you", but follow up with specifics. Point out something from their review that you genuinely liked:  a "gotcha" or "Oh wow, how did I miss that" type moment.
+
+
