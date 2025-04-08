@@ -1,0 +1,35 @@
+{
+  "issue": {
+    "assignee": {
+      "login": "professortocat",
+      "html_url": "https://github.com/professortocat"
+    },
+    "body": "The descriptoin of this new idea.",
+    "comments": 0,
+    "html_url": "https://github.com/{owner}/{repo}/issues/123",
+    "id": 2975185915,
+    "labels": [
+      {
+        "color": "0075ca",
+        "default": "true",
+        "description": "Improvements or additions to documentation",
+        "id": "8182958656",
+        "name": "documentation"
+      }
+    ],
+    "number": 123,
+    "reactions": {
+      "+1": 0,
+      "-1": 0,
+      "confused": 0,
+      "eyes": 0,
+      "heart": 0,
+      "hooray": 0,
+      "laugh": 0,
+      "rocket": 0,
+      "total_count": 0
+    },
+    "state": "open",
+    "title": "A new idea"
+  }
+}
