@@ -44,6 +44,20 @@ Unfortunately the normal [Alert syntax](https://docs.github.com/en/get-started/w
 
 > 🧪 **Try this:** Something to experiment with.
 
+### Long Form Tips
+
+If a tip needs to be more than one line or include an image, use the expandable box technique.
+
+
+   <details>
+   <summary> <b> 💡 Tip:</b> Short descriptoin</summary><br/>
+
+   Additional information to explain the tip.
+
+   <img width="200" src="https://octodex.github.com/images/puddle_jumper_octodex.jpg"/>
+
+   </details>
+
 ## Copilot Prompts
 
 Below are some options to make prompts easier to recognize.
