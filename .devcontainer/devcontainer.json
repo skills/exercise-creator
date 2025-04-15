@@ -76,6 +76,7 @@
         // Git
         "git.autofetch": true,
         "git.allowForcePush": false,
+        "chat.agent.enabled": true,
 
         // GitHub
         "github.copilot.editor.enableAutoCompletions": true,
