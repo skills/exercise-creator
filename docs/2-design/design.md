@@ -83,6 +83,12 @@ When the user triggers the action, it will check for expected outputs and add an
    - Disables the current step workflow, so it will never run again.
    - Enables the next step workflow.
 
+> [!CAUTION]
+> Do **NOT** create a workflow that triggers on `main` without a `paths` filter.  
+> Do **NOT** design the `paths` filter for an **existing** file, only new files.  
+> This will cause the workflow to run early, when the exercise is copied to the learner's account.
+
+If it is absolutely necessary to create a workflow triggered on `main` without any filtering, you can avoid the first run by updating the `if` condition to include `github.run_number != 1`
 
 ### Grading Types
 
