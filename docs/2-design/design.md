@@ -67,11 +67,22 @@ It step typically looks like this:
 
 A GitHub Actions workflow is used to monitor the learner's progress for the active step.
 
-When the user triggers the action, it will check for expected outputs and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed.
+When the user triggers the action, it will check for expected outputs and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed. Each learning step has it's own workflow and is structured into 3 jobs:
 
-- Each learning step has it's own workflow. One job is dedicated to grading.
-- After the grading job passes, the next job shares the next step.
-- After the step workflow finishes, it disables itself and enables the next step's workflow.
+1. `find_exercise` - Calls a reusable workflow that finds the appropriate issue and returns the issue url for use in the next jobs.
+2. `check_step_work` - Verifies the step's results and transitions to next learning step.
+
+   - Loads relevant content for grading the step's activities.
+   - Runs 1 or more grading checks to build useful feedback.
+     - The unique check is visually indicated by the comment `# START: Check practical exercise` and `# END: Check practical exercise`
+     - Boilerplate steps are outside this
+   - If the check fails, an issue comment is updated/created to provide useful feedback for trying again.
+   - If the check passes, an issue comment is updated/created to provide feedback that they did a good job.
+
+3. `post_next_step_content` - Loads the next step content and creates an issue comment.
+   - Disables the current step workflow, so it will never run again.
+   - Enables the next step workflow.
+
 
 ### Grading Types
 
