@@ -93,7 +93,7 @@ If it is absolutely necessary to create a workflow triggered on `main` without a
 ### Grading Types
 
 > [!IMPORTANT]
-> Only add a grading workflow if useful feedback can be provided to guide the learner to correct the mistake (and retrigger grading).
+> Only add a grading steps if useful feedback can be provided to guide the learner to correct the mistake (and retrigger grading).
 
 Below are some ideas for the grading job.
 

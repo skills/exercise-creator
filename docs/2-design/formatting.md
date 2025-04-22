@@ -48,7 +48,6 @@ Unfortunately the normal [Alert syntax](https://docs.github.com/en/get-started/w
 
 If a tip needs to be more than one line or include an image, use the expandable box technique.
 
-
    <details>
    <summary> <b> 💡 Tip:</b> Short descriptoin</summary><br/>
 
