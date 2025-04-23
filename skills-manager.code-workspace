@@ -1,10 +1,12 @@
 {
   "folders": [
     {
+      "name": "skills-manager",
       "path": "."
     },
     {
-      "path": "/workspaces/exercise-toolkit"
+      "name": "exercise-toolkit",
+      "path": "../exercise-toolkit"
     },
     {
       "path": "/workspaces/action-text-variables"
