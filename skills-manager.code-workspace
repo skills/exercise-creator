@@ -35,6 +35,11 @@
         "style": "fenced"
       }
     },
-    "prettier.printWidth": 100
+    "prettier.printWidth": 100,
+
+    // Spell checking
+    "cSpell.words": ["professortocat", "Mergington"],
+    "cSpell.ignoreRandomStrings": true,
+    "cSpell.useGitignore": true
   }
 }

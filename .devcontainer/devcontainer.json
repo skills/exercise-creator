@@ -48,6 +48,7 @@
         "davidanson.vscode-markdownlint",
         "rvest.vs-code-prettier-eslint",
         "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker",
 
         // Developing Actions workflows
         "github.vscode-github-actions",
