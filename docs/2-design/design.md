@@ -63,6 +63,16 @@ It step typically looks like this:
 
 - Lists don't support normal [Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts). Use our [suggested Alert alternatives](formatting.md#alerts) instead.
 
+### Tips: Sample Code
+
+- If providing sample code, provide a codespace configuration so the learner can try running it.
+
+- The dev container config does not allow setting a port as public. Instead, add this command to the `postCreate.sh` script.
+
+  ```bash
+  gh cs ports visibility <PORT_NUMBER>:public -c $CODESPACE_NAME
+  ```
+
 ## Step Grading and Transition
 
 A GitHub Actions workflow is used to monitor the learner's progress for the active step.
