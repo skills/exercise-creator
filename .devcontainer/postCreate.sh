@@ -14,7 +14,6 @@ fi
 
 # Skills related repositories to be cloned
 repositories=(
-  "https://github.com/skills/action-text-variables",
   "https://github.com/skills/exercise-toolkit"
 )
 
