@@ -58,13 +58,14 @@
         // Managing docker images and containers
         "ms-azuretools.vscode-docker",
 
-        // General
+        // General Coding
         "github.copilot",
         "esbenp.prettier-vscode",
         "github.vscode-pull-request-github",
         "hediet.vscode-drawio",
         "ryanluker.vscode-coverage-gutters",
-        "SonarSource.sonarlint-vscode",
+
+        // CSV editing
         "janisdd.vscode-edit-csv",
 
         // Python support
@@ -84,7 +85,7 @@
         "chat.mcp.enabled": true,
 
         // GitHub
-        "github.copilot.editor.enableAutoCompletions": true,
+        "github.copilot.enabled": true,
         "github.copilot.chat.codeGeneration.instructions": [
           { "file": ".github/copilot/code-style.md" }
         ],
