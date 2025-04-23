@@ -98,6 +98,30 @@ A default configuration is loaded from the `.actrc` file, which provides:
 
 1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
 
+## Configure the GitHub MCP Server
+
+A GitHub MCP server is already installed, but it must be provided a GitHub Personal Access Token before it can be used.
+
+1. Expand the VS Code terminal window.
+
+1. Run the following command to get a GitHub Personal Access Token (PAT).
+
+   ```bash
+   gh auth token
+   ```
+
+1. Open the `.vscode/mcp.json` file.
+
+1. In the list of servers, find `github` and look for and click the inline **Start** button.
+
+1. VS Code will prompt for the token.
+
+1. Switch to the Copilot panel and try a prompt like the below to confirm the MCP tools are ready.
+
+   ```txt
+   How many repos are in the `skills` org?
+   ```
+
 # FAQ
 
 - **I prefer to work locally. Will it also work as a Dev Container?**  
