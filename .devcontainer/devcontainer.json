@@ -33,9 +33,6 @@
       "repositories": {
         "skills/*": {
           "permissions": "write-all"
-        },
-        "skills-dev/*": {
-          "permissions": "write-all"
         }
       }
     },
