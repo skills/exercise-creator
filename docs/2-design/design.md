@@ -11,6 +11,8 @@ Remember:
 
 The [Exercise Toolkit](https://github.com/skills/exercise-toolkit) repository provides reusable workflows and markdown templates.
 
+The [Exercise Template](https://github.com/skills/exercise-template) repository is a template repository that is used as a scaffold to building new exercises. When creating a new exercise it is recommended to use this repository template as a starting point.
+
 - [text-variables](https://github.com/skills/action-text-variables) - A GitHub Action that enables loading a template and replacing variables.
 
 ## Step Content
@@ -77,10 +79,11 @@ It step typically looks like this:
 
 A GitHub Actions workflow is used to monitor the learner's progress for the active step.
 
-When the user triggers the action, it will check for expected outputs and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed. Each learning step has it's own workflow and is structured into 3 jobs:
+When the user triggers the action, it will check for expected outputs and add an issue comment with feedback, typically informing the user they have passed or highlighting a mistake to be fixed. Each learning step has it's own workflow and is structured into 2 or 3 jobs:
 
 1. `find_exercise` - Calls a reusable workflow that finds the appropriate issue and returns the issue url for use in the next jobs.
-2. `check_step_work` - Verifies the step's results and transitions to next learning step.
+1. (optional) `check_step_work` - Verifies the step's results and transitions to next learning step.
+    This is an optional job, only used if there is something to be checked (graded) in that step.
 
    - Loads relevant content for grading the step's activities.
    - Runs 1 or more grading checks to build useful feedback.
@@ -89,13 +92,13 @@ When the user triggers the action, it will check for expected outputs and add an
    - If the check fails, an issue comment is updated/created to provide useful feedback for trying again.
    - If the check passes, an issue comment is updated/created to provide feedback that they did a good job.
 
-3. `post_next_step_content` - Loads the next step content and creates an issue comment.
+1. `post_next_step_content` - Loads the next step content and creates an issue comment.
    - Disables the current step workflow, so it will never run again.
    - Enables the next step workflow.
 
 > [!CAUTION]
-> Do **NOT** create a workflow that triggers on `main` without a `paths` filter.  
-> Do **NOT** design the `paths` filter for an **existing** file, only new files.  
+> Do **NOT** create a workflow that triggers on `main` without a `paths` filter.
+> Do **NOT** design the `paths` filter for an **existing** file, only new files.
 > This will cause the workflow to run early, when the exercise is copied to the learner's account.
 
 If it is absolutely necessary to create a workflow triggered on `main` without any filtering, you can avoid the first run by updating the `if` condition to include `github.run_number != 1`
@@ -107,7 +110,8 @@ If it is absolutely necessary to create a workflow triggered on `main` without a
 
 Below are some ideas for the grading job.
 
-- A file contains 1 (or more) of a key word/phrase.
+- A file contains 1 (or more) of a key word/phrase. For that purpose use [skills/action-keyphrase-checker](https://github.com/skills/action-keyphrase-checker)
+- A file or set of files was created. For that purpose use [file-exists](https://github.com/skills/exercise-toolkit/tree/main/actions/file-exists) action
 
 - Checking validity/content at a provided URL. Examples:
 
@@ -119,7 +123,7 @@ Below are some ideas for the grading job.
 
 ### Tips: Grading
 
-- It is ok **NOT** to have a grading job in the workflow. This will mean the lesson will progres regardless of work.Better to be safe than leave a user stuck and confused.
+- It is ok **NOT** to have a grading job in the workflow. This will mean the lesson will progress regardless of work. Better to be safe than leave a user stuck and confused.
 
 - Existing markdown templates should be used as often as possible. See [Tools](#tools) above. Templates cover the typical sistuations such as:
 
@@ -130,7 +134,7 @@ Below are some ideas for the grading job.
 
 - Ensure the workflows are easy to follow and include references. Many developers will use them as references.
 
-- Use Mona and the ocotcats for responding to the user. The [exercise toolkit](https://github.com/skills/exercise-toolkit) provides premade templates.
+- Use Mona and the octocats for responding to the user. The [exercise toolkit](https://github.com/skills/exercise-toolkit) provides premade templates.
 
 - Use friendly, casual, active responses for feedback.
   - How would you interact with your friend or coworker?
