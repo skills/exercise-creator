@@ -14,7 +14,8 @@ fi
 
 # Skills related repositories to be cloned
 repositories=(
-  "https://github.com/skills/exercise-toolkit"
+  "https://github.com/skills/exercise-toolkit",
+  "https://github.com/skills/exercise-template"
 )
 
 # Clone all the repositories

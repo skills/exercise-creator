@@ -7,6 +7,10 @@
     {
       "name": "exercise-toolkit",
       "path": "../exercise-toolkit"
+    },
+    {
+      "name": "exercise-template",
+      "path": "../exercise-template"
     }
   ],
 
