@@ -2,16 +2,30 @@
 
 This project is primarily meant to be started from a Codespace. It includes all the necessary tools to develop and hopefully all settings to support consistent styling.
 
-### 1. Start the Codespace
+### 1. Set a Personal Access Token
+
+Unlike normal codespaces, this Codespace is primarily intended to modify other repositories (exercises).
+As such, permissions are a bit tricky. To account for this, you must set a Codespace secret in your account that applies to this repository.
+
+1. Create a [Personal Access Token (PAT)](https://github.com/settings/tokens) with the required permissions for accessing any exercise repositories you need.
+
+1. Navigate to the [Codespace Settings](https://github.com/settings/codespaces) for your user account.
+
+1. Under the **Secrets** area, create a new secret.
+   - Name: `GH_TOKEN`.
+   - Value: (The token created above)
+   - Repository Access: `skills/skills-manager`
+
+### 2. Start the Codespace
 
 1. Navigate to the [skills-manager](https://github.com/skills/skills-manager) repository main page.
 1. Above the files list, on the top right, expand the green button to show development options.
 1. Choose the **Codespaces** tab and select **Create Codespace on main**.
 1. Wait for the Codespace to be created.
-   - After started, if no credentials are found, it will ask to login to GitHub.
-   - After login, skills-related skills will be added to the workspace.
+   - The Codespace token will automatically be applied to the environment.
+   - This may take a while. A post creation script will modify clone useful repositories and prepare a runner image for testing exercises locally.
 
-### 2. Verify Setup
+### 3. Verify Setup
 
 Ensure all extensions and tools are ready.
 
@@ -36,7 +50,7 @@ Ensure all extensions and tools are ready.
    act --version
    ```
 
-### 3. Open the workspace
+### 4. Open the workspace
 
 The workspace allows opening multiple skills-related projects simultaneously.
 
@@ -45,6 +59,8 @@ The workspace allows opening multiple skills-related projects simultaneously.
 1. Select the file `/workspaces/skills-manager/skills-manager.code-workspace`.
    - The VS Code window will reload.
    - Check the file explorer. Additional projects have been opened.
+   - The `personal` area is for containing any files you would like to keep without version control. It is persistent if you rebuild the workspace.
+   - The `exercises` area is where you can clone exercises for working on then.
 
 # Common Tasks
 
