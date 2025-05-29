@@ -13,20 +13,12 @@ else
   gh auth status
 fi
 
-# Skills related repositories to be cloned
-repositories=(
-  "https://github.com/skills/exercise-toolkit",
-  "https://github.com/skills/exercise-template"
-)
 
-# Clone all the repositories
+# Clone useful repositories
 sudo chown $USER /workspaces
 cd /workspaces
-for repo in "${repositories[@]}"; do
-  echo "Cloning Repository: $repo"
-  gh repo clone "$repo"
-  echo ""
-done
+gh repo clone "https://github.com/skills/exercise-toolkit"
+gh repo clone "https://github.com/skills/exercise-template"
 
 # Build the Skills runner image for Act
 docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
