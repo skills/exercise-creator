@@ -19,6 +19,7 @@ sudo chown $USER /workspaces
 cd /workspaces
 gh repo clone "https://github.com/skills/exercise-toolkit"
 gh repo clone "https://github.com/skills/exercise-template"
+gh repo clone "https://github.com/skills/exercise-step-payloads"
 
 # Build the Skills runner image for Act
 docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
