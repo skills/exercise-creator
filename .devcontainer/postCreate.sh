@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Stop tracking workspace settings
-git update-index --skip-worktree skills-manager.code-workspace
+# Make directories for personal area and holding exercises
+mkdir -p /workspaces/personal
+mkdir -p /workspaces/exercises
 
 # Login using the GitHub CLI
 echo "Logging in to GitHub"
@@ -12,24 +13,17 @@ else
   gh auth status
 fi
 
-# Skills related repositories to be cloned
-repositories=(
-  "https://github.com/skills/exercise-toolkit",
-  "https://github.com/skills/exercise-template"
-)
 
-# Clone all the repositories
+# Clone useful repositories
 sudo chown $USER /workspaces
 cd /workspaces
-for repo in "${repositories[@]}"; do
-  echo "Cloning Repository: $repo"
-  gh repo clone "$repo"
-  echo ""
-done
+gh repo clone "https://github.com/skills/exercise-toolkit"
+gh repo clone "https://github.com/skills/exercise-template"
+gh repo clone "https://github.com/skills/exercise-step-payloads"
 
 # Build the Skills runner image for Act
 docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
 
 # Add a symbolic link in the user folder to the .actrc file in this repo
-# This means sets a default Act config across all projects.
+# This sets a default Act config across all projects.
 ln -s /workspaces/skills-manager/.actrc $HOME/.actrc

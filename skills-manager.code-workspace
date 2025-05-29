@@ -5,12 +5,19 @@
       "path": "."
     },
     {
-      "name": "exercise-toolkit",
-      "path": "../exercise-toolkit"
+      "path": "/workspaces/exercise-toolkit"
     },
     {
-      "name": "exercise-template",
-      "path": "../exercise-template"
+      "path": "/workspaces/exercise-template"
+    },
+    {
+      "path": "/workspaces/exercise-step-payloads"
+    },
+    {
+      "path": "/workspaces/personal/"
+    },
+    {
+      "path": "/workspaces/exercises/"
     }
   ],
 
