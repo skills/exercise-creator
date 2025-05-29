@@ -28,14 +28,7 @@
 
   "customizations": {
     "codespaces": {
-      "openFiles": ["README.md"],
-
-      // Grant access to work on skills org repos (limited by user permissions)
-      "repositories": {
-        "skills/*": {
-          "permissions": "write-all"
-        }
-      }
+      "openFiles": ["README.md"]
     },
 
     "vscode": {
