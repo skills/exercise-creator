@@ -13,6 +13,10 @@ else
   gh auth status
 fi
 
+# Configure Git and VS Code to prefer GH_TOKEN
+echo "Set Git and VS Code credential helper to prefer GH_TOKEN"
+CRED_HELPER=/workspaces/skills-manager/.devcontainer/gitcredential.sh
+sudo git config --system credential.helper "$CRED_HELPER"
 
 # Clone useful repositories
 sudo chown $USER /workspaces
