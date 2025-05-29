@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Stop tracking workspace settings
-git update-index --skip-worktree skills-manager.code-workspace
+# Make directories for personal area and holding exercises
+mkdir -p /workspaces/personal
+mkdir -p /workspaces/exercises
 
 # Login using the GitHub CLI
 echo "Logging in to GitHub"
