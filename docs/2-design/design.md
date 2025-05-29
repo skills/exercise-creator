@@ -83,14 +83,17 @@ When the user triggers the action, it will check for expected outputs and add an
 
 1. `find_exercise` - Calls a reusable workflow that finds the appropriate issue and returns the issue url for use in the next jobs.
 1. (optional) `check_step_work` - Verifies the step's results and transitions to next learning step.
-    This is an optional job, only used if there is something to be checked (graded) in that step.
 
+   - This is an optional job. It is only used if checking the results is critical for progress in the next step or if useful feedback is important.
    - Loads relevant content for grading the step's activities.
    - Runs 1 or more grading checks to build useful feedback.
      - The unique check is visually indicated by the comment `# START: Check practical exercise` and `# END: Check practical exercise`
-     - Boilerplate steps are outside this
-   - If the check fails, an issue comment is updated/created to provide useful feedback for trying again.
-   - If the check passes, an issue comment is updated/created to provide feedback that they did a good job.
+     - Boilerplate steps are outside this.
+     - Do not combine checks. Keep each independent.
+     - All checks should use `continue-on-error: true`
+   - All checks are combined to provide feedback by creating/updating an issue comment, typically as a table.
+     - If the check fails, the comment provides useful feedback for trying again.
+     - If the check passes, the comment to provides feedback that they did a good job.
 
 1. `post_next_step_content` - Loads the next step content and creates an issue comment.
    - Disables the current step workflow, so it will never run again.
