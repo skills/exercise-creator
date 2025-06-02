@@ -53,6 +53,8 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
+          # TODO: Familiarize with lychee options to check for all relevant files and exclude unnecessary ones https://lychee.cli.rs/recipes/excluding-links/
+
           args: --verbose --no-progress './**/*.md' './**/*.html' --include '^https://github.com/user-attachments/'
           fail: false
 
