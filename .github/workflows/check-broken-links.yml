@@ -3,7 +3,8 @@ name: Check Broken Exercise Links
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" # Every day at midnight UTC
+    - cron: "0 6 * * 1" # Every Monday at 6 am UTC
+    - cron: "0 6 * * 3" # Every Wednesday at 6 am UTC
 
 permissions:
   contents: read
@@ -15,12 +16,12 @@ jobs:
     outputs:
       repos: ${{ steps.set-matrix.outputs.repos }}
     steps:
-      - name: Get all repositories in github.com/skills with topic skills-course and not archived
+      - name: Get all exercise repositories
         id: get-repos
         uses: actions/github-script@v7
         with:
           script: |
-            const org = 'skills';
+            const org = context.repo.owner;
             const topic = 'skills-course';
 
             const { data: repos } = await github.rest.search.repos({
@@ -61,7 +62,3 @@ jobs:
         with:
           title: ":rotating_light: Broken links found in ${{ matrix.repo }}"
           content-filepath: ./lychee/out.md
-          assignees: |
-            FidelusAleksander
-            chriswblake
-            arilivigni
