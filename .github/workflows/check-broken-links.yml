@@ -1,0 +1,74 @@
+name: Check Broken Exercise Links
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1" # Every Monday at 6 am UTC
+    - cron: "0 6 * * 3" # Every Wednesday at 6 am UTC
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  get-repos:
+    runs-on: ubuntu-latest
+    outputs:
+      repos: ${{ steps.set-matrix.outputs.repos }}
+    steps:
+      - name: Get all exercise repositories
+        id: get-repos
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const org = context.repo.owner;
+            const topic = 'skills-course';
+
+            const { data: repos } = await github.rest.search.repos({
+              q: `org:${org} topic:${topic} archived:false`,
+              per_page: 100
+            });
+
+            // Only return full_name for each repo
+            return repos.items.map(repo => repo.full_name);
+      - name: Set matrix output
+        id: set-matrix
+        run: |
+          echo "repos=$(echo '${{ steps.get-repos.outputs.result }}' | jq -c)" >> $GITHUB_OUTPUT
+
+  link-check:
+    needs: get-repos
+    name: Lychee Link Check (${{ matrix.repo }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo: ${{ fromJson(needs.get-repos.outputs.repos) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ matrix.repo }}
+      - name: Check Links with Lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all markdown and HTML files in the repository
+          # Exclude links that are private, file:// URLs, and links containing mustache-style variables ({{ }}) and their encoded form
+          args: |
+            --verbose
+            --no-progress
+            './**/*.md'
+            './**/*.html'
+            --exclude-all-private
+            --exclude 'file:///*'
+            --exclude '.*\{\{.*\}\}.*'
+            --exclude '.*%7B%7B.*%7D%7D.*'
+          fail: false
+
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: ":rotating_light: Broken links found in ${{ matrix.repo }}"
+          content-filepath: ./lychee/out.md
