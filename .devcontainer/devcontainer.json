@@ -15,7 +15,7 @@
     },
 
     // Consistent formatting
-    "ghcr.io/devcontainers-contrib/features/prettier:1": {},
+    "ghcr.io/devcontainers-extra/features/prettier:1": {},
 
     // Python Support
     "ghcr.io/devcontainers/features/python:1": {
