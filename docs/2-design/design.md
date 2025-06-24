@@ -91,13 +91,16 @@ When the user triggers the action, it will check for expected outputs and add an
      - Boilerplate steps are outside this.
      - Do not combine checks. Keep each independent.
      - All checks should use `continue-on-error: true`
-   - All checks are combined to provide feedback by creating/updating an issue comment, typically as a table.
-     - If the check fails, the comment provides useful feedback for trying again.
-     - If the check passes, the comment to provides feedback that they did a good job.
+   - All checks are combined to provide feedback by updating the last issue comment, typically as a table. This job does not create any net new comments.
+     - If the check fails, the comment provides useful feedback for trying again and fails the job
+     - If the check passes, the comment to provides feedback that they completed what was asked and passes the job so the workflow continues to the next job - `post_next_step_content`.
 
 1. `post_next_step_content` - Loads the next step content and creates an issue comment.
+   - Comments that the previous step is finished (unless it was the first step)
    - Disables the current step workflow, so it will never run again.
    - Enables the next step workflow.
+   - Comments with the next step content
+   - Comments that Mona is watching for progress (unless it was the last step)
 
 > [!CAUTION]
 > Do **NOT** create a workflow that triggers on `main` without a `paths` filter.
