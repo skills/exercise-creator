@@ -1,5 +1,6 @@
 *.temp*
 *.env*
+!*.env-example
 *.secret*
 *.actrc.vars*
 *.actrc.secrets*

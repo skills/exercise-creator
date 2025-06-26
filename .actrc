@@ -3,6 +3,7 @@
 
 # Load variables and secrets from files
 --var-file /workspaces/skills-manager/.actrc.vars
+--env-file /workspaces/skills-manager/.env
 --secret-file /workspaces/skills-manager/.actrc.secrets
 
 # Cache used Actions
