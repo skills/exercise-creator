@@ -88,7 +88,11 @@ A default configuration is loaded from the `.actrc` file, which provides:
 - Uses a modified runner image to include additional tools matching GitHub runners.
 - Specifies to run in amd64 mode instead of arm64, if needed.
 
-1. To provide a Personal Access Token (PAT), update or create the `.actrc.secrets` file.
+1. To provide repository secrets to your workflow, update or create the `.actrc.secrets` file. 
+
+   > This simulates [Using secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-guides/using-secrets-in-github-actions).
+
+   - We recommend a fine-grained Personal Access Token (PAT) with access to a **single** private repository to test commands against.
 
    ```env
    GITHUB_TOKEN=gph_*******
@@ -96,13 +100,25 @@ A default configuration is loaded from the `.actrc` file, which provides:
 
 1. To provide repository variables to your worklow, update or create the `.actrc.vars` file.
 
+   > This simulates [Using variables in GitHub Actions](https://docs.github.com/en/actions/how-tos/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#creating-configuration-variables-for-a-repository).
+
    ```env
    MYVAR=hello world
    ```
 
-1. To provide environment variables to your worklow, create the `.env` file, you can use `.env-example` as a reference.
+1. To provide environment variables to your worklow, create the `.env` file, you can use `.env-example` as a reference. Note: These values will override any variables set in `.actrc.vars`.
+
+   > This simulates setting the environment variables of the Actions runner.
+
+   ```env
+   ISSUE_NUMBER=123
+   ISSUE_REPOSITORY=your-personal-handle/spam-repository
+   ISSUE_URL=
+   ```
 
 1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
+
+   > This simulates the payload provided to the workflow from a [GitHub Actions trigger](https://docs.github.com/en/actions/reference/events-that-trigger-workflows).
 
 ## Start the MCP Servers
 
