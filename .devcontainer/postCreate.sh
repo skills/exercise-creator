@@ -31,3 +31,9 @@ docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Do
 # Add a symbolic link in the user folder to the .actrc file in this repo
 # This sets a default Act config across all projects.
 ln -s /workspaces/skills-manager/.actrc $HOME/.actrc
+
+# Generate environment variable files for Act
+cd /workspaces/skills-manager
+touch '.actrc.vars'
+touch '.actrc.env'
+touch '.actrc.secrets'
