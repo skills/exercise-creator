@@ -71,11 +71,7 @@ The following steps clone a Skills exercise repository into the codespace and ad
 1. Ensure the Codespace is open.
 1. Open a terminal.
 1. Navigate to the `/workspaces/exercises` directory.
-
-    > or `workspaces/personal` if working on a personal fork
-
 1. Clone the desired Skills exercise.
-
 
 ## Configure nektos/act
 
@@ -156,8 +152,9 @@ Workspaces settings are defined in multiple places depending on necessity of cha
   - Example: Providing prettier formatting to Skills exercises.
 - **Workspace settings**
   - Location: `skills-manager.code-workspace`
-  - Workspace directory structure and settings.
-
+  - Workspace directory structure
+  - Adjustable linting settings
+  - Adjustable spell check settings
 - **Project settings**
   - Location: `<repo>/.vscode/settings.json`
   - Only apply to the related repository folder.
