@@ -102,9 +102,11 @@ A default configuration is loaded from the `.actrc` file, which provides:
    MYVAR=hello world
    ```
 
-1. To provide environment variables to your worklow, create the `.env` file, you can use `.env-example` as a reference. Note: These values will override any variables set in `.actrc.vars`.
+1. To provide environment variables to your worklow, update or create the `.actrc.env` file. 
 
    > This simulates setting the environment variables of the Actions runner.
+
+   - Note: These values will override any variables set in `.actrc.vars`.
 
    ```env
    ISSUE_NUMBER=123
