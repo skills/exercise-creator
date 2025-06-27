@@ -70,24 +70,12 @@ The following steps clone a Skills exercise repository into the codespace and ad
 
 1. Ensure the Codespace is open.
 1. Open a terminal.
-1. Navigate to the `/workspaces` directory.
-   ```bash
-   cd /workspaces
-   ```
+1. Navigate to the `/workspaces/exercises` directory.
+
+    > or `workspaces/personal` if working on a personal fork
+
 1. Clone the desired Skills exercise.
-1. Open the workspace file `/workspaces/skills-manager/skills-manager.code-workspace`.
-1. Add an entry for the recently cloned exercise repository. It will look similar to below.
 
-   ```json
-   {
-     "path": "/workspaces/my-skills-exercise/"
-   }
-   ```
-
-1. Inspect the File Explorer. The repository should now be visable and can be worked on as usual.
-
-> [!NOTE]
-> The `skills-manager.code-workspace` file has been excluded from Git tracking. Feel free to customize it for your personal development flow!
 
 ## Configure nektos/act
 
@@ -100,37 +88,29 @@ A default configuration is loaded from the `.actrc` file, which provides:
 - Uses a modified runner image to include additional tools matching GitHub runners.
 - Specifies to run in amd64 mode instead of arm64, if needed.
 
-1. To provide a Personal Access Token (PAT), update or create the `/.actrc.secrets` file.
+1. To provide a Personal Access Token (PAT), update or create the `.actrc.secrets` file.
 
    ```env
    GITHUB_TOKEN=gph_*******
    ```
 
-1. To provide environment variables to your worklow, update or create the `/.actrc.vars` file.
+1. To provide repository variables to your worklow, update or create the `.actrc.vars` file.
 
    ```env
    MYVAR=hello world
    ```
 
+1. To provide environment variables to your worklow, create the `.env` file, you can use `.env-example` as a reference.
+
 1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
 
-## Configure the GitHub MCP Server
+## Start the MCP Servers
 
-A GitHub MCP server is already installed, but it must be provided a GitHub Personal Access Token before it can be used.
+A GitHub HTTP based MCP server is already installed, all you need to do is start it
 
-1. Expand the VS Code terminal window.
+1. `cmd+shift+P` and search for `MCP: List Servers`.
 
-1. Run the following command to get a GitHub Personal Access Token (PAT).
-
-   ```bash
-   gh auth token
-   ```
-
-1. Open the `.vscode/mcp.json` file.
-
-1. In the list of servers, find `github` and look for and click the inline **Start** button.
-
-1. VS Code will prompt for the token.
+1. Start the `github` server. It will prompt you to log in to GitHub.
 
 1. Switch to the Copilot panel and try a prompt like the below to confirm the MCP tools are ready.
 
@@ -140,7 +120,7 @@ A GitHub MCP server is already installed, but it must be provided a GitHub Perso
 
 # FAQ
 
-- **I prefer to work locally. Will it also work as a Dev Container?**  
+- **I prefer to work locally. Will it also work as a Dev Container?**
   Yes. If you are familiar with Dev Containers, simply clone the repository locally and open as usual.
 
 - **What does the Codespace include?**
@@ -160,12 +140,10 @@ Workspaces settings are defined in multiple places depending on necessity of cha
   - Example: Providing prettier formatting to Skills exercises.
 - **Workspace settings**
   - Location: `skills-manager.code-workspace`
-  - Developer can freely make changes without accidentally committing.
-  - Git tracking is disabled on this file when the codespace is created.
-  - Example: Develop new default settings for the codespace.
-  - Example: Cloning additional repos and adding to the workspace.
+  - Workspace directory structure and settings.
+
 - **Project settings**
   - Location: `<repo>/.vscode/settings.json`
-  - Onlyl apply to the related repository folder.
+  - Only apply to the related repository folder.
   - Setting for a specific project.
   - Example: Configure linting or testing
