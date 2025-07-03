@@ -39,7 +39,6 @@ Most grading/transition workflows can be verified locally before testing them in
    - This prevents the need to save your PAT in each repository (exercise) folder.
 1. Ensure your dummy repository and issue are specified in the `.actrc.env` file.
    - This will send all commands to a different repository to avoid spamming the in-development repository (exercise).
-   - Note: Entries in the `.actrc.env` will override anything set in `.actrc.vars`.
 1. Create expected workflow payloads for each exercise step. There are several [sample payloads](/docs/3-testing/workflow-payload.examples/). Store these in a place you won't accidentally commit.
 
    <img width="200" alt="image" src="https://github.com/user-attachments/assets/ff8d58bb-2866-48c0-b880-37f95f9ba566" />
@@ -99,6 +98,4 @@ IMPORANT: Track who is testing on the issue. Have them put their feedback on the
 
 - Build personal connection with volunteers before and after the request. Noone likes feeling used. Plus we all like making new friends!
 
-- Be clear that you appreciate them. You can say the generic "thank you", but follow up with specifics. Point out something from their review that you genuinely liked:  a "gotcha" or "Oh wow, how did I miss that" type moment.
-
-
+- Be clear that you appreciate them. You can say the generic "thank you", but follow up with specifics. Point out something from their review that you genuinely liked: a "gotcha" or "Oh wow, how did I miss that" type moment.

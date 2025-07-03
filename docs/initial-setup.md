@@ -106,8 +106,6 @@ A default configuration is loaded from the `.actrc` file, which provides:
 
    > This simulates setting the environment variables of the Actions runner.
 
-   - Note: These values will override any variables set in `.actrc.vars`.
-
    ```env
    ISSUE_NUMBER=123
    ISSUE_REPOSITORY=your-personal-handle/spam-repository
