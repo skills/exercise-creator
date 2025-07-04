@@ -70,24 +70,8 @@ The following steps clone a Skills exercise repository into the codespace and ad
 
 1. Ensure the Codespace is open.
 1. Open a terminal.
-1. Navigate to the `/workspaces` directory.
-   ```bash
-   cd /workspaces
-   ```
+1. Navigate to the `/workspaces/exercises` directory.
 1. Clone the desired Skills exercise.
-1. Open the workspace file `/workspaces/skills-manager/skills-manager.code-workspace`.
-1. Add an entry for the recently cloned exercise repository. It will look similar to below.
-
-   ```json
-   {
-     "path": "/workspaces/my-skills-exercise/"
-   }
-   ```
-
-1. Inspect the File Explorer. The repository should now be visable and can be worked on as usual.
-
-> [!NOTE]
-> The `skills-manager.code-workspace` file has been excluded from Git tracking. Feel free to customize it for your personal development flow!
 
 ## Configure nektos/act
 
@@ -100,37 +84,45 @@ A default configuration is loaded from the `.actrc` file, which provides:
 - Uses a modified runner image to include additional tools matching GitHub runners.
 - Specifies to run in amd64 mode instead of arm64, if needed.
 
-1. To provide a Personal Access Token (PAT), update or create the `/.actrc.secrets` file.
+1. To provide repository secrets to your workflow, update or create the `.actrc.secrets` file. 
+
+   > This simulates [Using secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-guides/using-secrets-in-github-actions).
+
+   - We recommend a fine-grained Personal Access Token (PAT) with access to a **single** private repository to test commands against.
 
    ```env
    GITHUB_TOKEN=gph_*******
    ```
 
-1. To provide environment variables to your worklow, update or create the `/.actrc.vars` file.
+1. To provide repository variables to your worklow, update or create the `.actrc.vars` file.
+
+   > This simulates [Using variables in GitHub Actions](https://docs.github.com/en/actions/how-tos/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#creating-configuration-variables-for-a-repository).
 
    ```env
    MYVAR=hello world
    ```
 
-1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
+1. To provide environment variables to your worklow, update or create the `.actrc.env` file. 
 
-## Configure the GitHub MCP Server
+   > This simulates setting the environment variables of the Actions runner.
 
-A GitHub MCP server is already installed, but it must be provided a GitHub Personal Access Token before it can be used.
-
-1. Expand the VS Code terminal window.
-
-1. Run the following command to get a GitHub Personal Access Token (PAT).
-
-   ```bash
-   gh auth token
+   ```env
+   ISSUE_NUMBER=123
+   ISSUE_REPOSITORY=your-personal-handle/spam-repository
+   ISSUE_URL=
    ```
 
-1. Open the `.vscode/mcp.json` file.
+1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
 
-1. In the list of servers, find `github` and look for and click the inline **Start** button.
+   > This simulates the payload provided to the workflow from a [GitHub Actions trigger](https://docs.github.com/en/actions/reference/events-that-trigger-workflows).
 
-1. VS Code will prompt for the token.
+## Start the MCP Servers
+
+A GitHub HTTP based MCP server is already installed, all you need to do is start it
+
+1. `cmd+shift+P` and search for `MCP: List Servers`.
+
+1. Start the `github` server. It will prompt you to log in to GitHub.
 
 1. Switch to the Copilot panel and try a prompt like the below to confirm the MCP tools are ready.
 
@@ -140,7 +132,7 @@ A GitHub MCP server is already installed, but it must be provided a GitHub Perso
 
 # FAQ
 
-- **I prefer to work locally. Will it also work as a Dev Container?**  
+- **I prefer to work locally. Will it also work as a Dev Container?**
   Yes. If you are familiar with Dev Containers, simply clone the repository locally and open as usual.
 
 - **What does the Codespace include?**
@@ -160,12 +152,11 @@ Workspaces settings are defined in multiple places depending on necessity of cha
   - Example: Providing prettier formatting to Skills exercises.
 - **Workspace settings**
   - Location: `skills-manager.code-workspace`
-  - Developer can freely make changes without accidentally committing.
-  - Git tracking is disabled on this file when the codespace is created.
-  - Example: Develop new default settings for the codespace.
-  - Example: Cloning additional repos and adding to the workspace.
+  - Workspace directory structure
+  - Adjustable linting settings
+  - Adjustable spell check settings
 - **Project settings**
   - Location: `<repo>/.vscode/settings.json`
-  - Onlyl apply to the related repository folder.
+  - Only apply to the related repository folder.
   - Setting for a specific project.
   - Example: Configure linting or testing
