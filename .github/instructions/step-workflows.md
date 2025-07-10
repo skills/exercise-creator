@@ -28,6 +28,24 @@ Each learning step has it's own workflow and is required to have the following t
    - Comments with the next step content
    - Comments that Mona is watching for progress (unless it was the last step)
 
+#### Example of a step workflow without grading
+
+```yaml
+jobs:
+  find_exercise:
+    name: Find Exercise Issue
+    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
+
+  post_next_step_content:
+    name: Post next step content
+    needs: [find_exercise]
+    # Step commenting and transition logic here
+```
+
+The `post_next_step_content` will always run if the workflow was triggered.
+
+See full example of workflow without grading in [`exercise-template/.github/workflows/1-step.yml`](../../../exercise-template/.github/workflows/1-step.yml).
+
 #### Example of a step workflow with grading
 
 ```yaml
@@ -49,31 +67,11 @@ jobs:
 
 The `post_next_step_content` should use the `needs` keyword to depend on the `find_exercise` and on the `check_step_work` job if it exists. This ensures that the next step content is posted only after the exercise issue is found and the grading checks are completed.
 
-See full example in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
-
-#### Example of a step workflow without grading
-
-```yaml
-jobs:
-  find_exercise:
-    name: Find Exercise Issue
-    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
-
-  post_next_step_content:
-    name: Post next step content
-    needs: [find_exercise]
-    # Step commenting and transition logic here
-```
-
-The `post_next_step_content` will always run if the workflow was triggered.
-
-See full example in [`exercise-template/.github/workflows/1-step.yml`](../../../exercise-template/.github/workflows/1-step.yml).
+See full example of workflow with grading in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
 #### Grading Job Pattern
 
 Always follow this pattern for the `check_step_work` grading job.
-
-See complete example in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
 - This is an optional job. It is only used if checking the results is critical for progress in the next step or if useful feedback is important.
 - Runs 1 or more grading checks to build useful feedback.
@@ -83,6 +81,8 @@ See complete example in [`exercise-template/.github/workflows/2-step.yml`](../..
 - All checks are combined to provide feedback by updating the last issue comment in the form of a table `exercise-toolkit/markdown-templates/step-feedback/step-results-table.md`. This job does not create any net new comments.
   - If the check fails, the comment provides useful feedback for trying again and fails the job
   - If the check passes, the comment to provides feedback that they completed what was asked and passes the job so the workflow continues to the next job - `post_next_step_content`.
+
+See full example of workflow with grading in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
 ## Integrations
 
