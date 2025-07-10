@@ -3,13 +3,13 @@ applyTo: "**/.github/workflows/*.yml"
 ---
 
 
-# GitHub Skills Exercise Workflows
+# GitHub Skills Exercise Workflows instructions
 
-If something is not covered, or unclear always refer to the reference implementation in the [`exercise-template`](../../../exercise-template) repository.
+If something is not covered in the following instructions, or unclear always refer to the reference implementation in the [`exercise-template`](../../../exercise-template) repository.
 
 ## Core Workflow Structure
 
-GitHub Skills exercises use a **step-based workflow pattern** where each step (0-4) has its own workflow file. Only one step workflow is active at a time:
+GitHub Skills exercises use a **step-based workflow pattern** where each step (1-5) has its own workflow file. Only one step workflow is active at a time:
 
 - `0-start-exercise.yml`: Initializes exercise, creates issue, disables all step workflows
 - `1-step.yml`, `2-step.yml`, etc.: Monitor learner progress and provide feedback
@@ -50,7 +50,6 @@ jobs:
 The `post_next_step_content` should use the `needs` keyword to depend on the `find_exercise` and on the `check_step_work` job if it exists. This ensures that the next step content is posted only after the exercise issue is found and the grading checks are completed.
 
 See full example in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
-
 
 #### Example of a step workflow without grading
 
