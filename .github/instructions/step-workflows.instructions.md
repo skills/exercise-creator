@@ -20,7 +20,7 @@ GitHub Skills exercises use a **step-based workflow pattern** where each step (1
 Each learning step has it's own workflow and is required to have the following two or three (if using grading) jobs:
 
 1. `find_exercise` - Calls a reusable workflow that finds the appropriate issue and returns the issue url for use in the next jobs.
-1. (optional) `check_step_work` - Verifies the step's results and transitions to next learning step.
+1. (optional) `check_step_work` - Verifies the learner's results and provides feedback.
 1. `post_next_step_content` - Does several things, with variations for first and last steps:
    - Comments that the previous step is finished (unless it was the first step)
    - Disables the current step workflow, so it will never run again.
