@@ -105,11 +105,19 @@ steps:
 
 ### Comment Management
 
-Use `GrantBirki/comment` action for all issue comment operations:
+Use `GrantBirki/comment` action for all issue comment operations
 
+#### Find and update last comment
 
 ```yaml
-# Update existing comment (find last comment first)
+- name: Find last comment
+  id: find-last-comment
+  uses: peter-evans/find-comment@v3
+  with:
+    repository: ${{ env.ISSUE_REPOSITORY }}
+    issue-number: ${{ env.ISSUE_NUMBER }}
+    direction: last
+
 - name: Update comment - checking work
   uses: GrantBirki/comment@v2.1.1
   with:
@@ -118,8 +126,12 @@ Use `GrantBirki/comment` action for all issue comment operations:
     comment-id: ${{ steps.find-last-comment.outputs.comment-id }}
     edit-mode: replace
     file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
+```
 
-# Create new comment
+#### Create new comment
+
+```yaml
+
 - name: Create comment - step finished
   uses: GrantBirki/comment@v2.1.1
   with:
