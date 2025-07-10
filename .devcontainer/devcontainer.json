@@ -75,6 +75,11 @@
         "chat.agent.enabled": true,
         "chat.mcp.enabled": true,
 
+        // TODO: Not sure if this works correctly
+        "chat.instructionsFilesLocations": {
+          "skills-manager/.github/instructions": true
+        },
+
         // GitHub
         "github.copilot.enabled": true,
         "github.copilot.chat.codeGeneration.instructions": [
