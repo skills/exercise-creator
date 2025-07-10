@@ -111,7 +111,6 @@ Use `GrantBirki/comment` action for all issue comment operations:
 
 ```yaml
 # Update existing comment (find last comment first)
-
 - name: Update comment - checking work
   uses: GrantBirki/comment@v2.1.1
   with:
@@ -130,17 +129,6 @@ Use `GrantBirki/comment` action for all issue comment operations:
     file: exercise-toolkit/markdown-templates/step-feedback/step-finished-prepare-next-step.md
     vars: |
       next_step_number: N
-
-# Pass variables to templates
-- name: Create comment - add step content
-  uses: GrantBirki/comment@v2.1.1
-  with:
-    repository: ${{ env.ISSUE_REPOSITORY }}
-    issue-number: ${{ env.ISSUE_NUMBER }}
-    file: ${{ env.STEP_N_FILE }}
-    vars: |
-      login: ${{ github.actor }}
-      full_repo_name: ${{ github.repository }}
 ```
 
 ### Workflow State Management
