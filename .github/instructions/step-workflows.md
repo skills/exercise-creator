@@ -74,7 +74,7 @@ See full example in [`exercise-template/.github/workflows/1-step.yml`](../../../
 
 Always follow this pattern for the `check_step_work` grading job.
 
-See complete example in [`exercise-template/.github/workflows/2-step.yml`](../../..//exercise-template/.github/workflows/2-step.yml).
+See complete example in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
 - This is an optional job. It is only used if checking the results is critical for progress in the next step or if useful feedback is important.
 - Runs 1 or more grading checks to build useful feedback.
