@@ -47,7 +47,7 @@ jobs:
     # Step commenting and transition logic here
 ```
 
-The `post_next_step_content` won't run if the `check_step_work` fails, so the learner can try again.
+The `post_next_step_content` should use the `needs` keyword to depend on the `find_exercise` and on the `check_step_work` job if it exists. This ensures that the next step content is posted only after the exercise issue is found and the grading checks are completed.
 
 See full example in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
