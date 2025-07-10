@@ -129,7 +129,7 @@ Use `GrantBirki/comment` action for all issue comment operations:
     issue-number: ${{ env.ISSUE_NUMBER }}
     file: exercise-toolkit/markdown-templates/step-feedback/step-finished-prepare-next-step.md
     vars: |
-      next_step_number: 3
+      next_step_number: N
 
 # Pass variables to templates
 - name: Create comment - add step content
@@ -137,7 +137,7 @@ Use `GrantBirki/comment` action for all issue comment operations:
   with:
     repository: ${{ env.ISSUE_REPOSITORY }}
     issue-number: ${{ env.ISSUE_NUMBER }}
-    file: ${{ env.STEP_2_FILE }}
+    file: ${{ env.STEP_N_FILE }}
     vars: |
       login: ${{ github.actor }}
       full_repo_name: ${{ github.repository }}
@@ -152,7 +152,7 @@ Use `gh` CLI to manage workflow states:
   run: gh workflow disable "${{github.workflow}}"
 
 - name: Enable next step workflow
-  run: gh workflow enable "Step 2"
+  run: gh workflow enable "Step N"
 ```
 
 ## Trigger Patterns

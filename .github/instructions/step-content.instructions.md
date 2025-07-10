@@ -1,0 +1,3 @@
+---
+applyTo: "**/.github/steps/*.md"
+---
