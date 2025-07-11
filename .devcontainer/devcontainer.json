@@ -72,22 +72,18 @@
         // Git
         "git.autofetch": true,
         "git.allowForcePush": false,
+
+        // Chat
         "chat.agent.enabled": true,
         "chat.mcp.enabled": true,
-
-        // TODO: Not sure if this works correctly
         "chat.instructionsFilesLocations": {
-          "skills-manager/.github/instructions": true
+          ".github/instructions": true
         },
-
 
         // GitHub
         "github.copilot.enabled": true,
         "github.copilot.chat.commitMessageGeneration.instructions": [
-          { "file": ".github/instructions/commit-message-style.md" }
-        ],
-        "github.copilot.chat.reviewSelection.instructions": [
-          { "file": ".github/instructions/review-style.md" }
+          { "file": ".github/instructions/commit-message-style.instructions.md" }
         ],
 
         // Consistent formatting
