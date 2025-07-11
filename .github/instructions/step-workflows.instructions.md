@@ -65,7 +65,14 @@ jobs:
     # Step commenting and transition logic here
 ```
 
-The `post_next_step_content` should use the `needs` keyword to depend on the `find_exercise` and on the `check_step_work` job if it exists. This ensures that the next step content is posted only after the exercise issue is found and the grading checks are completed.
+When `check_step_work` is used the `post_next_step_content` should always include it in the `needs` list 
+```yaml
+  post_next_step_content:
+    name: Post next step content
+    needs: [find_exercise, check_step_work]
+```
+
+This ensures that the next step content is posted only after the  grading checks are completed.
 
 See full example of workflow with grading in [`exercise-template/.github/workflows/2-step.yml`](../../../exercise-template/.github/workflows/2-step.yml).
 
