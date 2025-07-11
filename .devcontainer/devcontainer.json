@@ -109,6 +109,14 @@
         // Javascript
         "jest.enable": false
       }
+    },
+    "mcp": {
+      "servers": {
+        "github": {
+          "type": "http",
+          "url": "https://api.githubcopilot.com/mcp/"
+        }
+      }
     }
   },
 
