@@ -80,19 +80,14 @@
           "skills-manager/.github/instructions": true
         },
 
+
         // GitHub
         "github.copilot.enabled": true,
-        "github.copilot.chat.codeGeneration.instructions": [
-          { "file": ".github/copilot/code-style.md" }
-        ],
         "github.copilot.chat.commitMessageGeneration.instructions": [
-          { "file": ".github/copilot/commit-message-style.md" }
+          { "file": ".github/instructions/commit-message-style.md" }
         ],
         "github.copilot.chat.reviewSelection.instructions": [
-          { "file": ".github/copilot/review-style.md" }
-        ],
-        "github.copilot.chat.testGeneration.instructions": [
-          { "file": ".github/copilot/test-style.md" }
+          { "file": ".github/instructions/review-style.md" }
         ],
 
         // Consistent formatting
