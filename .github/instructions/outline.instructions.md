@@ -33,7 +33,9 @@ For each step, use the following format:
 - **Theory**: Key concepts or background relevant to the activities. Keep it brief and focused. The goal is awareness, not deep knowledge.
 - **References**: Add links to GitHub documentation or other resources.
 - **Activity**: List the hands-on tasks for the learner. Use clear, actionable instructions. Each activity should have a descriptive title and use ordered lists for steps.
-- **Transition**: Describe what triggers the next step and any grading or completion criteria.
+- **Transition**: The GitHub Actions workflow trigger and grading checks.
+  - What will be monitored about the user's progress to trigger a GitHub Actions workflow.
+  - The workflow's steps will check the learner's work, such as checking file content, commit history, an active URL, etc. and if all pass, the next learning step will be shared.
 
 ### Writing Guidelines
 
