@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*test*"
+applyTo: "**/*_[tT]est.*,**/[tT]est_*.*"
 ---
 
 Each test should be completely independent of all other tests.
