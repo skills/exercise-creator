@@ -8,7 +8,8 @@ These instructions describe the required format, conventions, and structure for 
 
 ## File Location and Naming
 
-- Outline files are typically named `{exercise-name}-outline.md` and placed in the `exercises` directory until published as an issue.
+- If an `*outline.md` file is already provided, don't make a new one.
+- Outline files are typically named `{exercise-name}-outline.md` and placed in the `exercises` directory until published as an issue. 
 - Each exercise should have a single outline file that provides a high-level structure for the exercise.
 - Use the GitHub MCP server to publish the outline as an issue. Ask the user for the repository to create the issue.
 
