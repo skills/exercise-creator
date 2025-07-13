@@ -14,7 +14,7 @@ These instructions describe the required format, conventions, and structure for 
 
 ## Structure of an Outline File
 
-When creating a new outline file, start by copying the template from `exercise-template/outline.md`. All outlines should follow the same structure and conventions to promote consistency across exercises.
+When creating a new outline file, start by copying the template from `exercise-template/outline.md`. All outlines MUST follow the same structure and conventions to promote consistency across exercises. If an existing outline does not follow the structure, adjust it to match the template.
 
 Each outline file consists of the following main components:
 
@@ -50,3 +50,5 @@ References in steps should only come from official GitHub sources, such as:
 - GitHub Learn (https://learn.github.com)
 - GitHub Blog (https://github.blog)
 - GitHub Changelog (https://github.blog/changelog)
+
+All references should be checked for accuracy and relevance. Use the GitHub MCP server or Fetch tool to check the webpage content.
