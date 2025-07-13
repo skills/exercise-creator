@@ -21,7 +21,7 @@ Each outline file consists of the following main components:
 
 1. **Logistics**: Brief notes for non-content planning like repository URL, business considerations, or other important context.
 2. **README (Intro)**: Title, short introduction, overview of learning objectives and steps, description of what will be built, prerequisites, and any startup actions.
-3. **Steps**: The topics to be taught, the related hands-on activity, and how the learne's work will be verified.
+3. **Steps**: The topics to be taught, the related hands-on activity, and how the learner's work will be verified.
 4. **Review**: Summary of actions taken, skills learned, and what's next (links to docs, recommended exercises, etc.)
 
 ### Step Sections
