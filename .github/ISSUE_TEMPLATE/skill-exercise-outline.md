@@ -11,19 +11,25 @@ assignees: ''
 
 <!-- Provide a clear, concise description of what the Skills exercise will teach users -->
 
+## Target Audience
+
+**Primary Persona**: <!-- Developer, Tester, Project Manager, etc. -->
+**Experience Level**: <!-- Beginner, Intermediate, Advanced -->
+**Recommend Grouping**: <!-- See https://learn.github.com/skills or suggest a new one. -->
+
 ## Story Plot
 
 <!-- Craft a narrative that helps learners understand why they would need these skills -->
 
-## Future plot ideas (for reference):
+## Future plot ideas (for reference)
 
 <!-- Optional: Add ideas for how this exercise might expand or connect to other topics -->
 
 ## Outline
 
-### Step 1. [First Section Title]
+### Step 1: First Section Title
 
-<!-- Describe the first major section/step of your Skills exercise -->
+<!-- Brief story, scenario or narrative that sets the context for the learner and introduce the step. -->
 
 #### Theory
 
@@ -31,64 +37,20 @@ assignees: ''
 
 #### Activities
 
-1. <!-- First activity -->
-2. <!-- Second activity -->
-3. <!-- Additional activities as needed -->
+1. <!-- First activity title -->
+1. <!-- N activity title as needed-->
 
-Trigger: <!-- What initiates the check for this step -->
-Check: <!-- What will be verified to confirm completion -->
+Actions Event Trigger: <!-- What initiates the check for this step -->
+Check: <!-- Optional - What (if anything) will be verified in `check_step_work` job to confirm completion. -->
 
 References:
 
 - <!-- Link to relevant documentation -->
 - <!-- Additional resources -->
 
-### Step 2. [Second Section Title]
+### Step N: N Section Title
 
-<!-- Describe the second major section/step -->
-
-#### Theory
-
-<!-- Explain the concepts and background knowledge needed -->
-
-#### Activities
-
-1. <!-- First activity -->
-2. <!-- Second activity -->
-3. <!-- Additional activities as needed -->
-
-Trigger: <!-- What initiates the check for this step -->
-Check: <!-- What will be verified to confirm completion -->
-
-#### References
-
-- <!-- Link to relevant documentation -->
-- <!-- Additional resources -->
-
-### Step 3. [Third Section Title]
-
-<!-- Continue with additional sections as needed -->
-
-#### Theory
-
-<!-- Explain the concepts and background knowledge needed -->
-
-#### Activities
-1. <!-- First activity -->
-2. <!-- Second activity -->
-3. <!-- Additional activities as needed -->
-
-Trigger: <!-- What initiates the check for this step -->
-Check: <!-- What will be verified to confirm completion -->
-
-#### References
-
-- <!-- Link to relevant documentation -->
-- <!-- Additional resources -->
-
-### Step 4. [Fourth Section Title]
-
-<!-- Continue with additional sections as needed -->
+<!-- Brief story, scenario or narrative that sets the context for the learner and introduce the step. -->
 
 #### Theory
 
@@ -96,35 +58,23 @@ Check: <!-- What will be verified to confirm completion -->
 
 #### Activities
 
-1. <!-- First activity -->
-2. <!-- Second activity -->
-3. <!-- Additional activities as needed -->
+1. <!-- First activity title -->
+1. <!-- N activity title as needed-->
 
-Trigger: <!-- What initiates the check for this step -->
-Check: <!-- What will be verified to confirm completion -->
+Actions Event Trigger: <!-- What initiates the check for this step -->
+Check: <!-- Optional - What (if anything) will be verified in `check_step_work` job to confirm completion. -->
+
+References:
+
+- <!-- Link to relevant documentation -->
+- <!-- Additional resources -->
 
 #### References
 
 - <!-- Link to relevant documentation -->
 - <!-- Additional resources -->
 
-### Step 5. Review
+### Review File
 
 <!-- Summary of what was learned and recommendations for next steps -->
 
-## Recent Releases
-
-<!-- List relevant GitHub feature releases that make this exercise possible or enhance it -->
-- <!-- Feature 1 [Status] link -->
-- <!-- Feature 2 [Status] link -->
-
-### Grouping
-
-**Primary Persona**: <!-- Developer, Tester, Project Manager, etc. -->
-**Experience Level**: <!-- Beginner, Intermediate, Advanced -->
-**Recommend Grouping**: <!-- See https://skills.github.com or suggest a new one. -->
-
-### Product feature release
-
-**Public preview**: <!-- Date -->
-**GA**: <!-- Date -->
