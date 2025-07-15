@@ -41,28 +41,43 @@ When using the template:
 - **Grading-Check**: Briefly state what specific change or file will be verified for `check_step_work` grading process or `None` if no grading will be used.
 
 ```example
-## Step 1 - Enabling GitHub Pages
+## Step 1 - Setting Up Copilot Instructions
 
 ### Story
 
-You are a student looking to host your first website. Your code is on GitHub and you are looking for a way to publish it online and share it with others.
+You need to establish consistent coding standards for your students' homework assignments and ensure Copilot follows your teaching patterns.
 
 ### Theory
 
-GitHub Pages lets you host static websites directly from a GitHub repository. It's a great way to showcase projects, documentation, or personal portfolios without needing a separate hosting service.
+Repository custom instructions allow you to provide Copilot with context about your project standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your teaching conventions and help generate assignments that meet your pedagogical goals.
 
 ### References
 
-- https://docs.github.com/en/pages
+- https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot
 
-### Activity: Enable GitHub Pages
+### Activity: Setup Development Environment
 
-1. Enable GitHub Pages for your repository
+1. Start the codespace
+1. Check required extensions are available
+1. Familiarize with code
+
+### Activity: Create Repository Custom Instructions
+
+1. Create Copilot Instructions `.github/copilot-instructions.md`
+1. Add general guidelines and coding standards to the instructions file
+1. Test the instructions prompting Copilot about a file.
 
 ### Transition
 
-- **Actions Trigger:** [`page_build`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#page_build)
-- **Grading-Check:** None
+<!--
+What will be monitored about the user's progress to trigger a GitHub Actions workflow.
+
+The workflow's steps will check the learner's work, such as checking file content, commit history, an active URL, etc. and if all pass, the next learning step will be shared.
+-->
+
+- **Actions Trigger:** [`push`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#push)
+- **Grading-Check:** Verify `.github/copilot-instructions.md` file exists with [file-exists](https://github.com/skills/exercise-toolkit/tree/main/actions/file-exists) action. Check for a keyphrase with [action-keyphrase-checker](https://github.com/skills/action-keyphrase-checker) action
+
 ```
 
 
