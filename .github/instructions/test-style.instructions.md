@@ -1,5 +1,6 @@
 ---
-applyTo: "**/*test*"
+applyTo: "**/*.test.{js,ts,py},**/*_test.{js,ts,py},**/test_*.{js,ts,py},**/__tests__/**/*.{js,ts,py},**/tests/**/*.{js,ts,py},**/test/**/*.{js,ts,py}"
+
 ---
 
 Each test should be completely independent of all other tests.
