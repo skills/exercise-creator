@@ -15,6 +15,17 @@ This template provides the exact markdown format and sections required for consi
 
 If an existing outline does not follow this structure, adjust it to match the template.
 
+### Important Template Guidelines
+
+When using the template:
+
+- **Replace all `replace-me` indicators** with appropriate content specific to your exercise. Do not leave any placeholder text starting with `replace-me` in the final outline.
+- **Handle optional elements properly**:
+  - If you use an optional section (like "Story Plot" or "On Start"), remove the `(optional)` designation from the heading
+  - If you don't need an optional section, remove it entirely from the outline
+  - Examples: Use `## Story Plot` instead of `## (optional) Story Plot`, or remove the section completely if unused
+
+
 ## How to fill out the steps
 
 **Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations.
@@ -57,3 +68,4 @@ References in steps should only come from official GitHub sources, such as:
 - GitHub Blog (https://github.blog)
 - GitHub Changelog (https://github.blog/changelog)
 - Visual Studio Code Documentation (https://code.visualstudio.com/docs/)
+

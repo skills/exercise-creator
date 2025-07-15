@@ -1,7 +1,7 @@
 ---
 name: GitHub Skills Exercise
 about: Template for creating a new GitHub Skills exercise
-title: '(replace-me: Exercise Title)'
+title: 'replace-me: Exercise Title'
 labels: 'skills'
 assignees: ''
 
@@ -11,6 +11,7 @@ assignees: ''
 
 <!-- Important Context, critical dates, related releases, other special notes, etc. -->
 
+- **Exercise Title:** (replace-me: Exercise Title)
 - **Repo URL:** (replace-me: Tentative repository url)
 - **Experience Level**: (replace-me: Beginner, Intermediate, Advanced )
 - **Recommend Grouping**: (replace-me: See groups on https://learn.github.com/skills or suggest a new one. )
@@ -37,9 +38,9 @@ assignees: ''
 ### Overview
 
 1. replace-me: Key learning objectives.
-2. replace-me: Short description of each step.
-3. replace-me:
-4. replace-me:
+1. replace-me: Short description of each step.
+1. replace-me:
+1. replace-me:
 
 ### What you will build
 
@@ -80,8 +81,8 @@ Any automation to include in the 'start-exercise' workflow that will help prepar
 ### Activity: replace-me: Activity Title
 
 1. replace-me: high-level step-by-step instructions for the activity.
-2. ...
-3. ...
+1. ...
+1. ...
 
 ### Transition
 
