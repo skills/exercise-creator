@@ -14,7 +14,7 @@ assignees: ''
 - **Exercise Title:** (replace-me: Exercise Title)
 - **Repo URL:** (replace-me: Tentative repository url)
 - **Experience Level**: (replace-me: Beginner, Intermediate, Advanced )
-- **Recommend Grouping**: (replace-me: See groups on https://learn.github.com/skills or suggest a new one. )
+- **Recommended Grouping**: (replace-me: See groups on https://learn.github.com/skills or suggest a new one. )
 
 ### Relationships to other exercises
 
