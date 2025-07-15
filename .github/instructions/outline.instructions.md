@@ -2,50 +2,53 @@
 applyTo: "**/*outline.md"
 ---
 
-# Outline File Instructions
+# GitHub Skills exercise outline instructions
 
-These instructions describe the required format, conventions, and structure for creating an outline for a GitHub Skills exercise.
+These instructions describe the required format, conventions, and structure for creating an outline document for a GitHub Skills exercise.
 
-## File Location and Naming
-
-- If an `*outline.md` file is already provided, don't make a new one.
-- Outline files are typically named `{exercise-name}-outline.md` and placed in the `exercises` directory until published as an issue. 
-- Each exercise should have a single outline file that provides a high-level structure for the exercise.
-- Use the GitHub MCP server to publish the outline as an issue. Ask the user for the repository to create the issue.
+The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail.
 
 ## Structure of an Outline File
 
-When creating a new outline file, start by copying the template from `exercise-template/outline.md`. All outlines MUST follow the same structure and conventions to promote consistency across exercises. If an existing outline does not follow the structure, adjust it to match the template.
+GitHub Skills exercise outline files, follow the structure defined in [`.github/ISSUE_TEMPLATE/skill-exercise-outline.md`](../ISSUE_TEMPLATE/skill-exercise-outline.md). 
+This template provides the exact markdown format and sections required for consistency across exercises. 
 
-Each outline file consists of the following main components:
+If an existing outline does not follow this structure, adjust it to match the template.
 
-1. **Logistics**: Brief notes for non-content planning like repository URL, business considerations, or other important context.
-2. **README (Intro)**: Title, short introduction, overview of learning objectives and steps, description of what will be built, prerequisites, and any startup actions.
-3. **Steps**: The topics to be taught, the related hands-on activity, and how the learner's work will be verified.
-4. **Review**: Summary of actions taken, skills learned, and what's next (links to docs, recommended exercises, etc.)
+## How to fill out the steps
 
-### Step Sections
+**Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations.
 
-For each step, use the following format:
+**Activities**: List the high-level tasks the learner will accomplish. Use action-oriented titles that describe the outcome, not detailed instructions
 
-- **Step Title**: Clearly describe the focus of the step.
-- **(Optional) Story**: A short scenario or narrative that sets the context for the learner.
-- **Theory**: Key concepts or background relevant to the activities. Keep it brief and focused. The goal is awareness, not deep knowledge.
-- **References**: Add links to GitHub documentation or other resources.
-- **Activity**: List the hands-on tasks for the learner. Use clear, actionable instructions. Each activity should have a descriptive title and use ordered lists for steps.
-- **Transition**: The GitHub Actions workflow trigger and grading checks.
-  - What will be monitored about the user's progress to trigger a GitHub Actions workflow.
-  - The workflow's steps will check the learner's work, such as checking file content, commit history, an active URL, etc. and if all pass, the next learning step will be shared.
+**Actions Event Trigger**: Identify which GitHub event will signal that the learner has completed the step (e.g., push, pull_request, page_build, issue_comment).
 
-### Writing Guidelines
+**Check**: Briefly state what specific change or file will be verified for `check_step_work` grading process or `None` if no grading will be used.
 
-- Keep steps independent and related to only clear, concise, and focused on a single action per step.
-- Use comments for planning notes and context that should not appear in the final exercise.
-- Use "replace-me:" placeholders in the template for all content that should be customized for each exercise.
-- Avoid unnecessary jargon or assumptions about prior knowledge beyond the prerequisites.
-- Each outline should be self-contained and not require external context.
+**References**: Include 1-3 official documentation links that support the concepts introduced in the theory section.
 
-### Sourcing Information
+```example
+### Step 1: Enabling GitHub Pages
+
+You are a student looking to host your first website. Your code is on GitHub and you are looking for a way to publish it online and share it with others.
+
+#### Theory
+
+GitHub Pages lets you host static websites directly from a GitHub repository. It's a great way to showcase projects, documentation, or personal portfolios without needing a separate hosting service.
+
+#### Activities
+
+1. Enable GitHub Pages
+
+Actions Event Trigger: [`page_build`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#page_build)
+Check: None
+
+References:
+- https://docs.github.com/en/pages
+```
+
+
+## Sourcing Information
 
 References in steps should only come from official GitHub sources, such as:
 
@@ -53,5 +56,4 @@ References in steps should only come from official GitHub sources, such as:
 - GitHub Learn (https://learn.github.com)
 - GitHub Blog (https://github.blog)
 - GitHub Changelog (https://github.blog/changelog)
-
-All references should be checked for accuracy and relevance. Use the GitHub MCP server or Fetch tool to check the webpage content.
+- Visual Studio Code Documentation (https://code.visualstudio.com/docs/)
