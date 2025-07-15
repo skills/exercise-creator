@@ -1,80 +1,132 @@
 ---
 name: GitHub Skills Exercise
 about: Template for creating a new GitHub Skills exercise
-title: ''
-labels: 'skills, exercise'
+title: '(replace-me: Exercise Title)'
+labels: 'skills'
 assignees: ''
 
 ---
 
-## Description
+# Logistics
 
-<!-- Provide a clear, concise description of what the Skills exercise will teach users -->
+<!-- Important Context, critical dates, related releases, other special notes, etc. -->
 
-## Target Audience
+- **Repo URL:** (replace-me: Tentative repository url)
+- **Experience Level**: (replace-me: Beginner, Intermediate, Advanced )
+- **Recommend Grouping**: (replace-me: See groups on https://learn.github.com/skills or suggest a new one. )
 
-**Primary Persona**: <!-- Developer, Tester, Project Manager, etc. -->
-**Experience Level**: <!-- Beginner, Intermediate, Advanced -->
-**Recommend Grouping**: <!-- See https://learn.github.com/skills or suggest a new one. -->
+### Relationships to other exercises
 
-## Story Plot
+- **Previous Exercise:** (replace-me-optional: existing/future exercise this will continue from)
+- **Next Exercise:** (replace-me-optional: existing/future exercise this will lead to)
 
-<!-- Craft a narrative that helps learners understand why they would need these skills -->
+---
 
-## Future plot ideas (for reference)
+# Outline
 
-<!-- Optional: Add ideas for how this exercise might expand or connect to other topics -->
+## (optional) Story Plot
 
-## Outline
+(replace-me-optional: Craft a narrative that helps learners become more engaged or better understand the practical application of the new skill)
 
-### Step 1: First Section Title
+## README
 
-<!-- Brief story, scenario or narrative that sets the context for the learner and introduce the step. -->
+**Title:** (replace-me: Human friendly name of exercise title)
 
-#### Theory
+(replace-me: Brief introduction to the exercise and its purpose. Max 2 sentences.)
 
-<!-- Explain the concepts and background knowledge needed -->
+### Overview
 
-#### Activities
+1. replace-me: Key learning objectives.
+2. replace-me: Short description of each step.
+3. replace-me:
+4. replace-me:
 
-1. <!-- First activity title -->
-1. <!-- N activity title as needed-->
+### What you will build
 
-Actions Event Trigger: <!-- What initiates the check for this step -->
-Check: <!-- Optional - What (if anything) will be verified in `check_step_work` job to confirm completion. -->
+(replace-me: Description of the project or outcome. Max 3 sentences.)
 
-References:
+### Prerequisites
 
-- <!-- Link to relevant documentation -->
-- <!-- Additional resources -->
+- replace-me: List required prior knowledge.
+- replace-me: List required prior exercises.
 
-### Step N: N Section Title
+### (optional) On Start
 
-<!-- Brief story, scenario or narrative that sets the context for the learner and introduce the step. -->
+<!--
+Any automation to include in the 'start-exercise' workflow that will help prepare the exercise. Nothing manual.
+-->
 
-#### Theory
+- (replace-me: Any actions to run during the startup workflow.)
+- (replace-me: Any files that need created or modified.)
 
-<!-- Explain the concepts and background knowledge needed -->
+## Step 1 - (replace-me: Step Title)
 
-#### Activities
+### (optional) Story
 
-1. <!-- First activity title -->
-1. <!-- N activity title as needed-->
+(replace-me-optional: Scenario or context for this step.)
 
-Actions Event Trigger: <!-- What initiates the check for this step -->
-Check: <!-- Optional - What (if anything) will be verified in `check_step_work` job to confirm completion. -->
+### Theory
 
-References:
+(replace-me: A short sentences describing the key topic to be taught.)
 
-- <!-- Link to relevant documentation -->
-- <!-- Additional resources -->
+- (replace-me: Any important background knowledge to build context about the new topic.)
+- (replace-me: Key concepts to teach about this topic.)
+- (replace-me: Placeholders for recommended screenshots to include.)
 
-#### References
+### References
 
-- <!-- Link to relevant documentation -->
-- <!-- Additional resources -->
+- (replace-me: links to github documentation)
 
-### Review File
+### Activity: replace-me: Activity Title
 
-<!-- Summary of what was learned and recommendations for next steps -->
+1. replace-me: high-level step-by-step instructions for the activity.
+2. ...
+3. ...
 
+### Transition
+
+<!--
+What will be monitored about the user's progress to trigger a GitHub Actions workflow.
+
+The workflow's steps will check the learner's work, such as checking file content, commit history, an active URL, etc. and if all pass, the next learning step will be shared.
+-->
+
+- **Actions Trigger:** (replace-me: a Github Actions trigger for the `on` entry)
+- **Grading-Check:** (replace-me: Something to check in the repo to very the learner's work)
+- **Grading-Check:** (replace-me: Verify about the learner's output 2)
+
+## Step 2 - (replace-me: Step Title)
+
+...
+
+## Step 3 - (replace-me: Step Title)
+
+...
+
+## Step 4 - (replace-me: Step Title)
+
+...
+
+## Step 5 - (replace-me: Step Title)
+
+...
+
+## Review
+
+(replace-me: Short description of actions taken in this exercise. Max 2 sentences.)
+
+- (replace-me: List of skills learned.)
+- (replace-me: List of skills learned.)
+- (replace-me: List of skills learned.)
+
+### What's next?
+
+- (replace-me: links to github docs)
+- (replace-me: links to recommended exercises)
+- (replace-me: links to GitHub Skills website)
+
+# (optional) Future Considerations
+
+- (replace-me: Ideas that for future upgrades)
+- (replace-me: Ideas that for spin-off exercises)
+- (replace-me: Ideas that for spin-off storylines)
