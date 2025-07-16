@@ -11,7 +11,7 @@ Review an existing GitHub Skills exercise, check the following things to ensure 
 ## General
 
 - Test that all images can be retrieved.
-- Test that all links are work.
+- Test that all links are working.
 
 ## Readme
 
