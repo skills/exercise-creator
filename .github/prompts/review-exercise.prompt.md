@@ -28,7 +28,7 @@ Review an existing GitHub Skills exercise, check the following things to ensure 
 
 ## Step - Workflow files
 
-- Verify all variables match the templates being used.
+- Verify all variables match the markdown templates being used.
 - Check for typos.
 
 ## Review file
