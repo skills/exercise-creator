@@ -17,7 +17,7 @@ Review an existing GitHub Skills exercise, check the following things to ensure 
 
 - The introduction is not introducing any new material. It is only a brief overview.
 - The url for the start exercise button is correct.
-- The overview areas still match the learning steps.
+- The overview area matches what's taught in the learning steps.
 - The prerequisites are still relevant.
 
 ## Step - Content files
