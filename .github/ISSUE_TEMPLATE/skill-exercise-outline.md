@@ -93,7 +93,7 @@ The workflow's steps will check the learner's work, such as checking file conten
 -->
 
 - **Actions Trigger:** (replace-me: a Github Actions trigger for the `on` entry)
-- **Grading-Check:** (replace-me: Something to check in the repo to very the learner's work)
+- **Grading-Check:** (replace-me: Something to check in the repo to verify the learner's work)
 - **Grading-Check:** (replace-me: Verify about the learner's output 2)
 
 ## Step 2 - (replace-me: Step Title)
@@ -128,6 +128,6 @@ The workflow's steps will check the learner's work, such as checking file conten
 
 # (optional) Future Considerations
 
-- (replace-me: Ideas that for future upgrades)
-- (replace-me: Ideas that for spin-off exercises)
-- (replace-me: Ideas that for spin-off storylines)
+- (replace-me: Ideas for future upgrades)
+- (replace-me: Ideas for spin-off exercises)
+- (replace-me: Ideas for spin-off storylines)
