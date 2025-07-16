@@ -33,9 +33,9 @@ Review an existing GitHub Skills exercise, check the following things to ensure 
 
 ## Review file
 
-- The overview areas still match the learning steps.
-- The resources are still relevant.
-- The "What's next?" section is still relevant.
+- The overview area matches what's taught in the learning steps.
+- The resources are relevant.
+- The "What's next?" section is relevant.
 
 ## Final sanity check
 
