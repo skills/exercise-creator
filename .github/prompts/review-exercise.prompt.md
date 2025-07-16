@@ -6,7 +6,7 @@ description: "Review the format and quality of a GitHub Skills exercise."
 
 # Review Exercise Format and Quality
 
-When you have an existing GitHub Skills exercise, check the following things to ensure it is high quality.
+Review an existing GitHub Skills exercise, check the following things to ensure it is high quality.
 
 ## General
 
