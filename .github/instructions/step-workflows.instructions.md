@@ -17,6 +17,10 @@ GitHub Skills exercises use a **step-based workflow pattern** where each step (1
 
 ### Workflow Structure Details
 
+**Workflow Naming Convention**: Each workflow should use a simple naming convention, without additional descriptive text:
+- `name: Step 0` for the start exercise workflow
+- `name: Step 1`, `name: Step 2`, etc. for learning step workflows
+
 Each learning step has it's own workflow and is required to have the following two or three (if using grading) jobs:
 
 1. `find_exercise` - Calls a reusable workflow that finds the appropriate issue and returns the issue url for use in the next jobs.
@@ -27,6 +31,7 @@ Each learning step has it's own workflow and is required to have the following t
    - Enables the next step workflow.
    - Comments with the next step content
    - Comments that Mona is watching for progress (unless it was the last step)
+
 
 #### Example of a step workflow without grading
 
