@@ -2,9 +2,9 @@
 --actor $GITHUB_USER
 
 # Load variables and secrets from files
---secret-file /workspaces/skills-manager/.actrc.secrets
---var-file /workspaces/skills-manager/.actrc.vars
---env-file /workspaces/skills-manager/.actrc.env
+--secret-file /workspaces/exercise-manager/.actrc.secrets
+--var-file /workspaces/exercise-manager/.actrc.vars
+--env-file /workspaces/exercise-manager/.actrc.env
 
 # Cache used Actions
 --action-offline-mode

@@ -9,10 +9,10 @@ Your goal is to migrate the learning flow of an existing GitHub Skills exercise 
 
 1. Do not make modifications yet. Review the following guidelines.
 
-   - The [overview guide](/workspaces/skills-manager/README.md) provides an outline of what a Skills exercise is and references to other materials.
-   - The [planning guide](/workspaces/skills-manager/docs/1-planning/planning.md) provides an outline of how exercises are structured.
-   - The [design guide](/workspaces/skills-manager/docs/2-design/design.md) explains design of the learning steps and activities.
-   - The [testing guide](/workspaces/skills-manager/docs/3-testing/testing.md) explains how to test the transition/grading workflows.
+   - The [overview guide](/workspaces/exercise-manager/README.md) provides an outline of what a Skills exercise is and references to other materials.
+   - The [planning guide](/workspaces/exercise-manager/docs/1-planning/planning.md) provides an outline of how exercises are structured.
+   - The [design guide](/workspaces/exercise-manager/docs/2-design/design.md) explains design of the learning steps and activities.
+   - The [testing guide](/workspaces/exercise-manager/docs/3-testing/testing.md) explains how to test the transition/grading workflows.
    - The [exercise toolkit](/workspaces/exercise-toolkit/) provides reusable workflows and templates.
    - The [exercise template](/workspaces/exercise-template/) is a template repository for creating new exercises. Provides outlines with placeholders on how to structure the exercise.
 
