@@ -1,4 +1,4 @@
-# Skills Manager
+# Exercise Manager
 
 This is a codespace with guidelines for developing and managing GitHub Skills exercises and supportive tooling. It provides:
 

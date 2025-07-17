@@ -3,7 +3,7 @@
 # Why not use the full image? It is 65gb so too big for a Codespace!
 # 
 # To build this image: run the following command:
-# docker build . --file "/workspaces/skills-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
+# docker build . --file "/workspaces/exercise-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
 
 FROM catthehacker/ubuntu:act-latest
 

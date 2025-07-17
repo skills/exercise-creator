@@ -1,4 +1,4 @@
-# Prefer GitHub Skills Manager token if available
+# Prefer GitHub Exercise Manager token if available
 if [ "$GH_TOKEN" != "" ]; then
     GITHUB_TOKEN=$GH_TOKEN
 fi

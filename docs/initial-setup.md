@@ -14,11 +14,11 @@ As such, permissions are a bit tricky. To account for this, you must set a Codes
 1. Under the **Secrets** area, create a new secret.
    - Name: `GH_TOKEN`.
    - Value: (The token created above)
-   - Repository Access: `skills/skills-manager`
+   - Repository Access: `skills/exercise-manager`
 
 ### 2. Start the Codespace
 
-1. Navigate to the [skills-manager](https://github.com/skills/skills-manager) repository main page.
+1. Navigate to the [exercise-manager](https://github.com/skills/exercise-manager) repository main page.
 1. Above the files list, on the top right, expand the green button to show development options.
 1. Choose the **Codespaces** tab and select **Create Codespace on main**.
 1. Wait for the Codespace to be created.
@@ -56,7 +56,7 @@ The workspace allows opening multiple skills-related projects simultaneously.
 
 1. Ensure the Codespace is open.
 1. In the top menu, select **File** > **Open Workspace from File...**.
-1. Select the file `/workspaces/skills-manager/skills-manager.code-workspace`.
+1. Select the file `/workspaces/exercise-manager/exercise-manager.code-workspace`.
    - The VS Code window will reload.
    - Check the file explorer. Additional projects have been opened.
    - The `personal` area is for containing any files you would like to keep without version control. It is persistent if you rebuild the workspace.
@@ -84,7 +84,7 @@ A default configuration is loaded from the `.actrc` file, which provides:
 - Uses a modified runner image to include additional tools matching GitHub runners.
 - Specifies to run in amd64 mode instead of arm64, if needed.
 
-1. To provide repository secrets to your workflow, update or create the `.actrc.secrets` file. 
+1. To provide repository secrets to your workflow, update or create the `.actrc.secrets` file.
 
    > This simulates [Using secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-guides/using-secrets-in-github-actions).
 
@@ -102,7 +102,7 @@ A default configuration is loaded from the `.actrc` file, which provides:
    MYVAR=hello world
    ```
 
-1. To provide environment variables to your worklow, update or create the `.actrc.env` file. 
+1. To provide environment variables to your worklow, update or create the `.actrc.env` file.
 
    > This simulates setting the environment variables of the Actions runner.
 
@@ -151,7 +151,7 @@ Workspaces settings are defined in multiple places depending on necessity of cha
   - Modifications won't be affective until container is rebuilt.
   - Example: Providing prettier formatting to Skills exercises.
 - **Workspace settings**
-  - Location: `skills-manager.code-workspace`
+  - Location: `exercise-manager.code-workspace`
   - Workspace directory structure
   - Adjustable linting settings
   - Adjustable spell check settings
