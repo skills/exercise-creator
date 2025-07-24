@@ -73,6 +73,11 @@
         "git.autofetch": true,
         "git.allowForcePush": false,
 
+        // By default, VS Code only scans one level deep for git repositories.
+        // Setting this to -1 scans to an unlimited depth, which is useful for
+        // the nested repository structure in the /workspaces/repos directory.
+        "git.repositoryScanMaxDepth": -1,
+
         // Chat
         "chat.agent.enabled": true,
         "chat.mcp.enabled": true,

@@ -66,11 +66,11 @@ The workspace allows opening multiple skills-related projects simultaneously.
 
 ## Work on a Skills exercise
 
-The following steps clone a Skills exercise repository into the codespace and add it to the workspace to work in paralle.
+The following steps clone a Skills exercise repository into the codespace and add it to the workspace to work in parallel.
 
 1. Ensure the Codespace is open.
 1. Open a terminal.
-1. Navigate to the `/workspaces/exercises` directory.
+1. Navigate to the `/workspaces/repos` directory.
 1. Clone the desired Skills exercise.
 
 ## Configure nektos/act
