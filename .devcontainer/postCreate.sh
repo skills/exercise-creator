@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Make directories for personal area and holding exercises
-mkdir -p /workspaces/personal
-mkdir -p /workspaces/exercises
+# Make repos directory
+mkdir -p /workspaces/repos
 
 # Login using the GitHub CLI
 echo "Logging in to GitHub"
