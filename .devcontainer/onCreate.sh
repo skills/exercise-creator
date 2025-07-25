@@ -1,5 +1,4 @@
 #!/bin/bash
-# This will run 
 
 # Build the Skills runner image for Act
 docker build . --file "/workspaces/exercise-manager/.devcontainer/ubuntu-skills.Dockerfile" --tag "ubuntu-skills:latest"
