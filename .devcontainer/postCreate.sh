@@ -19,7 +19,3 @@ sudo chown $USER /workspaces
 cd /workspaces
 gh repo clone "https://github.com/skills/exercise-toolkit"
 gh repo clone "https://github.com/skills/exercise-template"
-
-
-# Ensure current branch is up to date
-git pull
