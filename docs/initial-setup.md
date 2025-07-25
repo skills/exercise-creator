@@ -23,7 +23,8 @@ As such, permissions are a bit tricky. To account for this, you must set a Codes
 1. Choose the **Codespaces** tab and select **Create Codespace on main**.
 1. Wait for the Codespace to be created.
    - The Codespace token will automatically be applied to the environment.
-   - This may take a while. A post creation script will modify clone useful repositories and prepare a runner image for testing exercises locally.
+   - It should be fairly quick (< 1 min).
+   - A post creation script will automatically clone useful repositories, pull the latest updates, and create some recommended folders/files.
 
 ### 3. Verify Setup
 
