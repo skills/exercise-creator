@@ -109,5 +109,9 @@
   },
 
   // https://containers.dev/implementors/json_reference/#lifecycle-scripts
+  // Tasks to include in the prebuild
+  "onCreateCommand": "bash ./.devcontainer/onCreate.sh",
+
+  // Tasks to include when the user starts the container for the first time
   "postCreateCommand": "bash ./.devcontainer/postCreate.sh"
 }
