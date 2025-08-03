@@ -40,7 +40,7 @@ It step typically looks like this:
 
 - Avoid use of acronymns and short hand. For example, use `repository` instead of `repo`.
 
-- For story content, keep phrasing professional, polite, and inviting.
+- Keep phrasing professional, polite, and inviting.
 
 - Be concise. More content means more to update.
 

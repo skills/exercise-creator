@@ -22,13 +22,6 @@ A list of existing materials for technical content, inspiration, or inserting as
 - Blog post 1
 - Blog post 2
 
-### Storyline Ideas
-
-The existing storyline to be used and how it might be applied to the practical activies.
-
-- A student reports a bug and the teacher uses Copilot to find and fix it.
-- The teacher decides to organize the annual hackathon using GitHub Project instead of a spreadsheet.
-
 ### Audience
 
 - **Difficulty level:** Beginner, Intermediate, Advanced
