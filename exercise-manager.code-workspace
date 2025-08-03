@@ -16,9 +16,6 @@
   ],
 
   "settings": {
-    "csv-edit.shouldWatchCsvSourceFile": "yesAndAutoReload",
-    "csv-edit.initiallyIsInReadonlyMode": true,
-
     // Styling
     "markdownlint.config": {
       "line-length": false,
