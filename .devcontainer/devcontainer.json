@@ -99,9 +99,6 @@
         "markdown.extension.italic.indicator": "_",
         "markdown.extension.orderedList.marker": "one",
 
-        // Learning coverage
-        "livePreview.autoRefreshPreview": "Never",
-
         // Javascript
         "jest.enable": false
       }
