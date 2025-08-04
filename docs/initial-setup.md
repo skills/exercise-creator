@@ -1,78 +1,35 @@
-# Initial Setup
+# Common Setup Tasks
 
-This project is primarily meant to be started from a Codespace. It includes all the necessary tools to develop and hopefully all settings to support consistent styling.
+## Work across multiple organizations
 
-### 1. Set a Personal Access Token
+By default a Codespace only has access to the original repository and your user space.
 
-Unlike normal codespaces, this Codespace is primarily intended to modify other repositories (exercises).
-As such, permissions are a bit tricky. To account for this, you must set a Codespace secret in your account that applies to this repository.
+To work across multiple organizations, the Codespace needs a different token with more permissions. You must set a Codespace secret in your account that applies to this repository.
 
-1. Create a [Personal Access Token (PAT)](https://github.com/settings/tokens) with the required permissions for accessing any exercise repositories you need.
+1. Run the following command to clear the existing Codespace token, then use the GitHub CLI to login again using web auth.
+
+   ```bash
+   unset GITHUB_TOKEN
+   gh auth login
+   ```
+
+   > ❕ **Important:** If you stop here, the updated token will only last for the remainder of the terminal session.
+
+1. Use the GitHub CLI to show your token.
+
+   ```bash
+   gh auth token
+   ```
 
 1. Navigate to the [Codespace Settings](https://github.com/settings/codespaces) for your user account.
 
 1. Under the **Secrets** area, create a new secret.
+
    - Name: `GH_TOKEN`.
    - Value: (The token created above)
    - Repository Access: `skills/exercise-manager`
 
-### 2. Start the Codespace
-
-1. Navigate to the [exercise-manager](https://github.com/skills/exercise-manager) repository main page.
-1. Above the files list, on the top right, expand the green button to show development options.
-1. Choose the **Codespaces** tab and select **Create Codespace on main**.
-1. Wait for the Codespace to be created.
-   - The Codespace token will automatically be applied to the environment.
-   - It should be fairly quick (< 1 min).
-   - A post creation script will automatically clone useful repositories, pull the latest updates, and create some recommended folders/files.
-
-### 3. Verify Setup
-
-Ensure all extensions and tools are ready.
-
-1. In VS Code's left navigation, open the extensions tab.
-1. Ensure all extensions in the "Dev Containter @ ..." list are enabled.
-1. In VS Code, open a terminal.
-1. Verify version info is available for the following tools.
-
-   ```bash
-   gh --version
-   ```
-
-   ```bash
-   npm --version
-   ```
-
-   ```bash
-   docker --version
-   ```
-
-   ```bash
-   act --version
-   ```
-
-### 4. Open the workspace
-
-The workspace allows opening multiple skills-related projects simultaneously.
-
-1. Ensure the Codespace is open.
-1. In the top menu, select **File** > **Open Workspace from File...**.
-1. Select the file `/workspaces/exercise-manager/exercise-manager.code-workspace`.
-   - The VS Code window will reload.
-   - Check the file explorer. Additional projects have been opened.
-   - The `personal` area is for containing any files you would like to keep without version control. It is persistent if you rebuild the workspace.
-   - The `exercises` area is where you can clone exercises for working on then.
-
-# Common Tasks
-
-## Work on a Skills exercise
-
-The following steps clone a Skills exercise repository into the codespace and add it to the workspace to work in parallel.
-
-1. Ensure the Codespace is open.
-1. Open a terminal.
-1. Navigate to the `/workspaces/repos` directory.
-1. Clone the desired Skills exercise.
+1. Restart the Codespace to trigger loading of your secret.
 
 ## Configure nektos/act
 
@@ -103,7 +60,7 @@ A default configuration is loaded from the `.actrc` file, which provides:
    MYVAR=hello world
    ```
 
-1. To provide environment variables to your worklow, update or create the `.actrc.env` file.
+1. To provide environment variables to your workflow, update or create the `.actrc.env` file.
 
    > This simulates setting the environment variables of the Actions runner.
 
@@ -113,9 +70,12 @@ A default configuration is loaded from the `.actrc` file, which provides:
    ISSUE_URL=
    ```
 
-1. If you need to provide a particular event payload, use the `act -e push-payload.json` flag. See `/docs/3-testing/workflow-payload.examples` folder for examples.
+1. If you need to provide a particular event payload, use the `-e <payload-file>.yml` flag.
 
    > This simulates the payload provided to the workflow from a [GitHub Actions trigger](https://docs.github.com/en/actions/reference/events-that-trigger-workflows).
+
+   - Example: `act -e push-payload.json`
+   - See `/docs/3-testing/workflow-payload.examples` folder for examples.
 
 ## Start the MCP Servers
 
