@@ -56,9 +56,6 @@
         "hediet.vscode-drawio",
         "ryanluker.vscode-coverage-gutters",
 
-        // CSV editing
-        "janisdd.vscode-edit-csv",
-
         // Python support
         "ms-python.python",
         "ms-python.vscode-pylance",
@@ -98,9 +95,6 @@
         "markdown.extension.list.indentationSize": "adaptive",
         "markdown.extension.italic.indicator": "_",
         "markdown.extension.orderedList.marker": "one",
-
-        // Learning coverage
-        "livePreview.autoRefreshPreview": "Never",
 
         // Javascript
         "jest.enable": false
