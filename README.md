@@ -5,6 +5,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 - Unified settings for consistent styling (like linting).
 - Tools for testing transition and grading workflows.
 - Guidelines and recommendations for designing exercise steps.
+- Copilot instructions and prompts to quickly make first drafts.
 
 ## Make an Exercise
 
