@@ -16,6 +16,8 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Start this Codespace.
 
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
+
 1. Open Copilot and ensure you are in `Agent` mode.
 
 1. Create an exercise outline. Copilot will use the template and guidelines to produce a draft.
