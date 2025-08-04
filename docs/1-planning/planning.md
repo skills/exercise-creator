@@ -4,7 +4,7 @@ There are a few perspectives to consider for planning a new Skills Exercise.
 
 - **Learning Content** - The primary subject to be taught and a few important theory points to be shared at each step.
 - **Practical Activities** - Hands-on practical work to use the newly learned theory.
-- **Storyline Fit** - Each exercise uses the theory and practical work to affect an ongoing [storyline](storylines.md), across exercises. (Like episodes in a TV series or scenes in a movie.)
+- **Storyline Fit** - Each exercise uses the theory and practical work to affect a storyline, providing continuity across exercises. (Like episodes in a TV series or scenes in a movie.)
 - **Step Transition** - Actions workflows to transition the learner from the current step to the next step.
 - **Step Grading** - Actions workflows to grade each step and provide feedback.
 - **Catalog Impact** - Each exercise should feel familiar and add a **_Skill_** in the learner's capabilities (ideally covering all features of GitHub).
@@ -52,7 +52,7 @@ Each exercise step is communicated as a comment on the issue, similar to a real 
   - The theory builds context by introducing a new idea and sharing the fundamentals.
   - The practice activity is a step-by-step guide interacting with actual GitHub.
 - Each step is a single markdown file and pairs with a [grading workflow](#exercise-grading).
-- Each step includes a short **very** short story element, justifying the need to do the upcoming practical activity.
+- Each step includes a **very** short story element, justifying the need to do the upcoming practical activity.
 - Each step introduces a small amount of theory. The goal is awareness, not teaching.
 - Each step includes references to support more learning. They should be naturally integrated, not a list at the end.
 - Each step includes 1 to 3 **Activities**.

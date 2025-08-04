@@ -18,7 +18,7 @@ Before creating an exercise, please use the [planning guide](docs/1-planning/pla
 
 - Important Considerations
 - Exercise Structure
-- [Storylines](docs/1-planning/storylines.md)
+- Storyline Continuity
 
 If applying significant changes to an existing exercise, please use a forking process. This will allow testing the exercise from the default branch like normal.
 

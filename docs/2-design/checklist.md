@@ -96,11 +96,6 @@ TODO: This might not make sense if the prebuild is not available after copying t
 - [ ] Verify tone is consistent.
 - [ ] Verify acronymns are spelled out or explained.
 - [ ] Check for typos and grammar.
-
-### Story
-
-- [ ] Exercise story elements agree with existing storyline.
-- [ ] New story elements are documented on the [storylines](/docs/1-planning/storylines.md) page.
 - [ ] Step feedback (issue comments) use casual, polite, active, and inspiring language.
 
 ### Beta Testers (internal)
