@@ -24,7 +24,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
    ```
 
 > [!TIP]
-> If you need to work across multiple organizations, see the [Common Setup Tasks](/docs/initial-setup.md) guide.
+> If you need to [work across multiple organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
 
 ## Make an Exercise
 
