@@ -84,4 +84,4 @@ Please see the [Skills docs](/docs/README.md) for the full guidelines on plannin
 
 We are very open to contributions and enhancements from the community! 🧑‍🚀
 
-Please feel free to [create an issue](/issues/new?template=BLANK_ISSUE) or submit a pull request.
+Please feel free to [create an issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE) or submit a pull request.
