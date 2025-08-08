@@ -10,9 +10,11 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
 
 ## 1. Create a new repository
 
+Ignore this step if the user already has a new repository created from the exercise template.
+
 1. **Create a new repository** - Use the CLI to initialize a new local repository based on the exercise template.
 
-   - Create and initialize the new repository in the `/workspaces/repos` folder. 
+   - Create and initialize the new repository in the `/workspaces/repos` folder.
    - Do not keep the Git history from the template.
    - Set the repository name to match the exercise title from the outline.
    - Do not publish it yet. Ask the user after final review.
@@ -94,4 +96,3 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
    - Each step builds on previous knowledge
    - Activities match theory sections
    - Transitions make sense for workflow triggers
-
