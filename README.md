@@ -43,6 +43,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    > /create-exercise-outline
    > Make an exercise to teach the fundamentals of Git and version control.
    > Assume no prior version control experience.
+   > Put it in the `/workspaces/repos/` folder.
    > ```
 
    > 💡 **Tip:** You can ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
@@ -71,9 +72,9 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    > /review-exercise
    > ```
 
-1. Test it with your friends and coworkers.
+1. Test it with your friends and coworkers to make it awesome! 😎
 
-1. Publish it and enjoy! 🤓
+1. Publish it and enjoy! 🚀
 
 ## Deeper Exercise Development
 
