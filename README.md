@@ -77,7 +77,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 ## Deeper Exercise Development
 
-Please see the [Skills docs](/docs/overview.md) for the full guidelines on planning, design, testing, and maintenance.
+Please see the [Skills docs](/docs/README.md) for the full guidelines on planning, design, testing, and maintenance.
 
 ## Contributing
 

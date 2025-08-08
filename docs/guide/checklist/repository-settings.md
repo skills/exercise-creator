@@ -1,0 +1,49 @@
+# Repository Settings
+
+### Code Tab
+
+- [ ] Add `skills-course` to the [repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
+
+## Settings Page
+
+### General
+
+- [ ] Verify desired repository name
+- [ ] Set as a template
+
+#### Features
+
+- [ ] Disable Wikis
+- [ ] Disable Discussions
+- [ ] Disable Projects
+
+#### Pull Requests
+
+- [ ] Only allow squash merging
+- [ ] Enable automatically delete head branches
+
+### Collaborators and teams
+
+- [ ] In **Direct Access** set the DRI as an admin (probably you).
+- [ ] Verify **Organization access** includes the appropriate team.
+
+### Rules
+
+- [ ] Add a Branch Ruleset
+  - Target branches: `default branch`, `main`
+  - Require linear history: enabled
+  - Require pull request before merging
+- [ ] Add a Push Ruleset
+  - Enable restrict file extensions.
+    - Disable images: `png, jpg, jpeg, gif, svg, webp`
+    - Others: `env, bin, exe`
+  - Enable restrict file sizes (5MB).
+
+### Advanced Security
+
+- [ ] Disable Dependabot.
+- [ ] Disable Copilot Autofix.
+
+## Actions (Tab)
+
+- [ ] All workflows are disabled.
