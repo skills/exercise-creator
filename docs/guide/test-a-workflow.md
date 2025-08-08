@@ -1,4 +1,4 @@
-# Test an Exercise
+# Test a Workflow
 
 The following testing flow allows you to develop a small section of workflow locally without constantly pushing to GitHub.
 

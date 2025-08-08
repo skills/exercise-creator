@@ -10,7 +10,7 @@ The following is a list of guides and references for a deeper understanding of m
   - Include important considerations.
   - Refine early to save time later.
 
-- [Make an Exercise](guide/make-an-exercise.md) -
+- [Make an Exercise](guide/make-an-exercise.md) - Use the outline to create an actual exercise.
 
   - Bootstrap a draft exercise with Copilot.
   - Refine to make it approachable and fun.
@@ -30,9 +30,9 @@ The following is a list of guides and references for a deeper understanding of m
 
 ## Configuration
 
-- [Testing Settings](guide/configuration/) - How do I set up local testing?
+- [Testing Settings](guide/configuration/configure-act-for-local-testing.md) - How do I set up local testing?
 - [Workspace Settings](guide/configuration/configure-your-workspace.md) - Where should I put a setting?
-- [MCP Server Settings](guide/configuration/enable-mcp-servers.md) - How do I enable the GitHub MCP server?
+- [MCP Server Settings](guide/configuration/configure-mcp-servers.md) - How do I enable the GitHub MCP server?
 - [Workspace Permissions](guide/configuration/work-across-multiple-organizations.md) - How do I change my codespace permissions to work across multiple organizations.
 
 ## Reference
