@@ -5,65 +5,83 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 - Unified settings for consistent styling (like linting).
 - Tools for testing transition and grading workflows.
 - Guidelines and recommendations for designing exercise steps.
+- Copilot instructions and prompts to quickly make first drafts.
 
-Please use the below guides to start the codespace and start building! 🤓
+## Start the Codespace
 
-## How to Develop Exercises
+1. Press the below button to start the Codespace. This may take a few minutes.
 
-Before making an exercise, please follow the [Initial Setup guide](docs/initial-setup.md) for instructions on preparing this codespace.
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
 
-### Planning
+1. Open the VS Code Command Palette. Run the following command and select the workspace settings file.
 
-Before creating an exercise, please use the [planning guide](docs/1-planning/planning.md) to create an outline. It covers topics like:
+   ```txt
+   File: Open workspace from file...
+   ```
 
-- Important Considerations
-- Exercise Structure
-- Storyline Continuity
+   ```txt
+   /exercise-manager/exercise-manager.code-workspace
+   ```
 
-If applying significant changes to an existing exercise, please use a forking process. This will allow testing the exercise from the default branch like normal.
+> [!TIP]
+> If you need to [work across multiple organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
 
-### Design
+## Make an Exercise
 
-While creating an exercise, please use the [design recommendations](docs/2-design/design.md) to provide a familiar learning experience between exercises. In covers topics like:
+With the help of GitHub Copilot, making a new exercise from scratch can be very quick. Here is a `hello world` level example. It creates an outline for planning then an actual exercise! 🧑‍🚀
 
-- Markdown Recommendations
-- Using the [Exercise Toolkit](https://github.com/skills/exercise-toolkit)
+> [!IMPORTANT]
+> Copilot is good for bootstrapping and refinement. It will make a solid first draft, but it is your responsibility as a human (with feelings and empathy) to ensure the exercise is enjoyable and meets the needs of your learners.
 
-### Testing
+1. Open the Copilot Chat panel and ensure you are in `Agent` mode.
 
-After an exercise has learning theory, activities, and workflows, it will need to be tested. Please follow the [testing](/docs/3-testing/testing.md) guide. It covers topics like:
+1. Use the following Copilot prompt to create a draft exercise outline.
 
-- Running transition workflows locally
-- Verifying grading workflows locally
-- Example event payloads
-- User testing
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > /create-exercise-outline
+   > Make an exercise to teach the fundamentals of Git and version control.
+   > Assume no prior version control experience.
+   > Put it in the `/workspaces/repos/` folder.
+   > ```
 
-### Publishing and Maintenance
+   > 💡 **Tip:** You can ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
 
-When an exercise is finished and ready to be published, please use the [publish checklist](docs/4-publishing/checklist.md) for **before**, **during**, and **after** checks. It covers topics like:
+1. Review and refine the draft outline.
 
-- Maintenance
-- Repository settings
-- Discussions
-- End of life
+   > 💡 **Tip:** This may seem boring, but a few extra minutes here will make the draft exercise from Copilot much better.
+
+1. Use the following Copilot prompt to create an actual exercise.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > /bootstrap-exercise-from-outline
+   > ```
+
+1. Review and refine the draft exercise. 🧐
+
+   > 💡 **Tip:** We are working on prompts to help develop a draft. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
+
+1. Ask Copilot to review the exercise for common issues.
+
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > /review-exercise
+   > ```
+
+1. Test it with your friends and coworkers to make it awesome! 😎
+
+1. Publish it and enjoy! 🚀
+
+## Deeper Exercise Development
+
+Please see the [Skills docs](/docs/README.md) for the full guidelines on planning, design, testing, and maintenance.
 
 ## Contributing
 
 We are very open to contributions and enhancements from the community! 🧑‍🚀
 
-Please feel free to create an issue or submit a pull request. More details will come later.
-
-## The Future
-
-Right now, exercises are created manually. A previous exercise is typically used as the starting point for a new exercise. However, we hope to eventually shift to a Copilot-centeric approach. This is an outline of our current thinking.
-
-![New Exercise Flowchart](docs/new-exercise-flowchart.drawio.svg)
-
-1. Critical GitHub features are added to a learning coverage map.
-2. Existing Skills exercise are reviewed and the learning coverage map is updated.
-3. Copilot is prompted to analyze the learning coverage map and suggest an exercise outline.
-4. The Exercise Developer revises the outline, either directly or with additional prompts to Copilot.
-5. Copilot is prompted to produce a draft exercise using the new outline and existing exercise guidelines, templates, etc.
-6. The Exercise Developer revises the exercise, either directly or with additional prompts to Copilot.
-7. The new skill is finished and added to the catalog.
-8. After some usage, feedback is used to update the existing exercise(s) and guidelines.
+Please feel free to [create an issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE) or submit a pull request.

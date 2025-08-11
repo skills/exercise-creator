@@ -8,7 +8,18 @@ description: "Bootstrap a new exercise from outline"
 
 When you have an exercise outline, follow these steps to bootstrap a repository freshly created from the exercise-template repository:
 
-## 1. Readme Setup
+## 1. Create a new repository
+
+Ignore this step if the user already has a new repository created from the exercise template.
+
+1. **Create a new repository** - Use the CLI to initialize a new local repository based on the exercise template.
+
+   - Create and initialize the new repository in the `/workspaces/repos` folder.
+   - Do not keep the Git history from the template.
+   - Set the repository name to match the exercise title from the outline.
+   - Do not publish it yet. Ask the user after final review.
+
+## 2. Readme Setup
 
 1. **Update README.md** - Replace template content with exercise-specific information from the outline:
 
@@ -21,7 +32,7 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
   
   Keep the original format of the README!
 
-## 2. Step Content files Setup
+## 3. Step Content files Setup
 
 1. **Create step content files** - Generate `.github/steps/N-step.md` files for each step in the outline if not already present:
 
@@ -36,7 +47,7 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
    - Include "What's next?" links
    - Follow outline review section
 
-## 3. Step Workflow files Setup
+## 4. Step Workflow files Setup
 
 1. **Update start exercise workflow** - Modify `.github/workflows/0-start-exercise.yml`:
 
@@ -69,7 +80,7 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
    - Update `STEP_N_FILE` variables in workflows
    - Ensure workflow names match in enable/disable commands
 
-## 4. Final validation
+## 5. Final validation
 
 1. **Validate structure** - Ensure consistency:
 
@@ -85,4 +96,3 @@ When you have an exercise outline, follow these steps to bootstrap a repository 
    - Each step builds on previous knowledge
    - Activities match theory sections
    - Transitions make sense for workflow triggers
-

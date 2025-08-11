@@ -14,7 +14,7 @@
 - Images, by default, display at max available resolution or the size of the window. Either reduce the size of the image or use an HTML tag to specify the size. Example:
 
   ```html
-  <img src="myimage.png" width="300px"
+  <img src="my-image.png" width="300px"
   ```
 
 - Consider reducing image sizes to speed up load times.
@@ -49,9 +49,9 @@ Unfortunately the normal [Alert syntax](https://docs.github.com/en/get-started/w
 If a tip needs to be more than one line or include an image, use the expandable box technique.
 
    <details>
-   <summary> <b> 💡 Tip:</b> Short descriptoin</summary><br/>
+   <summary> <b> 💡 Tip:</b> Short description</summary><br/>
 
-   Additional information to explain the tip.
+Additional information to explain the tip.
 
    <img width="200" src="https://octodex.github.com/images/puddle_jumper_octodex.jpg"/>
 
