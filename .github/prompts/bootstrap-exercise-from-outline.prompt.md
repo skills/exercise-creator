@@ -64,6 +64,7 @@ Ignore this step if the user already has a new repository created from the exerc
 
 1. **Configure workflow triggers** - Set appropriate `on:` events:
 
+   - Check the event trigger docs for correct usage: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows.
    - Match outline "Actions Trigger" specifications
    - Add proper `paths:` filters for push events
    - Configure specific event types (e.g., `pull_request: types: [closed]`)
