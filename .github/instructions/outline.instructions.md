@@ -6,9 +6,9 @@ applyTo: "**/*outline.md"
 
 These instructions describe the required format, conventions, and structure for creating an outline document for a GitHub Skills exercise.
 
-The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail.
+The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail. It should focus on only the requested topic. Do not teach additional content.
 
-Focus most of the learning on one topic. Other skills will naturally be used, but they should not be the focus.
+  Example: If the exercise is about GitHub Packages, do not teach automation using GitHub Actions. That would be a future exercise.
 
 ## Structure of an Outline File
 
