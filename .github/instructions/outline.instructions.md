@@ -31,7 +31,7 @@ When using the template:
 
 **Story** (optional): Provide scenario or context for the step to help learners understand the practical application.
 
-**Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations.
+**Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations. Make sure to provide real content from the docs, not generic descriptions. It needs to be very clear what is being taught. Graphical elements like lists, tables, and diagrams are good for making it visually appealing.
 
 **References**: Include 1-3 official documentation links that support the concepts introduced in the theory section.
 
