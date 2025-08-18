@@ -88,6 +88,7 @@ Ignore this step if the user already has a new repository created from the exerc
    - All workflows reference correct step files
    - Workflow names match step numbers
    - Event triggers align with learning objectives
+   - Steps that use markdown templates have all required variables and they are passed correctly.
    - Grading checks match step requirements
    - Last step workflow calls `finish-exercise.yml` instead of enabling next step
    - Intermediate steps do not call `finish-exercise.yml`
