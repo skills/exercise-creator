@@ -36,7 +36,7 @@
     "prettier.printWidth": 100,
 
     // Spell checking
-    "cSpell.words": ["professortocat", "Mergington"],
+    "cSpell.words": ["Birki", "Mergington", "professortocat", "keyphrase"],
     "cSpell.ignoreRandomStrings": true,
     "cSpell.useGitignore": true
   }
