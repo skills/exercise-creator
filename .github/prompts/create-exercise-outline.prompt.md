@@ -19,3 +19,8 @@ To create an outline follow these steps:
 
    - Use the [`outline instructions`](../instructions/outline.instructions.md) file as a guide for how to fill out the sections.
 
+1. Review the complete outline. Verify:
+
+   - Each step builds on previous knowledge.
+   - Activities match theory sections.
+   - The actions taken in the activity will trigger the selected trigger.
