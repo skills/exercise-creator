@@ -41,7 +41,7 @@ When using the template:
 
 - **Actions Trigger**: Identify which GitHub event will signal that the learner has completed the step.
 
-  - Use the [Transition Triggers](../../docs/reference/transition-triggers.md) guide to find an appropriate trigger for the step.
+  - Use the [Transition Triggers](../../docs/reference/transition-triggers.md) guide to select a trigger that would result from performing the activities.
   - Use the [GitHub Actions Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) docs to use it correctly.
 
 - **Grading-Check**: Briefly state what specific change or file will be verified for `check_step_work` grading process or `None` if no grading will be used.
