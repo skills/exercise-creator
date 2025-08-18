@@ -44,7 +44,7 @@ When using the template:
   - Use the [Transition Triggers](../../docs/reference/transition-triggers.md) guide to select a trigger that would result from performing the activities.
   - Use the [GitHub Actions Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) docs to use it correctly.
 
-- **Grading-Check**: Briefly state what specific change or file will be verified for `check_step_work` grading process or `None` if no grading will be used.
+- **Grading-Check**: Briefly explain what will be verified from the learner performing the activities. The goal is to provide feedback if they make a mistake. If no feedback is necessary, put `None`. This will inform designing the `check_step_work` job.
 
 ```example
 ## Step 1 - Setting Up Copilot Instructions
