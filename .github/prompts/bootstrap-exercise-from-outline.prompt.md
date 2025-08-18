@@ -92,6 +92,7 @@ Ignore this step if the user already has a new repository created from the exerc
    - Grading checks match step requirements
    - Last step workflow calls `finish-exercise.yml` instead of enabling next step
    - Intermediate steps do not call `finish-exercise.yml`
+   - Follow the recommended [formatting guidelines](../../docs/reference/step-formatting.md).
 
 1. **Review content flow** - Verify logical progression:
 
