@@ -16,3 +16,6 @@ To create an outline follow these steps:
 1. Search for relevant documentation that can be used in the outline references and theory sections.
 
 1. Fill out the sections in the template with the relevant information.
+
+   - Use the [`outline instructions`](../instructions/outline.instructions.md) file as a guide for how to fill out the sections.
+
