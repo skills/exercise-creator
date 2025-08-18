@@ -8,6 +8,8 @@ These instructions describe the required format, conventions, and structure for 
 
 The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail.
 
+Focus most of the learning on one topic. Other skills will naturally be used, but they should not be the focus.
+
 ## Structure of an Outline File
 
 GitHub Skills exercise outline files, follow the structure defined in [`.github/ISSUE_TEMPLATE/skill-exercise-outline.md`](../ISSUE_TEMPLATE/skill-exercise-outline.md).
