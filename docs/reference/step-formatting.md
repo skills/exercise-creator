@@ -27,7 +27,7 @@
   Text to be copied
   ```
 
-- If placing content between activity steps, ensure it is delimited enough to not cause a break in the counting. Typically at least `3` spaces.
+- If placing content between activity steps, ensure it is delimited enough to not cause a break in the ordered list counting. Typically at least `3` spaces.
 
 ## Images
 
