@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- Try to avoid telling the user to replace a variable. If possible, use [Nunjucks](https://mozilla.github.io/nunjucks/) variables to dynamically insert during the workflow run.
+- Try to avoid using text placeholders for the user to replace. If possible, use [Nunjucks](https://mozilla.github.io/nunjucks/) variables to dynamically insert during the workflow run.
 
 - Keep 1 blank line between activity steps for consistent spacing since some steps have content between them.
 
