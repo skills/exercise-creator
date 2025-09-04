@@ -6,7 +6,9 @@ applyTo: "**/*outline.md"
 
 These instructions describe the required format, conventions, and structure for creating an outline document for a GitHub Skills exercise.
 
-The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail.
+The outline should provide a concise, clear, high-level overview of the exercise without going into too much detail. It should focus on only the requested topic. Do not teach additional content.
+
+  Example: If the exercise is about GitHub Packages, do not teach automation using GitHub Actions. That would be a future exercise.
 
 ## Structure of an Outline File
 
@@ -29,7 +31,7 @@ When using the template:
 
 **Story** (optional): Provide scenario or context for the step to help learners understand the practical application.
 
-**Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations.
+**Theory**: Provide just enough background knowledge to understand the upcoming activity. Aim for awareness-level concepts, not comprehensive explanations. Make sure to provide real content from the docs, not generic descriptions. It needs to be very clear what is being taught. Graphical elements like lists, tables, and diagrams are good for making it visually appealing.
 
 **References**: Include 1-3 official documentation links that support the concepts introduced in the theory section.
 
@@ -37,8 +39,12 @@ When using the template:
 
 **Transition**:
 
-- **Actions Trigger**: Identify which GitHub event will signal that the learner has completed the step (e.g., push, pull_request, page_build, issue_comment).
-- **Grading-Check**: Briefly state what specific change or file will be verified for `check_step_work` grading process or `None` if no grading will be used.
+- **Actions Trigger**: Identify which GitHub event will signal that the learner has completed the step.
+
+  - Use the [Transition Triggers](../../docs/reference/transition-triggers.md) guide to select a trigger that would result from performing the activities.
+  - Use the [GitHub Actions Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) docs to use it correctly.
+
+- **Grading-Check**: Briefly explain what will be verified from the learner performing the activities. The goal is to provide feedback if they make a mistake. If no feedback is necessary, put `None`. This will inform designing the `check_step_work` job.
 
 ```example
 ## Step 1 - Setting Up Copilot Instructions

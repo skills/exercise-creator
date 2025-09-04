@@ -1,5 +1,34 @@
 # Formatting
 
+## Instructions
+
+- Try to avoid using text placeholders for the user to replace. If possible, use [Nunjucks](https://mozilla.github.io/nunjucks/) variables to dynamically insert during the workflow run.
+
+- Keep 1 blank line between activity steps for consistent spacing since some steps have content between them.
+
+- If a Codespace is introduced in the first step, include an inline button to open it.
+
+- When helping the learner locate something in the interface, describe the general area first and gradually be more specific. Example:
+
+  - Easier: `In the right settings area, near the bottom, click the **Duplicate issue** button.`
+  - Harder: `Click the **Duplicate issue** button at the bottom of the right settings area.`
+
+- Use bold formatting to identify names of things to interact with.
+
+  Example: `Click the **New issue** button.`
+
+- Put values in single backticks.
+
+  Example: `123`
+
+- If providing a command or copy/paste value, put it in a code block. Example:
+
+  ```txt
+  Text to be copied
+  ```
+
+- If placing content between activity steps, ensure it is delimited enough to not cause a break in the ordered list counting. Typically at least `3` spaces.
+
 ## Images
 
 - Image files **must** use absolute URLs. Relative links will break when the markdown content is copied and pasted as an issue comment.
@@ -22,7 +51,7 @@
 ### Diagrams
 
 - Do **NOT** use an external tool to create a diagram and then insert as an image. These require tracking the source document, which is often lost.
-- Store the image as an editable `.svg` file or use mermaid syntax.
+- Store the image as an editable `.drawio.svg` file or use mermaid syntax.
 
 ## Alerts
 

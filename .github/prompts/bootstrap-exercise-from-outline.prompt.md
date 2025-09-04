@@ -64,6 +64,7 @@ Ignore this step if the user already has a new repository created from the exerc
 
 1. **Configure workflow triggers** - Set appropriate `on:` events:
 
+   - Check the event trigger docs for correct usage: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows.
    - Match outline "Actions Trigger" specifications
    - Add proper `paths:` filters for push events
    - Configure specific event types (e.g., `pull_request: types: [closed]`)
@@ -87,9 +88,11 @@ Ignore this step if the user already has a new repository created from the exerc
    - All workflows reference correct step files
    - Workflow names match step numbers
    - Event triggers align with learning objectives
+   - Steps that use markdown templates have all required variables and they are passed correctly.
    - Grading checks match step requirements
    - Last step workflow calls `finish-exercise.yml` instead of enabling next step
    - Intermediate steps do not call `finish-exercise.yml`
+   - Follow the recommended [formatting guidelines](../../docs/reference/step-formatting.md).
 
 1. **Review content flow** - Verify logical progression:
 

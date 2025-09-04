@@ -44,6 +44,8 @@ Writing instructions:
 - Provide troubleshooting tips in a collapsible `<details>` block after each activity.
 - Each file should be self-contained and not require external context.
 - If multiple activities are present, repeat the activity section format for each.
+- If a screenshot would better explain the content, add a placeholder html tag like `<img alt="(description)" src="(link)">` for the author.
+- Check the styling with the formatting guidelines in [docs/reference/step-formatting.md](../../docs/reference/step-formatting.md).
 
 Example:
 

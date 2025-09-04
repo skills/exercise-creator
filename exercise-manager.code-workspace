@@ -21,7 +21,10 @@
       "line-length": false,
       "first-line-h1": false,
       "heading-increment": false,
+      "no-duplicate-heading": false,
       "no-blanks-blockquote": false,
+      "no-bare-urls": false,
+      "single-h1": false,
       "no-inline-html": {
         "allowed_elements": ["a", "img", "details", "summary", "p", "br"]
       },
@@ -33,7 +36,7 @@
     "prettier.printWidth": 100,
 
     // Spell checking
-    "cSpell.words": ["professortocat", "Mergington"],
+    "cSpell.words": ["Birki", "Mergington", "professortocat", "keyphrase"],
     "cSpell.ignoreRandomStrings": true,
     "cSpell.useGitignore": true
   }
