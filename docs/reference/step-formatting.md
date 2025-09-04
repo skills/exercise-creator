@@ -6,9 +6,9 @@
 
 - Keep 1 blank line between activity steps for consistent spacing since some steps have content between them.
 
-- If a Codespace is used, include an inline button to open it.
+- If a Codespace is introduced in the first step, include an inline button to open it.
 
-- When describing the location of something, use generic-to-specific. Example:
+- When helping the learner locate something in the interface, describe the general area first and gradually be more specific. Example:
 
   - Easier: `In the right settings area, near the bottom, click the **Duplicate issue** button.`
   - Harder: `Click the **Duplicate issue** button at the bottom of the right settings area.`
