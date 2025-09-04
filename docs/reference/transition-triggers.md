@@ -1,7 +1,6 @@
 # Transition Triggers
 
-This is a list of common situations and a recommended github actions trigger.
-Feel free to be creative though. These are just ideas.
+This is a list of common situations and a recommended GitHub Actions trigger. Feel free to be creative though. These are just ideas.
 
 > [!NOTE]
 > Please see the [GitHub Actions Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) docs for all options.
