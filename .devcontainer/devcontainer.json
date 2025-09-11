@@ -66,9 +66,14 @@
       ],
 
       "settings": {
+        // During Codespace creation, the below settings are copied to
+        // the machine settings in the following location.
+        // /home/vscode/.vscode-remote/data/Machine/settings.json
+
         // Git
         "git.autofetch": true,
         "git.allowForcePush": false,
+        "git.defaultCloneDirectory": "/workspaces/repos/",
 
         // By default, VS Code only scans one level deep for git repositories.
         // Setting this to -1 scans to an unlimited depth, which is useful for
