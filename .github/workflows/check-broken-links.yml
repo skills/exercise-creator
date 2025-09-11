@@ -64,6 +64,8 @@ jobs:
             --exclude 'file:///*'
             --exclude '.*\{\{.*\}\}.*'
             --exclude '.*%7B%7B.*%7D%7D.*'
+            --exclude https://github.com/organizations/
+            --accept 200,429
           fail: false
 
       - name: Create Issue From File
