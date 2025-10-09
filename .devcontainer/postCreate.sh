@@ -18,12 +18,16 @@ sudo git config --system credential.helper "$CRED_HELPER"
 sudo chown $USER /workspaces
 cd /workspaces
 
-if [ ! -d "exercise-toolkit" ]; then
+if [ -d "exercise-toolkit/.git" ]; then
+  echo "exercise-toolkit already cloned"
+else
   echo "Cloning exercise-toolkit"
   gh repo clone skills/exercise-toolkit
 fi
 
-if [ ! -d "exercise-template" ]; then
+if [ -d "exercise-template/.git" ]; then
+  echo "exercise-template already cloned"
+else
   echo "Cloning exercise-template"
   gh repo clone skills/exercise-template
 fi
