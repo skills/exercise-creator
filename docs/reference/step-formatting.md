@@ -88,7 +88,7 @@ Additional information to explain the tip.
 
 ## Skills Exercise Links
 
-Below are options to provided prettier links to Skills exercises. Colors come from [Primer](https://primer.style/product/primitives/color/).
+Below are options to provide prettier links to Skills exercises. Colors come from [Primer](https://primer.style/product/primitives/color/).
 
 ### Generic
 
