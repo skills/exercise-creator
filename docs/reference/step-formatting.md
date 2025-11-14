@@ -150,6 +150,25 @@ Below are options to provided prettier links to Skills exercises. Colors come fr
 
 [![Knowledge Check](https://img.shields.io/badge/GH_Certified-Practice_Test_→-text?style=flat&logo=checkmarx&labelColor=1f2328&color=f6f8fa&logoColor=fff)](https://ghcertified.com/questions/foundations/)
 
+## Other Links
+
+### Generic
+
+[![Generic Resource](https://img.shields.io/badge/Resource-Other_Website_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://example.com)
+
+[![Generic Reference](https://img.shields.io/badge/Reference-Other_Website_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://example.com)
+
+### Videos
+
+[![Video](https://img.shields.io/badge/Video_(2min)-Video_Name_→-text?style=flat&logo=youtube&labelColor=1f2328&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+[![Vimeo](https://img.shields.io/badge/Vimeo_(2min)-Video_Name_→-text?style=flat&logo=vimeo&labelColor=1f2328&logoColor=fff&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+[![YouTube](https://img.shields.io/badge/YouTube_(2min)-Video_Name_→-text?style=flat&logo=youtube&labelColor=1f2328&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+### Articles
+
+[![Wikipedia](https://img.shields.io/badge/Wiki-Open_Source_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://en.wikipedia.org/wiki/Open_source)
 
 ## Prompts
 
