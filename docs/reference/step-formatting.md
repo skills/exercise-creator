@@ -205,25 +205,25 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 
 ### Colorized
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=8250df&color=fbefff)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat-square&logo=github%20copilot&labelColor=0969da&color=ddf4ff)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat-square&logo=github-copilot&labelColor=0969da&color=ddf4ff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat&logo=github%20copilot&labelColor=8250df&color=fbefff)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat&logo=github-copilot&labelColor=8250df&color=fbefff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat&logo=github%20copilot&labelColor=0969da&color=ddf4ff)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat&logo=github-copilot&labelColor=0969da&color=ddf4ff)
 >
 > ```prompt
 > hello world
