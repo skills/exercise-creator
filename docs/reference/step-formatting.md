@@ -147,13 +147,13 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 
 ### Simple
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > Please make a ....
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > I would suggest...
@@ -161,13 +161,13 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 
 ### Simple with name
 
-> ![Static Badge](https://img.shields.io/badge/Copilot-Prompt-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/Copilot-Prompt-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > Please make a ....
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/Copilot-Response-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/Copilot-Response-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > I would suggest...
