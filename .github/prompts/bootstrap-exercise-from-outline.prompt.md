@@ -1,5 +1,5 @@
 ---
-mode: "agent"
+agent: "agent"
 model: Claude Sonnet 4
 description: "Bootstrap a new exercise from outline"
 ---
