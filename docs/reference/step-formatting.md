@@ -86,6 +86,60 @@ Additional information to explain the tip.
 
    </details>
 
+## Highlighted Links
+
+Below are options to provided prettier links to Skills exercises and references on other sites. Colors come from [Primer](https://primer.style/product/primitives/color/).
+
+### Skills Exercises
+
+#### Generic
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=f6f8fa)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=social&logo=github)](https://github.com/skills)
+
+#### Copilot Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Getting_Started_with_GitHub_Copilot_→-text?style=flat&logo=github&labelColor=1f2328&color=8250df)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Getting_Started_with_GitHub_Copilot_→-text?style=flat&logo=github&labelColor=1f2328&color=fbefff)](https://github.com/skills)
+
+#### Git/Repo Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_GitHub_→-text?style=flat&logo=github&labelColor=1f2328&color=1f883d)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_GitHub_→-text?style=flat&logo=github&labelColor=1f2328&color=dafbe1)](https://github.com/skills)
+
+#### Security Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_Secret_Scanning_→-text?style=flat&logo=github&labelColor=1f2328&color=cf222e)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_Secret_Scanning_→-text?style=flat&logo=github&labelColor=1f2328&color=ffebe9)](https://github.com/skills)
+
+#### Actions Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Hello_GitHub_Actions_→-text?style=flat&logo=github&labelColor=1f2328&color=0969da)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Hello_GitHub_Actions_→-text?style=flat&logo=github&labelColor=1f2328&color=ddf4ff)](https://github.com/skills)
+
+#### Other Exercises - Yellow
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=9a6700)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=fff8c5)](https://github.com/skills)
+
+#### Other Exercises - Orange
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=bc4c00)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=fff1e5)](https://github.com/skills)
+
+#### Other Exercises - Pink
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=bf3989)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=ffeff7)](https://github.com/skills)
+
 ## Prompts
 
 Below are some options to make prompts easier to recognize.
