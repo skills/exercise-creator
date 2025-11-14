@@ -48,7 +48,7 @@
 
 - Consider reducing image sizes to speed up load times.
 
-### Diagrams
+## Diagrams
 
 - Do **NOT** use an external tool to create a diagram and then insert as an image. These require tracking the source document, which is often lost.
 - Store the image as an editable `.drawio.svg` file or use mermaid syntax.
@@ -73,7 +73,7 @@ Unfortunately the normal [Alert syntax](https://docs.github.com/en/get-started/w
 
 > 🧪 **Try this:** Something to experiment with.
 
-### Long Form Tips
+## Long Form Tips
 
 If a tip needs to be more than one line or include an image, use the expandable box technique.
 
@@ -86,7 +86,7 @@ Additional information to explain the tip.
 
    </details>
 
-## Copilot Prompts
+## Prompts
 
 Below are some options to make prompts easier to recognize.
 The `prompt` markdown indicator is to quickly find prompts. It is not official syntax.
