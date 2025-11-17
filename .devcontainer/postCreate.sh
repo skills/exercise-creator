@@ -14,8 +14,20 @@ echo "Set Git and VS Code credential helper to prefer GH_TOKEN"
 CRED_HELPER=/workspaces/exercise-manager/.devcontainer/gitcredential.sh
 sudo git config --system credential.helper "$CRED_HELPER"
 
-# Clone useful repositories
+# Clone useful repositories (skip if already there - e.g. on container rebuild)
 sudo chown $USER /workspaces
 cd /workspaces
-gh repo clone "https://github.com/skills/exercise-toolkit"
-gh repo clone "https://github.com/skills/exercise-template"
+
+if [ -d "exercise-toolkit/.git" ]; then
+  echo "exercise-toolkit already cloned"
+else
+  echo "Cloning exercise-toolkit"
+  gh repo clone skills/exercise-toolkit
+fi
+
+if [ -d "exercise-template/.git" ]; then
+  echo "exercise-template already cloned"
+else
+  echo "Cloning exercise-template"
+  gh repo clone skills/exercise-template
+fi
