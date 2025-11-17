@@ -48,7 +48,7 @@
 
 - Consider reducing image sizes to speed up load times.
 
-### Diagrams
+## Diagrams
 
 - Do **NOT** use an external tool to create a diagram and then insert as an image. These require tracking the source document, which is often lost.
 - Store the image as an editable `.drawio.svg` file or use mermaid syntax.
@@ -73,7 +73,7 @@ Unfortunately the normal [Alert syntax](https://docs.github.com/en/get-started/w
 
 > 🧪 **Try this:** Something to experiment with.
 
-### Long Form Tips
+## Long Form Tips
 
 If a tip needs to be more than one line or include an image, use the expandable box technique.
 
@@ -86,20 +86,104 @@ Additional information to explain the tip.
 
    </details>
 
-## Copilot Prompts
+## Skills Exercise Links
+
+Below are options to provide prettier links to Skills exercises. Colors come from [Primer](https://primer.style/product/primitives/color/).
+
+### Generic
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=f6f8fa)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=social&logo=github)](https://github.com/skills)
+
+### Copilot Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Getting_Started_with_GitHub_Copilot_→-text?style=flat&logo=github&labelColor=1f2328&color=8250df)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Getting_Started_with_GitHub_Copilot_→-text?style=flat&logo=github&labelColor=1f2328&color=fbefff)](https://github.com/skills)
+
+### Git/Repo Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_GitHub_→-text?style=flat&logo=github&labelColor=1f2328&color=1f883d)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_GitHub_→-text?style=flat&logo=github&labelColor=1f2328&color=dafbe1)](https://github.com/skills)
+
+### Security Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_Secret_Scanning_→-text?style=flat&logo=github&labelColor=1f2328&color=cf222e)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Intro_to_Secret_Scanning_→-text?style=flat&logo=github&labelColor=1f2328&color=ffebe9)](https://github.com/skills)
+
+### Actions Exercises
+
+[![Skills](https://img.shields.io/badge/Skills-Hello_GitHub_Actions_→-text?style=flat&logo=github&labelColor=1f2328&color=0969da)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Hello_GitHub_Actions_→-text?style=flat&logo=github&labelColor=1f2328&color=ddf4ff)](https://github.com/skills)
+
+### Other Exercises - Yellow
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=9a6700)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=fff8c5)](https://github.com/skills)
+
+### Other Exercises - Orange
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=bc4c00)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=fff1e5)](https://github.com/skills)
+
+### Other Exercises - Pink
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=bf3989)](https://github.com/skills)
+
+[![Skills](https://img.shields.io/badge/Skills-Exercise_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=ffeff7)](https://github.com/skills)
+
+## GitHub Learn Links
+
+[![Static Badge](https://img.shields.io/badge/Learn-Register_for_Exam_→-text?style=flat&logo=github&labelColor=1f2328&color=f6f8fa)](https://learn.github.com/certification/GHF)
+
+[![Static Badge](https://img.shields.io/badge/Learn-Foundations_Certification_→-text?style=flat&logo=github&labelColor=1f2328&color=f6f8fa)](https://learn.github.com/certification/GHF)
+
+[![Static Badge](https://img.shields.io/badge/Blog-Article_Name_→-text?style=flat&logo=github&labelColor=1f2328&color=f6f8fa)](https://learn.github.com/certification/GHF)
+
+[![Knowledge Check](https://img.shields.io/badge/MS_Learn-Practice_Test_→-text?style=flat&logo=checkmarx&labelColor=1f2328&color=f6f8fa&logoColor=fff)](https://learn.github.com/certification/GHF)
+
+[![Knowledge Check](https://img.shields.io/badge/GH_Certified-Practice_Test_→-text?style=flat&logo=checkmarx&labelColor=1f2328&color=f6f8fa&logoColor=fff)](https://ghcertified.com/questions/foundations/)
+
+## Other Links
+
+### Generic
+
+[![Generic Resource](https://img.shields.io/badge/Resource-Other_Website_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://example.com)
+
+[![Generic Reference](https://img.shields.io/badge/Reference-Other_Website_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://example.com)
+
+### Videos
+
+[![Video](https://img.shields.io/badge/Video_(2min)-Video_Name_→-text?style=flat&logo=youtube&labelColor=1f2328&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+[![Vimeo](https://img.shields.io/badge/Vimeo_(2min)-Video_Name_→-text?style=flat&logo=vimeo&labelColor=1f2328&logoColor=fff&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+[![YouTube](https://img.shields.io/badge/YouTube_(2min)-Video_Name_→-text?style=flat&logo=youtube&labelColor=1f2328&color=f6f8fa)](https://www.youtube.com/watch?v=ABC)
+
+### Articles
+
+[![Wikipedia](https://img.shields.io/badge/Wiki-Open_Source_→-text?style=flat&logo=thestorygraph&labelColor=1f2328&color=f6f8fa)](https://en.wikipedia.org/wiki/Open_source)
+
+## Prompts
 
 Below are some options to make prompts easier to recognize.
 The `prompt` markdown indicator is to quickly find prompts. It is not official syntax.
 
 ### Simple
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > Please make a ....
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > I would suggest...
@@ -107,13 +191,13 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 
 ### Simple with name
 
-> ![Static Badge](https://img.shields.io/badge/Copilot-Prompt-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/Copilot-Prompt-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > Please make a ....
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/Copilot-Response-text?style=social&logo=github%20copilot)
+> ![Static Badge](https://img.shields.io/badge/Copilot-Response-text?style=social&logo=github-copilot)
 >
 > ```prompt
 > I would suggest...
@@ -121,25 +205,25 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 
 ### Colorized
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=8250df&color=fbefff)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat-square&logo=github%20copilot&labelColor=0969da&color=ddf4ff)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat-square&logo=github-copilot&labelColor=0969da&color=ddf4ff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat&logo=github%20copilot&labelColor=8250df&color=fbefff)
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat&logo=github-copilot&labelColor=8250df&color=fbefff)
 >
 > ```prompt
 > hello world
 > ```
 
-> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat&logo=github%20copilot&labelColor=0969da&color=ddf4ff)
+> ![Static Badge](https://img.shields.io/badge/-Response-text?style=flat&logo=github-copilot&labelColor=0969da&color=ddf4ff)
 >
 > ```prompt
 > hello world

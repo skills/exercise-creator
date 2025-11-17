@@ -1,5 +1,5 @@
 ---
-mode: 'agent'
+agent: 'agent'
 model: Claude Sonnet 4
 description: 'Create a new exercise outline for a GitHub Skills exercise.'
 ---
