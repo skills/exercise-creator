@@ -86,6 +86,7 @@
         "chat.instructionsFilesLocations": {
           ".github/instructions": true
         },
+        "editor.aiStats.enabled": true,
 
         // GitHub
         "github.copilot.enabled": true,
