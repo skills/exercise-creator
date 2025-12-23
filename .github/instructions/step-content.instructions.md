@@ -79,7 +79,7 @@ Your pull request URL is: {{ pr_url }}
 
 ### Escaping GitHub Actions Syntax
 
-If your markdown step content includes GitHub Actions syntax (e.g., `${{ secrets.GITHUB_TOKEN }}`) examples. You must escape it using the `{% raw %}...{% endraw %}` tags to prevent Nunjucks from trying to process it.
+If your markdown step content includes GitHub Actions syntax (e.g., `${{ secrets.GITHUB_TOKEN }}`) examples, you must escape it using the `{% raw %}...{% endraw %}` tags to prevent Nunjucks from trying to process it.
 
 ```markdown
 env:
