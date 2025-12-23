@@ -60,13 +60,11 @@ Example:
 1. As you commit your changes Mona will prepare the next step in this exercise!
 ```
 
-Step files (`.github/steps/*.md`) and markdown templates support [Nunjucks](https://mozilla.github.io/nunjucks/) templating. 
-
 ## Nunjucks templating support
 
 In your step file (`.github/steps/*.md`) you can use Nunjucks templating. This allows us to inject dynamic values passed from the workflow.
 
-- **Output a variable**: `{{ variable_name }}`
+- **Variable substitution**: `{{ variable_name }}`
 - **Conditional logic**: `{% if condition %}...{% endif %}`
 
 ### Example
