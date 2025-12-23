@@ -117,7 +117,25 @@ steps:
 
 ### Comment Management
 
-Use `GrantBirki/comment` action for all issue comment operations
+Use `GrantBirki/comment` action for all issue comment operations. You can pass variables to the markdown template using the `vars` input. These variables can be used in the markdown file with Nunjucks syntax (e.g. `{{ variable_name }}`).
+
+#### Create new comment
+
+```yaml
+
+- name: Create comment
+  uses: GrantBirki/comment@v2.1.1
+  with:
+    repository: ${{ env.ISSUE_REPOSITORY }}
+    issue-number: ${{ env.ISSUE_NUMBER }}
+    file: exercise-toolkit/path-to-markdown-file/markdown-file.md
+    vars: |
+      next_step_number: N
+      login: ${{ github.actor }}
+      full_repo_name: ${{ github.repository }}
+      pr_url: ${{ github.event.pull_request.html_url }}
+```
+
 
 #### Find and update last comment
 
@@ -140,19 +158,6 @@ Use `GrantBirki/comment` action for all issue comment operations
     file: exercise-toolkit/markdown-templates/step-feedback/checking-work.md
 ```
 
-#### Create new comment
-
-```yaml
-
-- name: Create comment - step finished
-  uses: GrantBirki/comment@v2.1.1
-  with:
-    repository: ${{ env.ISSUE_REPOSITORY }}
-    issue-number: ${{ env.ISSUE_NUMBER }}
-    file: exercise-toolkit/markdown-templates/step-feedback/step-finished-prepare-next-step.md
-    vars: |
-      next_step_number: N
-```
 
 ### Workflow State Management
 

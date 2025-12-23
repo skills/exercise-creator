@@ -59,3 +59,31 @@ Example:
 1. Commit your changes to the `main` branch.
 1. As you commit your changes Mona will prepare the next step in this exercise!
 ```
+
+Step files (`.github/steps/*.md`) and markdown templates support [Nunjucks](https://mozilla.github.io/nunjucks/) templating. 
+
+## Nunjucks templating support
+
+In your step file (`.github/steps/*.md`) you can use Nunjucks templating. This allows us to inject dynamic values passed from the workflow.
+
+- **Output a variable**: `{{ variable_name }}`
+- **Conditional logic**: `{% if condition %}...{% endif %}`
+
+### Example
+
+```markdown
+Hello {{ login }}!
+
+You are working in [{{ full_repo_name }}](https://github.com/{{ full_repo_name }}).
+
+Your pull request URL is: {{ pr_url }}
+```
+
+### Escaping GitHub Actions Syntax
+
+If your markdown step content includes GitHub Actions syntax (e.g., `${{ secrets.GITHUB_TOKEN }}`) examples. You must escape it using the `{% raw %}...{% endraw %}` tags to prevent Nunjucks from trying to process it.
+
+```markdown
+env:
+  GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+```

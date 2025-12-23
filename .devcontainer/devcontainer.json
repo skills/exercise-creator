@@ -62,7 +62,8 @@
 
         // Javascript support
         "dbaeumer.vscode-eslint",
-        "Orta.vscode-jest"
+        "Orta.vscode-jest",
+        "ms-vscode.live-server"
       ],
 
       "settings": {
