@@ -62,7 +62,8 @@
 
         // Javascript support
         "dbaeumer.vscode-eslint",
-        "Orta.vscode-jest"
+        "Orta.vscode-jest",
+        "ms-vscode.live-server"
       ],
 
       "settings": {
@@ -86,6 +87,7 @@
         "chat.instructionsFilesLocations": {
           ".github/instructions": true
         },
+        "editor.aiStats.enabled": true,
 
         // GitHub
         "github.copilot.enabled": true,
