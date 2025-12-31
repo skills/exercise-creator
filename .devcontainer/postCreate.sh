@@ -15,7 +15,7 @@ CRED_HELPER=/workspaces/exercise-manager/.devcontainer/gitcredential.sh
 sudo git config --system credential.helper "$CRED_HELPER"
 
 # Clone useful repositories (skip if already there - e.g. on container rebuild)
-sudo chown -R $USER:$USER /workspaces
+sudo chown -R "$USER":"$USER" /workspaces
 cd /workspaces
 
 if [ -d "exercise-toolkit/.git" ]; then
