@@ -18,7 +18,7 @@ Let's use the command-line interface to work with the Node.js calculator.
 
 1. Run the calculator using the CLI command. You should see an interface similar to this:
 
-   <img alt="Node.js calculator CLI interface showing the command prompt and available operations" src="(node-js-calculator.png)">
+   <img alt="Node.js calculator CLI interface showing the command prompt and available operations" src="node-js-calculator.png">
 
 1. Try performing a basic calculation by entering a command.
 
@@ -29,7 +29,7 @@ Let's use the command-line interface to work with the Node.js calculator.
    Wait about 20 seconds then refresh this page for the next step.
 
 <details>
-<summary> <b> 💡 Tip:</b> Troubleshooting the CLI</summary><br/>
+<summary> <b> 💡 Tip:</b> Troubleshooting the CLI</summary>
 
 If you encounter issues running the calculator:
 
