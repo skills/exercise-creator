@@ -26,7 +26,7 @@ Let's use the Copilot CLI with an attached image to create and work on the Node.
 
 1. The calculator interface should look similar to this:
 
-   <img alt="Node.js calculator CLI interface showing the command prompt and available operations" src="node-js-calculator.png">
+   <img alt="Node.js calculator CLI interface showing the command prompt and available operations" src="https://github.com/user-attachments/assets/330a5086-e74e-4c54-bead-91c7a9d93997">
 
 1. Test the calculator by running it with the CLI command.
 
