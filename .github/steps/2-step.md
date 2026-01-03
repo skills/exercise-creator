@@ -19,7 +19,7 @@ Let's use the Copilot CLI with an attached image to create and work on the Node.
 1. Use the Copilot CLI with the attached image to create the calculator. Run the following command:
 
    ```bash
-   gh copilot suggest --attach node-js-calculator.png "Create a Node.js calculator based on the image"
+   gh copilot suggest --attach node-js-calculator.png "Create a Node.js calculator based on the image attached"
    ```
 
 1. Review the suggested code from Copilot and implement it in your project.
