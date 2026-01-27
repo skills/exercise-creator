@@ -200,10 +200,36 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 > ![Static Badge](https://img.shields.io/badge/Copilot-Response-text?style=social&logo=github-copilot)
 >
 > ```prompt
+> Please make a ....
+> ```
+
+### Simple with mode
+
+> ![Static Badge](https://img.shields.io/badge/Copilot_Chat-Prompt-text?style=social&logo=github-copilot)
+>
+> ```prompt
+> Please make a ....
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/Copilot_Chat-Response-text?style=social&logo=github-copilot)
+>
+> ```prompt
 > I would suggest...
 > ```
 
-### Colorized
+> ![Static Badge](https://img.shields.io/badge/Copilot_CLI-Prompt-text?style=social&logo=github-copilot)
+>
+> ```prompt
+> Please make a ....
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/Copilot_CLI-Response-text?style=social&logo=github-copilot)
+>
+> ```prompt
+> I would suggest...
+> ```
+
+### Colorized - Simple
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
 >
@@ -227,4 +253,20 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 >
 > ```prompt
 > hello world
+> ```
+
+### Colorized - with mode
+
+> ![Static Badge](https://img.shields.io/badge/Chat-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+>
+> ```prompt
+> hello world
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+>
+> ```prompt
+> hello world
+> ```
+
 > ```
