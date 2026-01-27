@@ -306,25 +306,25 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 > [![Static Badge](https://img.shields.io/badge/Terminal-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=1f2328)](https://learn.github.com/certification/GHF)
 >
 > ```bash
-> git init --version
+> git --version
 > ```
 
 > [![Static Badge](https://img.shields.io/badge/CLI-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=1f2328)](https://learn.github.com/certification/GHF)
 >
 > ```bash
-> git init --version
+> git --version
 > ```
 
 > [![Static Badge](https://img.shields.io/badge/Terminal-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
 >
 > ```bash
-> git init --version
+> git --version
 > ```
 
 > [![Static Badge](https://img.shields.io/badge/CLI-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
 >
 > ```bash
-> git init --version
+> git --version
 > ```
 
 ## Terminal - Language Specific
@@ -332,11 +332,11 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 > [![Static Badge](https://img.shields.io/badge/bash-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
 >
 > ```bash
-> git init --version
+> git --version
 > ```
 
 > [![Static Badge](https://img.shields.io/badge/shell-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
 >
 > ```shell
-> git init --version
+> git --version
 > ```
