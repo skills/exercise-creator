@@ -326,3 +326,17 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 > ```bash
 > git init --version
 > ```
+
+## Terminal - Language Specific
+
+> [![Static Badge](https://img.shields.io/badge/bash-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
+>
+> ```bash
+> git init --version
+> ```
+
+> [![Static Badge](https://img.shields.io/badge/shell-text?style=flat&logo=gnometerminal&labelColor=1f2328&color=eee)](https://learn.github.com/certification/GHF)
+>
+> ```shell
+> git init --version
+> ```
