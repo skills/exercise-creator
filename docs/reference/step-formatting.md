@@ -269,6 +269,37 @@ The `prompt` markdown indicator is to quickly find prompts. It is not official s
 > hello world
 > ```
 
+## Spark Prompts
+
+> ![Static Badge](https://img.shields.io/badge/✨-Prompt-text?style=flat-square&labelColor=8250df&color=f1e5ff)
+>
+> ```prompt
+> hello world
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/✨-Prompt-text?style=flat-square&labelColor=a830e8&color=f8e5ff)
+>
+> ```prompt
+> hello world
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/✨-Prompt-text?style=flat-square&labelColor=ce2c85&color=ffe5f1)
+>
+> ```prompt
+> hello world
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/✨-Prompt-text?style=flat-square&labelColor=bc4c00&color=ffe7d1)
+>
+> ```prompt
+> hello world
+> ```
+
+> ![Static Badge](https://img.shields.io/badge/✨-Prompt-text?style=flat-square&labelColor=179b9b&color=c7f5ef)
+>
+> ```prompt
+> hello world
+> ```
 
 ## Terminal
 
