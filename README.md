@@ -1,5 +1,7 @@
 # Exercise Manager
 
+<img src="https://octodex.github.com/images/Professortocat_v2.png" alt="Professortocat" width="150" align="right"/>
+
 This is a codespace with guidelines for developing and managing GitHub Skills exercises and supportive tooling. It provides:
 
 - Unified settings for consistent styling (like linting).
@@ -19,7 +21,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
 
-1. Open the VS Code Command Palette. Run the following command and select the workspace settings file.
+1. Open the [VS Code Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Run the following command and select the workspace settings file.
 
    ```txt
    File: Open workspace from file...
@@ -32,10 +34,12 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 
 ## Make an Exercise
 
+<img src="https://octodex.github.com/images/manufacturetocat.png" alt="Manufacturetocat" width="150" align="right"/>
+
 With the help of GitHub Copilot, making a new exercise from scratch can be very quick. Here is a `hello world` level example. It creates an outline for planning then an actual exercise! 🧑‍🚀
 
 > [!IMPORTANT]
-> Copilot is good for bootstrapping and refinement. It will make a solid first draft, but it is your responsibility as a human (with feelings and empathy) to ensure the exercise is enjoyable and meets the needs of your learners.
+> Copilot is good for bootstrapping and refinement. It will make a decent first draft, but it is your responsibility as a human (with feelings and empathy) to ensure the exercise is enjoyable and meets the needs of your learners.
 
 1. Open the Copilot Chat panel and ensure you are in `Agent` mode.
 
