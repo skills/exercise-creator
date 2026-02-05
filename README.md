@@ -45,40 +45,40 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Use the following Copilot prompt to create a draft exercise outline.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /create-exercise-outline
-   > Make an exercise to teach the fundamentals of Git and version control.
-   > Assume no prior version control experience.
-   > Put it in the `/workspaces/repos/` folder.
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
-   > 💡 **Tip:** You can ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
+   ```prompt
+   /create-exercise-outline
+   Make an exercise to teach the fundamentals of Git and version control.
+   Assume no prior version control experience.
+   Put it in the `/workspaces/repos/` folder.
+   ```
 
-1. Review and refine the draft outline.
+   > 💡 **Tip:** You can also ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
 
-   > 💡 **Tip:** This may seem boring, but a few extra minutes here will make the draft exercise from Copilot much better.
+1. Manually review and refine the draft exercise outline.
+
+   > 💡 **Note:** This may seem boring, but a few extra minutes here will make the actual draft exercise from Copilot much better.
 
 1. Use the following Copilot prompt to create an actual exercise.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /bootstrap-exercise-from-outline
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   
+   ```prompt
+   /bootstrap-exercise-from-outline
+   ```
 
-1. Review and refine the draft exercise. 🧐
+1. Manually refine the draft exercise to make it production worthy. 🧐
 
-   > 💡 **Tip:** We are working on prompts to help develop a draft. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
+   > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
 
 1. Ask Copilot to review the exercise for common issues.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /review-exercise
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   
+   ```prompt
+   /review-exercise
+   ```
 
 1. Test it with your friends and coworkers to make it awesome! 😎
 
