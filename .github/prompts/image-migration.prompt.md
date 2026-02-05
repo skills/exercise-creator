@@ -1,16 +1,16 @@
 # Image Migration Task: Migrate External Images to Local Repository
 
 ## Objective
-Migrate all external image references (user-attachments, user-images URLs) to local repository files in `.github/images/` with descriptive filenames and relative links.
+Migrate GitHub user-attachments image references to local repository files in `.github/images/` with descriptive filenames and relative links.
 
 ## Task Steps
 
-### 1. Find All External Image References
+### 1. Find All User-Attachments Image References
 
-Search `.github/steps/*.md` files for external image URLs:
+Search `.github/steps/*.md` files for user-attachments image URLs:
 - `https://github.com/user-attachments/assets/*`
-- `https://user-images.githubusercontent.com/*`
-- Any other external image hosting URLs
+
+**Important:** Only migrate user-attachments images. Leave other external images (octodex, img.shields.io, etc.) as absolute URLs.
 
 ### 2. Create Images Directory
 
@@ -20,7 +20,7 @@ mkdir -p .github/images
 
 ### 3. Download and Rename Images
 
-For each external image:
+For each user-attachments image:
 
 **Download the image:**
 ```bash
@@ -38,14 +38,18 @@ curl -L "<image-url>" -o ".github/images/<descriptive-name>.png"
 - Alt text "target branch settings" → `branch-protection-target-settings.png`
 - Generic "image" with button context → `new-workflow-button.png`
 
+**Do not download:**
+- Octodex images (`octodex.github.com`)
+- Badge images (`img.shields.io`)
+- Any other external hosted images
+
 ### 4. Update Markdown References
 
-Replace each external URL with relative path:
+Replace user-attachments URLs with relative paths:
 
 **Find pattern:**
 ```markdown
 src="https://github.com/user-attachments/assets/..."
-src="https://user-images.githubusercontent.com/..."
 ```
 
 **Replace with:**
@@ -53,16 +57,19 @@ src="https://user-images.githubusercontent.com/..."
 src="../images/descriptive-filename.png"
 ```
 
-**Important:** Preserve all other attributes (width, alt text, etc.)
+**Important:** 
+- Preserve all other attributes (width, alt text, etc.)
+- Do not change other external image URLs (octodex, shields.io, etc.) - keep them as absolute references
 
 ### 5. Verify Changes
 
-- [ ] All images downloaded successfully to `.github/images/`
+- [ ] All user-attachments images downloaded successfully to `.github/images/`
 - [ ] All filenames are descriptive (no generic names or UUIDs)
-- [ ] All markdown files updated with relative paths
+- [ ] All markdown files updated with relative paths for user-attachments images
 - [ ] Relative paths are correct (`../images/` from `.github/steps/`)
 - [ ] No broken image links
 - [ ] Zero net new files added (only images in `.github/images/` should be new)
+- [ ] Other external images (octodex, shields.io, etc.) remain as absolute URLs
 
 ### 6. Update start-exercise reusable workflow version
 
