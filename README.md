@@ -84,6 +84,28 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Publish it and enjoy! 🚀
 
+## Work on an existing exercise
+
+The exercise manager is structured to handle multiple repositories via a dedicated `repos` folder. We recommend organizing exercises in this space.
+
+1. Get the URL for your existing exercise repository. Example:
+
+   ```
+   https://github.com/skills/getting-started-with-github-copilot.git
+   ```
+
+2. In the Codespace terminal, navigate to the `/workspaces/repos` folder.
+
+   ```bash
+   cd /workspaces/repos/
+   ```
+
+3. Clone the exercise.
+
+   ```bash
+   git clone https://github.com/skills/getting-started-with-github-copilot.git
+   ```
+
 ## Deeper Exercise Development
 
 Please see the [Skills docs](/docs/README.md) for the full guidelines on planning, design, testing, and maintenance.
