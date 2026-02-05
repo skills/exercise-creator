@@ -9,6 +9,12 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 
 ## Start the Codespace
 
+1. (Optional) For additional permissions options, fork the repository to your account/organization.
+
+   - By default a Codespace only has access to the original repository and your user space.
+    - If you need to [edit exercises across multiple accounts/organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
+
+
 1. Press the below button to start the Codespace. This may take a few minutes.
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
@@ -23,8 +29,6 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
    /exercise-manager/exercise-manager.code-workspace
    ```
 
-> [!TIP]
-> If you need to [work across multiple organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
 
 ## Make an Exercise
 
