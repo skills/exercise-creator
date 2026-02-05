@@ -14,8 +14,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 1. (Optional) For additional permissions options, fork the repository to your account/organization.
 
    - By default a Codespace only has access to the original repository and your user space.
-    - If you need to [edit exercises across multiple accounts/organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
-
+   - If you need to [edit exercises across multiple accounts/organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
 
 1. Press the below button to start the Codespace. This may take a few minutes.
 
@@ -30,7 +29,6 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
    ```txt
    /exercise-manager/exercise-manager.code-workspace
    ```
-
 
 ## Make an Exercise
 
@@ -84,7 +82,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Publish it and enjoy! 🚀
 
-## Work on an existing exercise
+## Work on an Existing Exercise
 
 The exercise manager is structured to handle multiple repositories via a dedicated `repos` folder. We recommend organizing exercises in this space.
 
@@ -94,13 +92,13 @@ The exercise manager is structured to handle multiple repositories via a dedicat
    https://github.com/skills/getting-started-with-github-copilot.git
    ```
 
-2. In the Codespace terminal, navigate to the `/workspaces/repos` folder.
+1. In the Codespace terminal, navigate to the `/workspaces/repos` folder.
 
    ```bash
    cd /workspaces/repos/
    ```
 
-3. Clone the exercise.
+1. Clone the exercise.
 
    ```bash
    git clone https://github.com/skills/getting-started-with-github-copilot.git
