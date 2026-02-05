@@ -1,5 +1,7 @@
 # Exercise Manager
 
+<img src="https://octodex.github.com/images/Professortocat_v2.png" alt="Professortocat" width="150" align="right"/>
+
 This is a codespace with guidelines for developing and managing GitHub Skills exercises and supportive tooling. It provides:
 
 - Unified settings for consistent styling (like linting).
@@ -9,11 +11,16 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 
 ## Start the Codespace
 
+1. (Optional) For additional permissions options, fork the repository to your account/organization.
+
+   - By default a Codespace only has access to the original repository and your user space.
+   - If you need to [edit exercises across multiple accounts/organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
+
 1. Press the below button to start the Codespace. This may take a few minutes.
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
 
-1. Open the VS Code Command Palette. Run the following command and select the workspace settings file.
+1. Open the [VS Code Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Run the following command and select the workspace settings file.
 
    ```txt
    File: Open workspace from file...
@@ -23,58 +30,79 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
    /exercise-manager/exercise-manager.code-workspace
    ```
 
-> [!TIP]
-> If you need to [work across multiple organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
-
 ## Make an Exercise
+
+<img src="https://octodex.github.com/images/manufacturetocat.png" alt="Manufacturetocat" width="150" align="right"/>
 
 With the help of GitHub Copilot, making a new exercise from scratch can be very quick. Here is a `hello world` level example. It creates an outline for planning then an actual exercise! 🧑‍🚀
 
 > [!IMPORTANT]
-> Copilot is good for bootstrapping and refinement. It will make a solid first draft, but it is your responsibility as a human (with feelings and empathy) to ensure the exercise is enjoyable and meets the needs of your learners.
+> Copilot is good for bootstrapping and refinement. It will make a decent first draft, but it is your responsibility as a human (with feelings and empathy) to ensure the exercise is enjoyable and meets the needs of your learners.
 
 1. Open the Copilot Chat panel and ensure you are in `Agent` mode.
 
 1. Use the following Copilot prompt to create a draft exercise outline.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /create-exercise-outline
-   > Make an exercise to teach the fundamentals of Git and version control.
-   > Assume no prior version control experience.
-   > Put it in the `/workspaces/repos/` folder.
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
-   > 💡 **Tip:** You can ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
+   ```prompt
+   /create-exercise-outline
+   Make an exercise to teach the fundamentals of Git and version control.
+   Assume no prior version control experience.
+   Put it in the `/workspaces/repos/` folder.
+   ```
 
-1. Review and refine the draft outline.
+   > 💡 **Tip:** You can also ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
 
-   > 💡 **Tip:** This may seem boring, but a few extra minutes here will make the draft exercise from Copilot much better.
+1. Manually review and refine the draft exercise outline.
+
+   > 💡 **Note:** This may seem boring, but a few extra minutes here will make the actual draft exercise from Copilot much better.
 
 1. Use the following Copilot prompt to create an actual exercise.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /bootstrap-exercise-from-outline
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   
+   ```prompt
+   /bootstrap-exercise-from-outline
+   ```
 
-1. Review and refine the draft exercise. 🧐
+1. Manually refine the draft exercise to make it production worthy. 🧐
 
-   > 💡 **Tip:** We are working on prompts to help develop a draft. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
+   > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
 
 1. Ask Copilot to review the exercise for common issues.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /review-exercise
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   
+   ```prompt
+   /review-exercise
+   ```
 
 1. Test it with your friends and coworkers to make it awesome! 😎
 
 1. Publish it and enjoy! 🚀
+
+## Work on an Existing Exercise
+
+The exercise manager is structured to handle multiple repositories via a dedicated `repos` folder. We recommend organizing exercises in this space.
+
+1. Get the URL for your existing exercise repository. Example:
+
+   ```
+   https://github.com/skills/getting-started-with-github-copilot.git
+   ```
+
+1. In the Codespace terminal, navigate to the `/workspaces/repos` folder.
+
+   ```bash
+   cd /workspaces/repos/
+   ```
+
+1. Clone the exercise.
+
+   ```bash
+   git clone https://github.com/skills/getting-started-with-github-copilot.git
+   ```
 
 ## Deeper Exercise Development
 

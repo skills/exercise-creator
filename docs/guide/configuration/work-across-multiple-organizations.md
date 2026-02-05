@@ -25,6 +25,6 @@ To work across multiple organizations, the Codespace needs a different token wit
 
    - Name: `GH_TOKEN`.
    - Value: (The token created above)
-   - Repository Access: `skills/exercise-manager`
+   - Repository Access: `{owner}/exercise-manager`
 
 1. Restart the Codespace to trigger loading of your secret.
