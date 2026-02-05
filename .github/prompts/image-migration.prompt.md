@@ -62,7 +62,10 @@ src="../images/descriptive-filename.png"
 - [ ] All markdown files updated with relative paths
 - [ ] Relative paths are correct (`../images/` from `.github/steps/`)
 - [ ] No broken image links
+- [ ] Zero net new files added (only images in `.github/images/` should be new)
 
 ### 6. Update start-exercise reusable workflow version
 
-Update `start-exercise` reusable workflow that is used to `v0.8.0` version which is the first release of `exercise-toolkit` that supports relative links
+Update `start-exercise` reusable workflow that is used to `v0.8.0` version which is the first release of `exercise-toolkit` that supports relative links.
+
+**Important:** Only update the `start-exercise` version reference. Do not modify any other references to `exercise-toolkit` elsewhere in the repository.
