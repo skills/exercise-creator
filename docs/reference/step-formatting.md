@@ -31,19 +31,12 @@
 
 ## Images
 
-- Image files **must** use absolute URLs. Relative links will break when the markdown content is copied and pasted as an issue comment.
-- Use the online file/markdown editor on GitHub to paste images and get urls.
-
-  - This will upload the image from your clipboard and insert a markdown image (absolute url) into the text editor. Simply copy that to your active work.
-  - You do not need to save the editor session for the image to remain alive.
-  - The image will have the same privacy as the repository. As such, private images will not appear in VS Code's preview (even if you are logged in).
-
-- Animated images (GIFs) are deliberately blocked on GitHub. As useful as they are for demonstrations, they are unfortunately not an option.
+- Image files **must** use relative URLs. Relative links will be replaced with `raw.githubusercontent` links when the exercise is started
 
 - Images, by default, display at max available resolution or the size of the window. Either reduce the size of the image or use an HTML tag to specify the size. Example:
 
   ```html
-  <img src="my-image.png" width="300px"
+  <img src="../images/my-image.png" width="300px"
   ```
 
 - Consider reducing image sizes to speed up load times.

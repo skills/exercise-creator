@@ -37,7 +37,7 @@ If you are unfamiliar with the architecture and flow of an exercise, please see 
 
 1. Use the [Step Formatting](../reference/step-formatting.md) recommendations to make your exercise more enjoyable.
 
-   > ❗️ **IMPORTANT:** Images should not be stored in the repository. Relative links do not work when the text is copied to the issue. Use absolute links.
+   > ❗️ **IMPORTANT:** Images should be stored in the repository under `.github/images` and referenced as relative links in the `.github/steps` files.
 
 1. Use the checklists to to prepare for publishing.
 

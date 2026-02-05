@@ -20,7 +20,7 @@
 ### Steps
 
 - [ ] All learnings steps like `1-step.md` are in `.github/steps/`
-- [ ] All images use absolute urls. They are NOT stored directly in the repository.
+- [ ] All images use relative urls. They are stored directly in the repository.
 - [ ] Any sample files have intuitive code comments.
 - [ ] Tense is consistent.
 - [ ] Tone is consistent.
