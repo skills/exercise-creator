@@ -85,3 +85,15 @@ If your markdown step content includes GitHub Actions syntax (e.g., `${{ secrets
 env:
   GITHUB_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
 ```
+
+### Referencing images
+
+All images must be stored in the `.github/images` directory and referenced using relative paths.
+
+Images should have descriptive alt text and include at least one size attribute (width or height) to control display size.
+
+Example:
+
+```md
+<img width="300" alt="target branch settings" src="../images/branch-protection-target-settings.png" />
+```

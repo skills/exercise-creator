@@ -33,11 +33,6 @@
   - Target branches: `default branch`, `main`
   - Require linear history: enabled
   - Require pull request before merging
-- [ ] Add a Push Ruleset
-  - Enable restrict file extensions.
-    - Disable images: `png, jpg, jpeg, gif, svg, webp`
-    - Others: `env, bin, exe`
-  - Enable restrict file sizes (5MB).
 
 ### Advanced Security
 
