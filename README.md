@@ -18,7 +18,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 
 1. Press the below button to start the Codespace. This may take a few minutes.
 
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-manager/tree/cwb-simplify-docs)
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skills/exercise-creator/tree/cwb-simplify-docs)
 
 1. Open the [VS Code Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Run the following command and select the workspace settings file.
 
@@ -27,7 +27,7 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
    ```
 
    ```txt
-   /exercise-manager/exercise-manager.code-workspace
+   /exercise-creator/exercise-creator.code-workspace
    ```
 
 ## Make an Exercise
@@ -68,7 +68,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Manually refine the draft exercise to make it production worthy. 🧐
 
-   > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
+   > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-creator/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
 
 1. Ask Copilot to review the exercise for common issues.
 
@@ -84,7 +84,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 ## Work on an Existing Exercise
 
-The exercise manager is structured to handle multiple repositories via a dedicated `repos` folder. We recommend organizing exercises in this space.
+The Exercise Creator is structured to handle multiple repositories via a dedicated `repos` folder. We recommend organizing exercises in this space.
 
 1. Get the URL for your existing exercise repository. Example:
 
@@ -112,4 +112,4 @@ Please see the [Skills docs](/docs/README.md) for the full guidelines on plannin
 
 We are very open to contributions and enhancements from the community! 🧑‍🚀
 
-Please feel free to [create an issue](https://github.com/skills/exercise-manager/issues/new?template=BLANK_ISSUE) or submit a pull request.
+Please feel free to [create an issue](https://github.com/skills/exercise-creator/issues/new?template=BLANK_ISSUE) or submit a pull request.

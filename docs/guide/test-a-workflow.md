@@ -20,7 +20,7 @@ Most grading/transition workflows can be verified locally before testing them in
 
 1. Ensure you are in the Codespace and have [configured nektos/act](configuration/configure-act-for-local-testing.md).
 1. Ensure any required environment variables are in the `.actrc.vars` file.
-   - This is loaded from exercise manager
+   - This is loaded from exercise creator
    - This will rarely be needed.
 1. Ensure any required secrets are in the `.actrc.secrets` file.
    - This prevents the need to save your PAT in each repository (exercise) folder.

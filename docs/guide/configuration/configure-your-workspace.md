@@ -15,7 +15,7 @@ Workspaces settings are defined in multiple places depending on necessity of cha
 
 - **Workspace settings**
 
-  - Location: `exercise-manager.code-workspace`
+  - Location: `exercise-creator.code-workspace`
   - Workspace directory structure
   - Adjustable linting settings
   - Adjustable spell check settings
