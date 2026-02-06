@@ -69,6 +69,14 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
    > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-creator/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
 
+1. Ask Copilot to review the exercise for common issues.
+
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+
+   ```prompt
+   /review-exercise
+   ```
+
 1. Use the following Copilot prompt to publish the exercise to your account.
 
    ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
