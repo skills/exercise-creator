@@ -31,7 +31,7 @@ description: Publishes a GitHub Skills exercise repository to the current user's
   gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=false | cat
   ```
 
-4. Before publishing, adjust the following repository settings:
+5. Before publishing, adjust the following repository settings:
 
   1. Set the repository as template.
 
@@ -45,7 +45,7 @@ description: Publishes a GitHub Skills exercise repository to the current user's
    gh api -X PATCH /repos/{owner}/{exercise-name} -f description="{description}" | cat
    ```
 
-5. Publish the exercise repository to the user's account.
+6. Publish the exercise repository to the user's account.
 
    - If you fail to publish it, there is probably a permissions issue. Ask the user to manually publish.
 
@@ -54,7 +54,7 @@ description: Publishes a GitHub Skills exercise repository to the current user's
     ```
     - Do not continue until the repository is successfully published, otherwise the next steps do not make sense.
 
-6. After publishing, disable current workflows and reenable Actions.
+7. After publishing, disable current workflows and reenable Actions.
 
   1. Check the exercise repository for workflows. Disable all workflows that are found.
   
