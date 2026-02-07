@@ -68,6 +68,6 @@ description: Publishes a GitHub Skills exercise repository to the current user's
 
   2. Re-enable Actions on the repository, leaving workflows disabled and untriggered.
 
-     ```bash
-    gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=true | cat
-    ```
+   ```bash
+   gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=true | cat
+   ```
