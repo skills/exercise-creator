@@ -22,7 +22,7 @@ description: Publishes a GitHub Skills exercise repository to the current user's
   - If they confirm, create an empty repository in their account with the same name as the current exercise repository. Add the remote but do not publish the exercise repository yet!
 
     ```bash
-    gh repo create {owner}/{exercise-name} --private --add-readme=false
+    gh repo create {owner}/{exercise-name} --private
     ```
 
 4. Disable Actions on the repository to prevent any of the exercise workflows from accidentally triggering during publishing.
