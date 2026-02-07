@@ -36,7 +36,7 @@ description: Publishes a GitHub Skills exercise repository to the current user's
   1. Set the repository as template.
 
    ```bash
-   gh api -X PATCH /repos/{owner}/{exercise-name} -f is_template=true | cat
+   gh api -X PATCH /repos/{owner}/{exercise-name} -F is_template=true | cat
    ```
 
   2. Set the repository description to match the exercise description from the top of the README.
