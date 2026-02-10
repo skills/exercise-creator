@@ -73,6 +73,11 @@ src="../images/descriptive-filename.png"
 
 ### 6. Update start-exercise reusable workflow version
 
-Update `start-exercise` reusable workflow that is used to `v0.8.0` version which is the first release of `exercise-toolkit` that supports relative links.
+Update `start-exercise` reusable workflow that is used to `v0.8.1` version which is the first release of `exercise-toolkit` that fully supports relative links.
 
 **Important:** Only update the `start-exercise` version reference. Do not modify any other references to `exercise-toolkit` elsewhere in the repository.
+
+### 7. Use explicit ref when posting content in start-exercise workflow
+
+Ensure that the repository is checked out at the main branch during the "Checkout" step in the .github/workflows/0-start-exercise.yml file in the post_next_step_content job
+This will ensure the current repository is checked out with the commit that was pushed by the previous start-exercise reusable workflow
