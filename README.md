@@ -12,7 +12,6 @@ This is a codespace with guidelines for developing and managing GitHub Skills ex
 ## Start the Codespace
 
 1. (Optional) For additional permissions options, fork the repository to your account/organization.
-
    - By default a Codespace only has access to the original repository and your user space.
    - If you need to [edit exercises across multiple accounts/organizations](docs/guide/configuration/work-across-multiple-organizations.md), you will need to change a few settings.
 
@@ -61,7 +60,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 1. Use the following Copilot prompt to create an actual exercise.
 
    ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   
+
    ```prompt
    /bootstrap-exercise-from-outline
    ```
@@ -73,14 +72,22 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 1. Ask Copilot to review the exercise for common issues.
 
    ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   
+
    ```prompt
    /review-exercise
    ```
 
-1. Test it with your friends and coworkers to make it awesome! 😎
+1. Use the following Copilot prompt to publish the exercise to your account.
 
-1. Publish it and enjoy! 🚀
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+
+   ```prompt
+   /publish-exercise
+   ```
+
+1. Go to the exercise repo and give it a test run! 😎
+
+1. Share it with your friends and coworkers! 🥳 🚀
 
 ## Work on an Existing Exercise
 
