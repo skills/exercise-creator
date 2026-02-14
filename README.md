@@ -51,6 +51,15 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    Put it in the `/workspaces/repos/` folder.
    ```
 
+   Alternatively, you can use the custom outline-creator agent:
+
+   ```prompt
+   @outline-creator
+   Make an exercise to teach the fundamentals of Git and version control.
+   Assume no prior version control experience.
+   Put it in the `/workspaces/repos/` folder.
+   ```
+
    > 💡 **Tip:** You can also ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
 
 1. Manually review and refine the draft exercise outline.
