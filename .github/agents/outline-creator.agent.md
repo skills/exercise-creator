@@ -43,7 +43,7 @@ Follow the structure and guidelines from `.github/instructions/outline.instructi
 - Exercise Title: Clear, descriptive name
 - Repo URL: Tentative repository URL
 - Experience Level: Beginner, Intermediate, or Advanced
-- Recommended Grouping: Category on https://learn.github.com/skills
+- Recommended Grouping: Category on https://skills.github.com/
 - Relationships: Previous/next exercises if applicable
 
 #### Story Plot (Optional)
@@ -78,7 +78,7 @@ For each step, include:
   - GitHub Documentation (https://docs.github.com)
   - GitHub Learn (https://learn.github.com)
   - GitHub Blog (https://github.blog)
-  - GitHub Changelog (https://github.blog/changelog)
+  - GitHub Changelog (https://github.blog/changelog/)
   - VS Code Documentation (https://code.visualstudio.com/docs/)
 
 **Activity**: 
