@@ -156,7 +156,7 @@ Repository custom instructions allow you to provide Copilot with context about y
 
 ### Transition
 
-- **Actions Trigger:** [`push`](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#push)
+- **Actions Trigger:** [`push`](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push)
 - **Grading-Check:** Verify `.github/copilot-instructions.md` file exists and contains required content
 ```
 
