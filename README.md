@@ -51,10 +51,10 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    Put it in the `/workspaces/repos/` folder.
    ```
 
-   Alternatively, you can use the custom outline-creator agent:
+   Alternatively, you can use the custom skills-outline-creator agent:
 
    ```prompt
-   @outline-creator
+   @skills-outline-creator
    Make an exercise to teach the fundamentals of Git and version control.
    Assume no prior version control experience.
    Put it in the `/workspaces/repos/` folder.

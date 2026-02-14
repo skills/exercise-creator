@@ -1,5 +1,5 @@
 ---
-name: outline-creator
+name: skills-outline-creator
 description: Creates new exercise outlines for GitHub Skills exercises following the required structure and conventions
 model: Claude Sonnet 4
 tools: ["read", "edit", "create", "search"]
