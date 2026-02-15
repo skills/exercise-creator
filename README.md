@@ -51,7 +51,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    Put it in the `/workspaces/repos/` folder.
    ```
 
-   Alternatively, you can use the custom skills-outline-creator agent:
+   Alternatively, you can use the custom `@skills-outline-creator` agent:
 
    ```prompt
    @skills-outline-creator
