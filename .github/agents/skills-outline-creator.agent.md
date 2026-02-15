@@ -88,7 +88,7 @@ For each step, include:
 
 **Transition**:
 - **Actions Trigger**: GitHub event that signals step completion
-  - Reference the Transition Triggers guide
+  - Reference the Transition Triggers guide at `docs/reference/transition-triggers.md`
   - Use correct GitHub Actions trigger syntax
 - **Grading-Check**: What to verify from the learner's work
   - Provide specific checks for feedback
