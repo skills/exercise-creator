@@ -1,6 +1,6 @@
 ---
+name: "review-exercise"
 agent: "agent"
-model: Claude Sonnet 4
 description: "Review the format and quality of a GitHub Skills exercise."
 ---
 
