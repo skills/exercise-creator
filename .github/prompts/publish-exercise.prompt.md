@@ -1,4 +1,5 @@
 ---
+name: "publish-exercise"
 agent: agent
 description: Publishes a GitHub Skills exercise repository to the current user's GitHub Account.
 ---
