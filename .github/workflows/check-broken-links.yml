@@ -51,7 +51,7 @@ jobs:
           repository: ${{ matrix.repo }}
       - name: Check Links with Lychee
         id: lychee
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@v2.7.0
         with:
           # Check all markdown and HTML files in the repository
           # Exclude links that are private, file:// URLs, and links containing mustache-style variables ({{ }}) and their encoded form
