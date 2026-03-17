@@ -70,7 +70,7 @@ jobs:
             --exclude '.*%7B%7B.*%7D%7D.*'
             --exclude https://github.com/organizations/
             --exclude https://platform.openai.com/
-            --accept 200,429
+            --accept 200,203,429
           fail: false
 
       - name: Create Issue From File
