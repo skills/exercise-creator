@@ -62,6 +62,10 @@ jobs:
             './**/*.html'
             --exclude-all-private
             --exclude 'file:///*'
+            --exclude '^/'
+            --exclude '^\./'
+            --exclude '^\.\./'
+            --exclude '^#'
             --exclude '.*\{\{.*\}\}.*'
             --exclude '.*%7B%7B.*%7D%7D.*'
             --exclude https://github.com/organizations/
