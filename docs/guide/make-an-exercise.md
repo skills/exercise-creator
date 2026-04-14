@@ -35,6 +35,12 @@ If you are unfamiliar with the architecture and flow of an exercise, please see 
    > /bootstrap-exercise-from-outline
    > ```
 
+   You can also ask naturally and let the repo Agent Skill load, for example:
+
+   ```text
+   Bootstrap this GitHub Skills exercise repository from the approved outline.
+   ```
+
 1. Use the [Step Formatting](../reference/step-formatting.md) recommendations to make your exercise more enjoyable.
 
    > ❗️ **IMPORTANT:** Images should be stored in the repository under `.github/images` and referenced as relative links in the `.github/steps` files.
@@ -53,6 +59,12 @@ If you are unfamiliar with the architecture and flow of an exercise, please see 
    > ```prompt
    > /review-exercise
    > ```
+
+   You can also ask naturally, for example:
+
+   ```text
+   Review this GitHub Skills exercise draft for learner flow, workflow correctness, and formatting issues.
+   ```
 
 1. Use the [testing guide](test-an-exercise.md) to validate the exercise.
 

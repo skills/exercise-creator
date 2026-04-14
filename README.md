@@ -40,6 +40,11 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Open the Copilot Chat panel and ensure you are in `Agent` mode.
 
+1. Choose either repo Agent Skills or slash prompts as your entry point.
+
+   - Repo Agent Skills now live in `.github/skills/` and are available to Copilot agent mode and Copilot CLI when you ask naturally for help with outlining, bootstrapping, reviewing, or publishing an exercise.
+   - The existing slash prompts in `.github/prompts/` still work and remain a good explicit option.
+
 1. Use the following Copilot prompt to create a draft exercise outline.
 
    ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
@@ -50,6 +55,8 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    Assume no prior version control experience.
    Put it in the `/workspaces/repos/` folder.
    ```
+
+   Or ask naturally, for example: `Create a GitHub Skills exercise outline for teaching Git fundamentals to beginners.`
 
    > 💡 **Tip:** You can also ask Copilot to save this outline as an issue on a repository. Alternately, Copilot can review notes from an existing issue and restructure it.
 
@@ -65,6 +72,8 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    /bootstrap-exercise-from-outline
    ```
 
+   Or ask naturally: `Bootstrap this exercise repository from the approved outline.`
+
 1. Manually refine the draft exercise to make it production worthy. 🧐
 
    > 💡 **Tip:** We are working on prompts to help refine the initial draft exercise. If you have ideas, please [open a new feature issue](https://github.com/skills/exercise-creator/issues/new?template=BLANK_ISSUE&title=replace-me:%20prompt%20name&body=replace-me:%20I%20have%20an%20idea%20for%20a%20prompt%20to%20help%20refine%20exercises)! 🧑‍🚀
@@ -77,6 +86,8 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    /review-exercise
    ```
 
+   Or ask naturally: `Review this GitHub Skills exercise draft for learner flow, workflow correctness, and formatting issues.`
+
 1. Use the following Copilot prompt to publish the exercise to your account.
 
    ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
@@ -84,6 +95,8 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
    ```prompt
    /publish-exercise
    ```
+
+   Or ask naturally: `Publish this exercise repository to my GitHub account after checking the remote and repository settings.`
 
 1. Go to the exercise repo and give it a test run! 😎
 

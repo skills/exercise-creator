@@ -35,6 +35,26 @@ The following is a list of guides and references for a deeper understanding of m
 - [MCP Server Settings](guide/configuration/configure-mcp-servers.md) - How do I enable the GitHub MCP server?
 - [Workspace Permissions](guide/configuration/work-across-multiple-organizations.md) - How do I change my codespace permissions to work across multiple organizations.
 
+## Copilot discoverability
+
+This repository supports both **repo Agent Skills** in `.github/skills/` and **slash prompts** in `.github/prompts/`.
+
+- Use **natural language** when you want Copilot to select the right repo skill automatically.
+- Use a **slash prompt** when you want to invoke a specific workflow explicitly.
+
+### Available repo Agent Skills
+
+- `create-exercise-outline` - Plan or refine a new GitHub Skills exercise outline.
+- `bootstrap-exercise-from-outline` - Turn an approved outline into exercise files and workflows.
+- `review-exercise` - Review an exercise draft for learner flow, formatting, and workflow correctness.
+- `publish-exercise` - Prepare and publish an exercise repository safely to GitHub.
+
+### Copilot CLI tips
+
+- Use `/skills` to view and toggle loaded skills.
+- Use `/skills info` to inspect skill details and location.
+- Use `/skills reload` after adding or editing skills in the current session.
+
 ## Reference
 
 The following provide the role/purpose of components in a Skills exercise.
