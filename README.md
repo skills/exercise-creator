@@ -42,7 +42,7 @@ With the help of GitHub Copilot, making a new exercise from scratch can be very 
 
 1. Choose either repo Agent Skills or slash prompts as your entry point.
 
-   - Repo Agent Skills now live in `.github/skills/` and are available to Copilot agent mode and Copilot CLI when you ask naturally for help with outlining, bootstrapping, reviewing, or publishing an exercise.
+   - Repo Agent Skills now live in `.github/skills/` and are available in Copilot `Agent` mode and Copilot CLI when you ask naturally for help with outlining, bootstrapping, reviewing, or publishing an exercise.
    - The existing slash prompts in `.github/prompts/` still work and remain a good explicit option.
 
 1. Use the following Copilot prompt to create a draft exercise outline.
