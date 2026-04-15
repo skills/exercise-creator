@@ -51,6 +51,7 @@
 
         // General Coding
         "github.copilot",
+        "GitHub.copilot-chat",
         "esbenp.prettier-vscode",
         "github.vscode-pull-request-github",
         "hediet.vscode-drawio",
