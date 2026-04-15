@@ -5,3 +5,4 @@ description: Publishes a GitHub Skills exercise repository to the current user's
 ---
 
 Use the repo Agent Skill at `.github/skills/publish-exercise/SKILL.md`.
+If that file is missing, report the missing path and stop.
