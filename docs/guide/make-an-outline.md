@@ -2,15 +2,17 @@
 
 The most important part of any new exercise is making a good plan. Every minute invested here will save hours on development and fixes to the exercise.
 
-You can create a new exercise outline by simply asking Copilot. The more details you and resources you can provide, the better the outline.
+You can create a new exercise outline by simply asking Copilot. The more details and resources you can provide, the better the outline.
 
-> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
->
-> ```prompt
-> /create-exercise-outline
-> Make an exercise to teach the fundamentals of Git and version control.
-> Assume no prior version control experience.
-> ```
+![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+
+```prompt
+Make a GitHub Skills exercise outline to teach
+the fundamentals of Git and version control.
+Assume no prior experience with version control.
+```
+
+> 💡 **Tip:** You can also use the `/create-exercise-outline` command to be more explicit.
 
 ## Outline Considerations
 
