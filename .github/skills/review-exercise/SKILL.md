@@ -28,6 +28,7 @@ Review an existing GitHub Skills exercise, check the following things to ensure 
 ## Step - Workflow files
 
 - Verify all variables match the markdown templates being used.
+- Step 0 is does not need to be manually disabled. The start exercise workflow disables all workflows.
 - Check for typos.
 
 ## Review file
