@@ -58,6 +58,7 @@ description: Publish a GitHub Skills exercise repository safely to GitHub. Use w
     ```bash
     git push -u origin main
     ```
+    
    - Do not continue until the repository is successfully published, otherwise the next steps do not make sense.
 
 7. After publishing, disable current workflows and reenable Actions.

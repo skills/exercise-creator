@@ -3,48 +3,25 @@ name: create-exercise-outline
 description: Create or refine a GitHub Skills exercise outline. Use when asked to plan a new exercise, draft an outline, turn notes into an outline, or improve an existing outline before implementation.
 ---
 
-# Create a GitHub Skills exercise outline
+# Create Exercise Outline
 
-Use this skill when the user wants a GitHub Skills exercise outline rather than a full exercise implementation.
+Create a new exercise outline for a GitHub Skills exercise with the information provided by the user. If there is information missing, ask for it.
 
-## Primary sources in this repository
+To create an outline follow these steps:
 
-- Prompt baseline: `.github/prompts/create-exercise-outline.prompt.md`
-- Outline template: `.github/ISSUE_TEMPLATE/skill-exercise-outline.md`
-- Outline rules: `.github/instructions/outline.instructions.md`
+1. Create a new file using the template from [`.github/ISSUE_TEMPLATE/skill-exercise-outline.md`](../../ISSUE_TEMPLATE/skill-exercise-outline.md) as a starting point.
 
-## Workflow
+   - The file should follow the `{exercise-name}-outline.md` name format.
+   - If they don't specify where to save the file, put it in the `/workspaces/repos/` folder.
 
-1. Clarify missing inputs before drafting if the exercise topic, learner level, repository destination, or scope is ambiguous.
-2. Start from `.github/ISSUE_TEMPLATE/skill-exercise-outline.md` instead of inventing a new structure.
-3. Create the outline file using the `{exercise-name}-outline.md` naming pattern.
-4. If the user does not specify a save location, prefer `/workspaces/repos/`.
-5. Fill every required template section with real content and remove all `replace-me` placeholders.
-6. If you keep an optional section, remove the `(optional)` marker from the heading. If it is not needed, delete the section entirely.
-7. Research official documentation for references and theory support. Prefer:
-   - `docs.github.com`
-   - `learn.github.com`
-   - `github.blog`
-   - `github.blog/changelog`
-   - `code.visualstudio.com/docs`
+1. Search for relevant documentation that can be used in the outline references and theory sections.
 
-## Outline quality bar
+1. Fill out the sections in the template with the relevant information.
 
-Follow `.github/instructions/outline.instructions.md` closely:
+   - Use the [`outline instructions`](../../instructions/outline.instructions.md) file as a guide for how to fill out the sections.
 
-- Keep the outline focused on the requested topic only.
-- Make the theory awareness-level, not a full tutorial.
-- Give each step a clear learning purpose that builds on the previous step.
-- Make activities action-oriented and high level.
-- Choose transition triggers that actually result from the activity the learner performs.
-- Describe grading checks as concrete things the workflow can verify.
+1. Review the complete outline. Verify:
 
-## Review before finishing
-
-Before you conclude:
-
-1. Verify each step teaches a distinct concept.
-2. Verify theory, references, activity, and transition all align for each step.
-3. Verify no `replace-me` text remains.
-4. Verify the learner journey is coherent from README through Review.
-
+   - Each step builds on previous knowledge.
+   - Activities match theory sections.
+   - The actions taken in the activity will trigger the selected trigger.

@@ -3,66 +3,98 @@ name: bootstrap-exercise-from-outline
 description: Bootstrap a GitHub Skills exercise repository from an approved outline. Use when asked to turn an outline into a working exercise with README, step content, workflows, and review content.
 ---
 
-# Bootstrap a GitHub Skills exercise from an outline
+# Bootstrap Exercise from Outline
 
-Use this skill when the user already has an outline and wants the actual repository content created or updated.
+When you have an exercise outline, follow these steps to bootstrap a repository freshly created from the exercise-template repository:
 
-## Primary sources in this repository
+## 1. Create a new repository
 
-- Prompt baseline: `.github/prompts/bootstrap-exercise-from-outline.prompt.md`
-- Step content rules: `.github/instructions/step-content.instructions.md`
-- Workflow rules: `.github/instructions/step-workflows.instructions.md`
-- Outline rules: `.github/instructions/outline.instructions.md`
-- Step formatting reference: `docs/reference/step-formatting.md`
+Ignore this step if the user already has a new repository created from the exercise template.
 
-## Workflow
+1. **Create a new repository** - Use the CLI to initialize a new local repository based on the exercise template.
 
-1. Read the approved outline first and treat it as the source of truth.
-2. If the repository does not yet exist and the user wants one created from the template:
-   - create it under `/workspaces/repos/`
-   - base it on the exercise template
-   - do not keep the template git history
-   - do not publish until the exercise has been reviewed
-3. Update `README.md` using the outline's title, introduction, overview, build outcome, and prerequisites while preserving the existing README structure.
-4. Create or update `.github/steps/N-step.md` files:
-   - one file per step
-   - concise theory
-   - actionable numbered activities
-   - troubleshooting details blocks
-   - optional story content only when the outline includes it
-5. Create or update `.github/steps/x-review.md` from the outline's review section.
-6. Create or update `.github/workflows/0-start-exercise.yml` and `.github/workflows/N-step.yml` files to match the outline's transition design.
+   - Create and initialize the new repository in the `/workspaces/repos` folder.
+   - Do not keep the Git history from the template.
+   - Set the repository name to match the exercise title from the outline.
+   - Do not publish it yet. Ask the user after final review.
 
-## Required standards
+## 2. Readme Setup
 
-### Step content
+1. **Update README.md** - Replace template content with exercise-specific information from the outline:
 
-Follow `.github/instructions/step-content.instructions.md`:
+   - Title from outline
+   - Brief introduction (max 2 sentences)
+   - Overview section with learning objectives
+   - "What you will build" description
+   - Prerequisites list
+   - Remove template placeholder text
+  
+  Keep the original format of the README!
 
-- Start each activity with `### ⌨️ Activity: <title>`.
-- Use ordered lists for learner actions.
-- Keep each step self-contained.
-- Use Nunjucks variables only when workflow data must be injected.
-- Store images in `.github/images` and reference them relatively.
+## 3. Step Content files Setup
 
-### Workflows
+1. **Create step content files** - Generate `.github/steps/N-step.md` files for each step in the outline if not already present:
 
-Follow `.github/instructions/step-workflows.instructions.md`:
+   - Create one file per step (1-step.md, 2-step.md, etc.)
+   - Add story sections if provided in outline
+   - Convert theory content into digestible sections. Include links to references to read more about the topic.
+   - Transform activity descriptions into numbered, actionable instructions
+   - Follow [`.github/instructions/step-content.instructions.md`](../../instructions/step-content.instructions.md) for formatting
 
-- Keep workflow names simple: `Step 0`, `Step 1`, and so on.
-- Each learning step must include `find_exercise` and `post_next_step_content`.
-- Add `check_step_work` only when grading feedback is valuable or necessary.
-- If `check_step_work` exists, include it in `post_next_step_content.needs`.
-- Disable the current workflow and enable the next one during step transitions.
-- The final step should post review content and call `finish-exercise.yml` instead of enabling another step.
+1. **Create review content file** - Generate `.github/steps/x-review.md`:
+   - Summarize skills learned
+   - Include "What's next?" links
+   - Follow outline review section
 
-## Validation checklist
+## 4. Step Workflow files Setup
 
-Before you conclude:
+1. **Update start exercise workflow** - Modify `.github/workflows/0-start-exercise.yml`:
 
-1. Verify every workflow points to the correct step file.
-2. Verify triggers match the learner actions described in the outline.
-3. Verify grading checks are concrete, independent, and useful.
-4. Verify the learning flow feels progressive and coherent.
-5. Verify the README, step files, workflows, and review file tell the same story.
+   - Update exercise title and intro message placeholders
+   - Add any "On Start" automation from outline if present
+   - Ensure proper issue creation and workflow state management
 
+1. **Create step workflows** - Generate `.github/workflows/N-step.yml` files:
+
+   - One workflow per step
+   - Configure event triggers based on outline transition specifications
+   - Add grading checks if specified in outline.
+   - Update workflow names and step file references
+
+1. **Configure workflow triggers** - Set appropriate `on:` events:
+
+   - Check the event trigger docs for correct usage: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows.
+   - Match outline "Actions Trigger" specifications
+   - Add proper `paths:` filters for push events
+   - Configure specific event types (e.g., `pull_request: types: [closed]`)
+
+1. **Configure grading checks** - Implement workflow validation:
+
+   - Add `check_step_work` jobs for steps requiring grading
+   - Use appropriate actions (file-exists, keyphrase-checker, etc.)
+   - Match outline "Grading-Check" specifications
+   - Follow grading job pattern from [`.github/instructions/step-workflows.instructions.md`](../../instructions/step-workflows.instructions.md)
+
+1. **Update environment variables** - Set proper step file paths:
+
+   - Update `STEP_N_FILE` variables in workflows
+   - Ensure workflow names match in enable/disable commands
+
+## 5. Final validation
+
+1. **Validate structure** - Ensure consistency:
+
+   - All workflows reference correct step files
+   - Workflow names match step numbers
+   - Event triggers align with learning objectives
+   - Steps that use markdown templates have all required variables and they are passed correctly.
+   - Grading checks match step requirements
+   - Last step workflow calls `finish-exercise.yml` instead of enabling next step
+   - Intermediate steps do not call `finish-exercise.yml`
+   - Follow the recommended [formatting guidelines](../../../docs/reference/step-formatting.md).
+
+1. **Review content flow** - Verify logical progression:
+
+   - Each step builds on previous knowledge
+   - Activities match theory sections
+   - Transitions make sense for workflow triggers
