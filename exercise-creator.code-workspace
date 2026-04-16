@@ -2,17 +2,17 @@
   "folders": [
     {
       "name": "exercise-creator",
-      "path": "."
+      "path": ".",
     },
     {
-      "path": "/workspaces/exercise-toolkit"
+      "path": "/workspaces/exercise-toolkit",
     },
     {
-      "path": "/workspaces/exercise-template"
+      "path": "/workspaces/exercise-template",
     },
     {
-      "path": "/workspaces/repos/"
-    }
+      "path": "/workspaces/repos/",
+    },
   ],
 
   "settings": {
@@ -26,18 +26,18 @@
       "no-bare-urls": false,
       "single-h1": false,
       "no-inline-html": {
-        "allowed_elements": ["a", "img", "details", "summary", "p", "br"]
+        "allowed_elements": ["a", "img", "details", "summary", "p", "br"],
       },
       "no-alt-text": false,
       "code-block-style": {
-        "style": "fenced"
-      }
+        "style": "fenced",
+      },
     },
     "prettier.printWidth": 100,
 
     // Spell checking
     "cSpell.words": ["Birki", "Mergington", "professortocat", "keyphrase"],
     "cSpell.ignoreRandomStrings": true,
-    "cSpell.useGitignore": true
-  }
+    "cSpell.useGitignore": true,
+  },
 }
