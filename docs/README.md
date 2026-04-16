@@ -5,25 +5,21 @@ The following is a list of guides and references for a deeper understanding of m
 ## Guides
 
 - [Make an Outline](guide/make-an-outline.md) - Plan the exercise.
-
   - Create a draft with Copilot that includes all critical information.
   - Include important considerations.
   - Refine early to save time later.
 
 - [Make an Exercise](guide/make-an-exercise.md) - Use the outline to create an actual exercise.
-
   - Bootstrap a draft exercise with Copilot.
   - Refine to make it approachable and fun.
   - Use formatting tips to avoid typical mistakes.
 
 - [Test a Workflow](guide/test-a-workflow.md) - Verify the technical functionality of the exercise.
-
   - Running transition workflows locally
   - Verifying grading workflows locally
   - Example event payloads
 
 - [Test an Exercise](guide/test-an-exercise.md) - Verify the exercise is consistent for learners.
-
   - Verifying instructions
   - Predicting for failure points
   - Getting feedback from testers
@@ -54,6 +50,9 @@ This repository supports both **repo Agent Skills** in `.github/skills/` and **s
 - Use `/skills` to view and toggle loaded skills.
 - Use `/skills info` to inspect skill details and location.
 - Use `/skills reload` after adding or editing skills in the current session.
+
+> [!NOTE]
+> The above commands are referring to Agent Skills available to Copilot, not GitHub Skills exercises.
 
 ## Reference
 
