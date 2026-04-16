@@ -78,3 +78,6 @@ description: Publish a GitHub Skills exercise repository safely to GitHub. Use w
    ```bash
    gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=true | cat
    ```
+
+8. Update the `template_owner` in the "Copy Exercise" button's URL from `skills` to the new repository owner. Commit and push the change.
+
