@@ -29,24 +29,19 @@ If you are unfamiliar with the architecture and flow of an exercise, please see 
 
 1. Prompt Copilot to create the exercise.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /bootstrap-exercise-from-outline
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
-   You can also ask naturally and let the repo Agent Skill load, for example:
-
-   ```text
-   Bootstrap this GitHub Skills exercise repository from the approved outline.
+   ```prompt
+   This outline looks good. Please make it into a real exercise.
    ```
+
+   > 💡 **Tip:** You can also use the `/bootstrap-exercise-from-outline` command to be more explicit.
 
 1. Use the [Step Formatting](../reference/step-formatting.md) recommendations to make your exercise more enjoyable.
 
    > ❗️ **IMPORTANT:** Images should be stored in the repository under `.github/images` and referenced as relative links in the `.github/steps` files.
 
 1. Use the checklists to to prepare for publishing.
-
    - [Repository files](checklist/repository-files.md) checklist
    - [Repository settings](checklist/repository-settings.md) checklist
 
@@ -54,20 +49,15 @@ If you are unfamiliar with the architecture and flow of an exercise, please see 
 
 1. Ask Copilot to review your exercise.
 
-   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
-   >
-   > ```prompt
-   > /review-exercise
-   > ```
+   ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
-   You can also ask naturally, for example:
-
-   ```text
-   Review this GitHub Skills exercise draft for learner flow, workflow correctness, and formatting issues.
+   ```prompt
+   Please review the GitHub Skills exercise draft for common issues.
    ```
 
-1. Use the [testing guide](test-an-exercise.md) to validate the exercise.
+   > 💡 **Tip:** You can also use the `/review-exercise` command to be more explicit.
 
+1. Use the [testing guide](test-an-exercise.md) to validate the exercise.
    - Assume the role of the learner and try to break it.
    - Share it internally to get feedback.
 
