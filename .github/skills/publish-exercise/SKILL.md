@@ -3,47 +3,77 @@ name: publish-exercise
 description: Publish a GitHub Skills exercise repository safely to GitHub. Use when asked to create the remote repository, prepare repository settings, and publish an exercise after review is complete.
 ---
 
-# Publish a GitHub Skills exercise
+# Publish Exercise
 
-Use this skill when the repository is ready to go live and the task is release-oriented rather than content authoring.
+1. Check the exercise repository for a remote. If it already has one, do nothing.
+   
+   - Only consider repositories in the `/workspaces/repos/**` folder.
 
-## Primary source in this repository
+2. Try to determine the current user's GitHub account username.
+   
+   - GitHub CLI authenticated user
+      ```bash
+      gh auth status
+      ```
+   - Environment variables
+      ```bash
+      echo $GITHUB_OWNER
+      ```
+   - Other repositories in the parent folder
 
-- Prompt baseline: `.github/prompts/publish-exercise.prompt.md`
+3. Ask the user if they would like to publish the current exercise repository to that location.
+  
+  - If they reject, do nothing and exit.
 
-## Workflow
+  - If they confirm, create an empty repository in their account with the same name as the current exercise repository. Add the remote but do not publish the exercise repository yet!
 
-1. Check whether the current repository already has a remote.
-   - Only consider repositories under `/workspaces/repos/**`.
-   - If a remote already exists, do nothing.
-2. Determine the likely GitHub owner:
-   - authenticated `gh` user
-   - environment variables
-   - nearby repositories in the same parent folder
-3. Ask the user for confirmation before creating the remote repository.
-4. Create an empty private repository with the same repository name.
-5. Disable Actions on the remote repository before pushing exercise content.
-6. Update repository settings before publishing:
-   - set `is_template=true`
-   - set the description from the exercise README introduction
-7. Push the repository to `origin main`.
-8. After publishing:
-   - enumerate workflows
-   - disable all of them so they do not accidentally trigger
-   - re-enable Actions while leaving workflows disabled
+    ```bash
+    gh repo create {owner}/{exercise-name} --private
+    ```
 
-## Command guidance
+4. Disable Actions on the repository to prevent any of the exercise workflows from accidentally triggering during publishing.
 
-Use the workflow and command pattern from `.github/prompts/publish-exercise.prompt.md`, including:
+  ```bash
+  gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=false | cat
+  ```
 
-- `gh repo create`
-- `gh api` to change Actions permissions
-- `gh api` to set repository metadata
-- `git push -u origin main`
+5. Before publishing, adjust the following repository settings:
 
-## Safety requirements
+  1. Set the repository as template.
 
-- Do not publish without explicit user confirmation.
-- Do not continue if the push fails; surface the failure clearly.
-- Assume permissions issues are common and tell the user when a manual publish step is required.
-- Leave the remote in a safe post-publish state with workflows disabled.
+   ```bash
+   gh api -X PATCH /repos/{owner}/{exercise-name} -F is_template=true | cat
+   ```
+
+  2. Set the repository description to match the exercise description from the top of the README.
+
+   ```bash
+   gh api -X PATCH /repos/{owner}/{exercise-name} -f description="{description}" | cat
+   ```
+
+6. Publish the exercise repository to the user's account.
+
+   - If you fail to publish it, there is probably a permissions issue. Ask the user to manually publish.
+
+    ```bash
+    git push -u origin main
+    ```
+   - Do not continue until the repository is successfully published, otherwise the next steps do not make sense.
+
+7. After publishing, disable current workflows and reenable Actions.
+
+  1. Check the exercise repository for workflows. Disable all workflows that are found.
+  
+   ```bash
+    gh api -X GET /repos/{owner}/{exercise-name}/actions/workflows | cat
+   ```
+   
+   ```bash
+    gh api -X PUT /repos/{owner}/{exercise-name}/actions/workflows/{workflow_id}/disable | cat
+   ```
+
+  2. Re-enable Actions on the repository, leaving workflows disabled and untriggered.
+
+   ```bash
+   gh api -X PUT repos/{owner}/{exercise-name}/actions/permissions -F enabled=true | cat
+   ```
