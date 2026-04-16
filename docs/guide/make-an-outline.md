@@ -4,8 +4,6 @@ The most important part of any new exercise is making a good plan. Every minute 
 
 You can create a new exercise outline by simply asking Copilot. The more details and resources you can provide, the better the outline.
 
-This repository now includes a repo Agent Skill for outline creation in `.github/skills/create-exercise-outline/`, so you can either ask naturally or use the older slash prompt.
-
 ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
 
 ```prompt
