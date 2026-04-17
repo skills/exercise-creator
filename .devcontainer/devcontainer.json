@@ -1,5 +1,11 @@
 {
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "containerEnv": {
+    // Copilot CLI env variables to find skills and instructions
+    // https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#environment-variables
+    "COPILOT_SKILLS_DIRS": "/workspaces/exercise-creator/.github/skills",
+    "COPILOT_CUSTOM_INSTRUCTIONS_DIRS": "/workspaces/exercise-creator/.github/instructions"
+  },
 
   // Ref: https://containers.dev/features
   "features": {
