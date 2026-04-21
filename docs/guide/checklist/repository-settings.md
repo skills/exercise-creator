@@ -1,9 +1,5 @@
 # Repository Settings
 
-### Code Tab
-
-- [ ] Add `skills-course` to the [repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
-
 ## Settings Page
 
 ### General

@@ -3,8 +3,6 @@
 The following are **recommended** items to verify **before**, **during**, and **after** releasing the exercise for general availability.
 
 ## Before Release
-
-- [ ] Update **Skills Project** to automatically add issues created in the exercise repository.
 - [ ] All links clicked and verified.
 
 ## During Release
